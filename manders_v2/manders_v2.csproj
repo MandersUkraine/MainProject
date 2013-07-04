@@ -740,6 +740,9 @@
     <Content Include="Tools\FortAwesome\src\_plugins\site.rb" />
     <Content Include="Tools\FortAwesome\_config.yml" />
   </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Shared\Копия _Layout.cshtml" />
+  </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
