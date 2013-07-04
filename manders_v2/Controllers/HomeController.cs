@@ -10,14 +10,18 @@ namespace manders_v2.Controllers
     {
         public ActionResult Index()
         {
-            ViewBag.Message = "Modify this template to jump-start your ASP.NET MVC application.";
+            ViewBag.Message = "Элитные обои, мебель, элитный текстиль, английские краски в Украине";
 
+            return View();
+        }
+        public ActionResult Other()
+        {
             return View();
         }
 
         public ActionResult About()
         {
-            ViewBag.Message = "Your app description page.";
+            ViewBag.Message = "Компания MANDERS – эксклюзивный поставщик английских декоративных материалов";
 
             return View();
         }
@@ -26,6 +30,25 @@ namespace manders_v2.Controllers
         {
             ViewBag.Message = "Your contact page.";
 
+            return View();
+        }
+
+        public ActionResult Advice()
+        {
+            return View();
+        }
+        public ActionResult Manuals()
+        {
+            return View();
+        }
+        public ActionResult Video()
+        {
+            return View();
+        }
+
+        public ActionResult Gallery()
+        {
+            ViewBag.Message = "Галерея фотографий";
             return View();
         }
     }

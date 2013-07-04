@@ -205,7 +205,7 @@
     <Content Include="Tools\bootstrap-master\docs\assets\ico\apple-touch-icon-144-precomposed.png" />
     <Content Include="Tools\bootstrap-master\docs\assets\ico\apple-touch-icon-57-precomposed.png" />
     <Content Include="Tools\bootstrap-master\docs\assets\ico\apple-touch-icon-72-precomposed.png" />
-    <Content Include="Tools\bootstrap-master\docs\assets\ico\favicon.ico" />
+    <Content Include="Tools\bootstrap-master\docs\assets\ico\_favicon.ico" />
     <Content Include="Tools\bootstrap-master\docs\assets\ico\favicon.png" />
     <Content Include="Tools\bootstrap-master\docs\assets\img\bootstrap-docs-readme.png" />
     <Content Include="Tools\bootstrap-master\docs\assets\img\bootstrap-mdo-sfmoma-01.jpg" />
@@ -742,6 +742,18 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\Shared\Копия _Layout.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Home\Advice.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Home\Manuals.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Home\Video.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Home\Gallery.cshtml" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

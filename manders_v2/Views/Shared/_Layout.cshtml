@@ -4,12 +4,11 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
         <meta charset="utf-8" />
         <title>@ViewBag.Title — приложение ASP.NET MVC</title>
-        <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+        
         <meta name="viewport" content="width=device-width" />
-        <link href="@Url.Content("~/Tools/bootstrap/css/bootstrap.css")" rel="stylesheet" />
-        <link href="@Url.Content("~/Tools/bootstrap/css/bootstrap-responsive.css")" rel="stylesheet" />
-       @* @Styles.Render("~/Content/css")
-        @Scripts.Render("~/bundles/modernizr")*@
+        <link href="@Url.Content("~/Tools/bootstrap-master/docs/assets/css/bootstrap.css")" rel="stylesheet" />
+        <link href="@Url.Content("~/Tools/bootstrap-master/docs/assets/css/bootstrap-responsive.css")" rel="stylesheet" />
+     
      <style>
 
     /* GLOBAL STYLES
@@ -107,7 +106,7 @@
       position: static;
       max-width: 550px;
       padding: 0 20px;
-      margin-top: 200px;
+      margin-top: 100px;
     }
     .carousel-caption h1,
     .carousel-caption .lead {
@@ -255,9 +254,15 @@
 
     <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
     <!--[if lt IE 9]>
-      <script src="../assets/js/html5shiv.js"></script>
+      <script src="@Url.Content("~/Tools/bootstrap-master/docs/assets/js/html5shiv.js")"></script>
     <![endif]-->
-
+        <!-- Fav and touch icons -->
+        <link rel="apple-touch-icon-precomposed" sizes="144x144" href="@Url.Content("~/Tools/bootstrap-master/docs/assets/ico/apple-touch-icon-144-precomposed.png")">
+        <link rel="apple-touch-icon-precomposed" sizes="114x114" href="@Url.Content("~/Tools/bootstrap-master/docs/assets/ico/apple-touch-icon-114-precomposed.png")">
+        <link rel="apple-touch-icon-precomposed" sizes="72x72" href="@Url.Content("~/Tools/bootstrap-master/docs/assets/ico/apple-touch-icon-72-precomposed.png")">
+        <link rel="apple-touch-icon-precomposed" href="@Url.Content("~/Tools/bootstrap-master/docs/assets/ico/apple-touch-icon-57-precomposed.png")">
+        <link rel="shortcut icon" href="@Url.Content("~/Tools/bootstrap-master/docs/assets/ico/favicon.png")">
+        <link rel="shortcut icon" href="@Url.Content("~/Tools/bootstrap-master/docs/assets/ico/favicon.ico")" type="image/x-icon" />
     </head>
     <body>
 
@@ -282,7 +287,7 @@
             <div class="nav-collapse collapse">
               <ul class="nav">
                 <li class="active">@Html.ActionLink("Домашняя страница", "Index", "Home")</li>
-                <li>@Html.ActionLink("О программе", "About", "Home")</li>
+                <li>@Html.ActionLink("О нас", "About", "Home")</li>
                 <li>@Html.ActionLink("Контакт", "Contact", "Home")</li>
                 <!-- Read about Bootstrap dropdowns at http://twitter.github.com/bootstrap/javascript.html#dropdowns -->
                 <li class="dropdown">
@@ -316,32 +321,32 @@
     <div id="myCarousel" class="carousel slide">
       <div class="carousel-inner">
         <div class="item active">
-          <img src="../assets/img/examples/slide-01.jpg" alt="">
+          <img src="@Url.Content("~/Tools/bootstrap-master/docs/assets/img/examples/slide-01.jpg")" alt="">
           <div class="container">
             <div class="carousel-caption">
-              <h1>Краски ведущих производителей Англии.</h1>
-              <p class="lead">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-              <a class="btn btn-large btn-primary" href="#">Перейти для просмотра.</a>
+              <h1>Краски от ведущих производителей Англии.</h1>
+              <p class="lead">Особенные достоинства английских красок – это  их удивительные цвета, которые так необходимы жителям крупных городов, чтобы добавить яркости и уюта в свою жизнь. У каких других производителей вы найдете такую потрясающею цветовую палитру?</p>
+              <a class="btn btn-large btn-primary" href="#">Узнайте больше как украсить свой дом.</a>
             </div>
           </div>
         </div>
         <div class="item">
-          <img src="../assets/img/examples/slide-02.jpg" alt="">
+          <img src="@Url.Content("~/Tools/bootstrap-master/docs/assets/img/examples/slide-02.jpg")" alt="">
           <div class="container">
             <div class="carousel-caption">
-              <h1>Обои от произаодителя.</h1>
-              <p class="lead">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+              <h1>Обои от лучших произаодителей Англии.</h1>
+              <p class="lead">В создании интерьера всегда особая роль отводится стенам. Самый распространенный способ отделки стен – покрытие нашими обоями. Их назвают предметом искусства. Их создают по эскизам знаменитых дизайнеров, художников, иногда – на заказ.</p>
               <a class="btn btn-large btn-primary" href="#">Хотите узнать больше?</a>
             </div>
           </div>
         </div>
         <div class="item">
-          <img src="../assets/img/examples/slide-03.jpg" alt="">
+          <img src="@Url.Content("~/Tools/bootstrap-master/docs/assets/img/examples/slide-03.jpg")" alt="">
           <div class="container">
             <div class="carousel-caption">
               <h1>Текстиль для Вашего дома.</h1>
-              <p class="lead">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-              <a class="btn btn-large btn-primary" href="#">Посмотерть производителей.</a>
+              <p class="lead">Только от лучших производителей Англии. Украсить свои окна лучшим от лучших Sanderson, Morris & Co, Swaffer, Zoffany   　</p>
+              <a class="btn btn-large btn-primary" href="#">для Вас.</a>
             </div>
           </div>
         </div>
@@ -360,6 +365,10 @@
 
       <!-- Three columns of text below the carousel -->
       <div class="row">
+          <div class="span 12">
+               @RenderSection("featured", required: false)
+               @RenderBody()
+          </div>
         <div class="span4">
           <img class="img-circle" data-src="holder.js/140x140">
           <h2>Heading</h2>
@@ -386,7 +395,7 @@
       <hr class="featurette-divider">
 
       <div class="featurette">
-        <img class="featurette-image pull-right" src="../assets/img/examples/browser-icon-chrome.png">
+        <img class="featurette-image pull-right" src="@Url.Content("~/Tools/bootstrap-master/docs/assets/img/examples/browser-icon-chrome.png")">
         <h2 class="featurette-heading">First featurette headling. <span class="muted">It'll blow your mind.</span></h2>
         <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
       </div>
@@ -394,7 +403,7 @@
       <hr class="featurette-divider">
 
       <div class="featurette">
-        <img class="featurette-image pull-left" src="../assets/img/examples/browser-icon-firefox.png">
+        <img class="featurette-image pull-left" src="@Url.Content("~/Tools/bootstrap-master/docs/assets/img/examples/browser-icon-firefox.png")">
         <h2 class="featurette-heading">Oh yeah, it's that good. <span class="muted">See for yourself.</span></h2>
         <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
       </div>
@@ -402,7 +411,7 @@
       <hr class="featurette-divider">
 
       <div class="featurette">
-        <img class="featurette-image pull-right" src="../assets/img/examples/browser-icon-safari.png">
+        <img class="featurette-image pull-right" src="@Url.Content("~/Tools/bootstrap-master/docs/assets/img/examples/browser-icon-safari.png")">
         <h2 class="featurette-heading">And lastly, this one. <span class="muted">Checkmate.</span></h2>
         <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
       </div>
@@ -425,19 +434,19 @@
     <!-- Le javascript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
-    <script src="../assets/js/jquery.js"></script>
-    <script src="../assets/js/bootstrap-transition.js"></script>
-    <script src="../assets/js/bootstrap-alert.js"></script>
-    <script src="../assets/js/bootstrap-modal.js"></script>
-    <script src="../assets/js/bootstrap-dropdown.js"></script>
-    <script src="../assets/js/bootstrap-scrollspy.js"></script>
-    <script src="../assets/js/bootstrap-tab.js"></script>
-    <script src="../assets/js/bootstrap-tooltip.js"></script>
-    <script src="../assets/js/bootstrap-popover.js"></script>
-    <script src="../assets/js/bootstrap-button.js"></script>
-    <script src="../assets/js/bootstrap-collapse.js"></script>
-    <script src="../assets/js/bootstrap-carousel.js"></script>
-    <script src="../assets/js/bootstrap-typeahead.js"></script>
+    <script src="@Url.Content("~/Tools/bootstrap-master/docs/assets/js/jquery.js")"></script>
+    <script src="@Url.Content("~/Tools/bootstrap-master/docs/assets/js/bootstrap-transition.js")"></script>
+    <script src="@Url.Content("~/Tools/bootstrap-master/docs/assets/js/bootstrap-alert.js")"></script>
+    <script src="@Url.Content("~/Tools/bootstrap-master/docs/assets/js/bootstrap-modal.js")"></script>
+    <script src="@Url.Content("~/Tools/bootstrap-master/docs/assets/js/bootstrap-dropdown.js")"></script>
+    <script src="@Url.Content("~/Tools/bootstrap-master/docs/assets/js/bootstrap-scrollspy.js")"></script>
+    <script src="@Url.Content("~/Tools/bootstrap-master/docs/assets/js/bootstrap-tab.js")"></script>
+    <script src="@Url.Content("~/Tools/bootstrap-master/docs/assets/js/bootstrap-tooltip.js")"></script>
+    <script src="@Url.Content("~/Tools/bootstrap-master/docs/assets/js/bootstrap-popover.js")"></script>
+    <script src="@Url.Content("~/Tools/bootstrap-master/docs/assets/js/bootstrap-button.js")"></script>
+    <script src="@Url.Content("~/Tools/bootstrap-master/docs/assets/js/bootstrap-collapse.js")"></script>
+    <script src="@Url.Content("~/Tools/bootstrap-master/docs/assets/js/bootstrap-carousel.js")"></script>
+    <script src="@Url.Content("~/Tools/bootstrap-master/docs/assets/js/bootstrap-typeahead.js")"></script>
     <script>
       !function ($) {
         $(function(){
@@ -446,6 +455,7 @@
         })
       }(window.jQuery)
     </script>
-    <script src="../assets/js/holder/holder.js"></script>
+    <script src="@Url.Content("~/Tools/bootstrap-master/docs/assets/js/holder/holder.js")"></script>
   </body>
 </html>
+
