@@ -1,0 +1,106 @@
+﻿@{
+    ViewBag.Title = "Zoffany slide";
+}
+
+<script type="text/javascript">
+    $(document).ready(function () {
+        var timer, last;
+        var i = 1;
+        var limit = $("#bannerImgZF  li").size();
+        var active = true;
+
+        animate(i, 4000);
+
+        function animate(i, last, time) {
+            timer = setTimeout(function () {
+                i = doBanner(i);
+                last = i;
+                if (i > limit - 1) { i = 0; }
+                i++;
+                animate(i, last, 5000);
+            }, time);
+        }
+
+        function doBanner(i) {
+            $("#bannerImgZF  li:visible").hide();
+            $("#bannerTextZF  li:visible div").hide();
+            $("#bannerImgZF  li:nth-child(" + i + ")").show();
+
+            $("#bannerTextZF  li:nth-child(" + i + ") div").show(200);
+            return i;
+        }
+
+        $("#bannerTextZF  li").click(function () {
+            i = (parseInt($(this).attr('id').substr(3, 3)));
+            if (active) {
+                clearTimeout(timer);
+                doBanner(i);
+                active = false;
+            } else {
+                animate(i, 5000);
+                active = true;
+            }
+        });
+
+    });
+
+        </script>
+      
+
+<div id="logoCat"><a class="no_color" href="@Url.Action("Zoffany", "Products")">
+    <img class="ui-corner-all" src="../../Content/images/Zoffany/main-logo.gif" /></a>
+</div>
+
+
+
+
+<div id="bannerBoxZF">
+    <ul id="bannerImgZF" class="bannerImg ">
+        <li style="display: none;"><a class="no_color" href="@Url.Action("Zoffany_textile", "Products")"><img class="ui-corner-all" width="230" height="290" alt="Zoffany Текстиль" title="Текстиль от компании Zoffany" src="@Url.Content("~/Content/images/Zoffany/Home-Page-1.jpg")"></a></li>
+        <li style="display: none;"><a class="no_color" href="@Url.Action("Zoffany_wallpaper", "Products")"><img class="ui-corner-all" width="230" height="290" alt="Zoffany Обои" title="Обои Zoffany" src="@Url.Content("~/Content/images/Zoffany/Home-Page-2.jpg")"></a></li>
+        <li style="display: none;"><a class="no_color" href="@Url.Action("Zoffany", "Products")"><img class="ui-corner-all" width="230" height="290" alt="Zoffany" title="Zoffany" src="@Url.Content("~/Content/images/Zoffany/Home-Page-3.jpg")"></a></li>
+        <li style="display: list-item;"><a class="no_color" href="@Url.Action("Zoffany_catalog", "Products")"><img class="ui-corner-all" width="230" height="290" alt="Каталог компании Zoffany" title="Каталог компании Zoffany" src="@Url.Content("~/Content/images/Zoffany/Home-Page-4.jpg")"></a></li>
+    </ul>
+    
+    <ul id="bannerTextZF" class="bannerText ">
+        <li id="txt1">
+            <h3>
+                <a>Текстиль Zoffany</a></h3>
+            <div style="display: none;">
+                <p>База временно не доступна</p>
+                
+            </div>
+        </li>
+        <li id="txt2">
+            <h3>
+                <a>Обои Zoffany </a></h3>
+            <div style="display: none;">
+                <p>      База временно не доступна                  </p>
+            </div>
+        </li>
+        <li id="txt3">
+            <h3>
+                <a>Zoffany</a></h3>
+            <div style="display: none;">
+                <p>
+                База временно не доступна</p>
+            </div>
+        </li>
+        <li id="txt4">
+            <h3>
+                <a>Каталог компании Zoffany</a></h3>
+            <div style="display: none;">
+                <p>
+                    База временно не доступна</p>
+            </div>
+        </li>
+    </ul>
+</div>
+
+
+
+
+
+
+
+

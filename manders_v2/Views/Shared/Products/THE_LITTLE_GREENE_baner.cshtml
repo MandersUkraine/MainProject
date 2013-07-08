@@ -1,0 +1,75 @@
+﻿@{
+    ViewBag.Title = "Little Green Manders";
+   
+}
+
+<link href="@Url.Content("~/Content/css/slide_baner.css")" rel="stylesheet" type="text/css" />
+
+    <script type="text/javascript">
+        $(function () {
+            $('#slidesBaner').slides(
+            {
+                preload: true,
+                preloadImage: '../../Content/images/show/loading.gif',
+                play: 2000,
+                pause: 800,
+                hoverPause: true,
+                animationStart: function (current) {
+                    $('.caption').animate({
+                        bottom: -35
+                    }, 100);
+                    if (window.console && console.log) {
+                        // example return of current slide number
+                        console.log('animationStart on slide: ', current);
+                    };
+                },
+                animationComplete: function (current) {
+                    $('.caption').animate({
+                        bottom: 0
+                    }, 200);
+                    if (window.console && console.log) {
+                        // example return of current slide number
+                        console.log('animationComplete on slide: ', current);
+                    };
+                },
+                slidesLoaded: function () {
+                    $('.caption').animate({
+                        bottom: 0
+                    }, 200);
+                }
+            });
+        });
+    </script>
+
+
+<div id="slidesBaner">
+            <div class="slides_container">
+                <div class="slide">
+                    
+                    <a href="@Url.Action("THE_LITTLE_GREENE_paints", "Products")"><img src="../../Content/images/LG/banner2.jpg" alt="buy_paint" /></a>
+                    <div class="caption ui-corner-all" style="bottom:0">
+						<p><a href="@Url.Action("THE_LITTLE_GREENE_paints", "Products")">Краски Little Green</a></p>
+				     </div>
+                </div>
+                <div class="slide">
+                    
+                   <a href="@Url.Action("THE_LITTLE_GREENE_wallpaper", "Products")"><img src="../../Content/images/LG/banner4.jpg" alt="wallpaper" /> </a>
+                   <div class="caption ui-corner-all" style="bottom:0">
+						<p>	<a href="@Url.Action("THE_LITTLE_GREENE_wallpaper", "Products")">Обои Little Green</a></p>
+						</div>
+                </div>
+                <div class="slide">
+                    
+                    <a href="@Url.Action("THE_LITTLE_GREENE_catalog", "Products")"><img src="../../Content/images/LG/banner3.jpg" alt="Farrow&Ball" /></a>   
+                   <div class="caption ui-corner-all" style="bottom:0">
+						<p> <a href="@Url.Action("THE_LITTLE_GREENE_catalog", "Products")">Little Green Каталог</a></p>
+						</div>
+                </div>
+                
+                
+            </div>
+            
+        </div>
+    
+
+

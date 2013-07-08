@@ -1,0 +1,109 @@
+﻿@{
+    ViewBag.Title = "Morris & Co";
+}
+
+
+    
+
+    
+        <script type="text/javascript">
+            $(document).ready(function () {
+                var timer, last;
+                var i = 1;
+                var limit = $("#bannerImgMC  li").size();
+                var active = true;
+
+                animate(i, 4000);
+
+                function animate(i, last, time) {
+                    timer = setTimeout(function () {
+                        i = doBanner(i);
+                        last = i;
+                        if (i > limit - 1) { i = 0; }
+                        i++;
+                        animate(i, last, 5000);
+                    }, time);
+                }
+
+                function doBanner(i) {
+                    $("#bannerImgMC  li:visible").hide();
+                    $("#bannerTextMC  li:visible div").hide();
+                    $("#bannerImgMC  li:nth-child(" + i + ")").show();
+
+                    $("#bannerTextMC  li:nth-child(" + i + ") div").show(200);
+                    return i;
+                }
+
+                $("#bannerTextMC  li").click(function () {
+                    i = (parseInt($(this).attr('id').substr(3, 3)));
+                    if (active) {
+                        clearTimeout(timer);
+                        doBanner(i);
+                        active = false;
+                    } else {
+                        animate(i, 5000);
+                        active = true;
+                    }
+                });
+
+            });
+
+        </script>
+
+  
+
+
+
+<div id="logoCat">
+    <a class="no_color" href="@Url.Action("Morris_and_Co", "Products")">
+        <img class="ui-corner-all" src="@Url.Content("~/Content/images/MC/logo.jpg")"/></a>
+</div>
+
+
+
+<div id="bannerBoxMC">
+    <ul id="bannerImgMC" class="bannerImg ">
+        <li style="display: none;"><a class="no_color" href="@Url.Action("Morris_and_Co_textile", "Products")"><img class="ui-corner-all" width="230" height="290" alt="Текстиль Morris & Co" title="Текстиль от компании Morris & Co" src="@Url.Content("~/Content/images/MC/home_01.jpg")"></a></li>
+        <li style="display: none;"><a class="no_color" href="@Url.Action("Morris_and_Co_wallpaper", "Products")"><img class="ui-corner-all" width="230" height="290" alt="Morris & Co Обои" title="Обои Morris & Co" src="@Url.Content("~/Content/images/MC/home_02.jpg")"></a></li>
+        <li style="display: none;"><a class="no_color" href="@Url.Action("Morris_and_Co", "Products")"><img class="ui-corner-all" width="230" height="290" alt="Morris & Co" title="Morris & Co" src="@Url.Content("~/Content/images/MC/home_03.jpg")"></a></li>
+        <li style="display: list-item;"><a class="no_color" href="@Url.Action("Morris_and_Co_catalog", "Products")"><img class="ui-corner-all" width="230" height="290" alt="Каталог компании Morris & Co" title="Каталог компании Morris & Co" src="@Url.Content("~/Content/images/MC/home_04.jpg")"></a></li>
+    </ul>
+    
+    <ul id="bannerTextMC" class="bannerText ">
+        <li id="txt1">
+            <h3>
+                <a>Текстиль Morris & Co</a></h3>
+            <div style="display: none;">
+                <p>База временно не доступна</p>
+                
+            </div>
+        </li>
+        <li id="txt2">
+            <h3>
+                <a>Обои Morris & Co </a></h3>
+            <div style="display: none;">
+                <p>      База временно не доступна                  </p>
+            </div>
+        </li>
+        <li id="txt3">
+            <h3>
+                <a>Morris & Co</a></h3>
+            <div style="display: none;">
+                <p>
+                База временно не доступна</p>
+            </div>
+        </li>
+        <li id="txt4">
+            <h3>
+                <a>Каталог компании Morris & Co</a></h3>
+            <div style="display: none;">
+                <p>
+                    База временно не доступна</p>
+            </div>
+        </li>
+    </ul>
+</div>
+
+
+    
+

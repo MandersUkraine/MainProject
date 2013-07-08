@@ -1,0 +1,98 @@
+﻿
+    <link href="../../Content/SliderStyle.css" rel="stylesheet" type="text/css" />
+     <script src="../../Scripts/slides.min.jquery.js" type="text/javascript"></script>
+	<script type="text/javascript">
+	    $(function () {
+	        $('#slides').slides({
+	            preload: true,
+	            preloadImage: '../../Content/images/show/loading.gif',
+	            play: 5000,
+	            pause: 2500,
+	            hoverPause: true,
+	            animationStart: function (current) {
+	                $('.caption').animate({
+	                    bottom: -35
+	                }, 100);
+	                if (window.console && console.log) {
+	                    // example return of current slide number
+	                    console.log('animationStart on slide: ', current);
+	                };
+	            },
+	            animationComplete: function (current) {
+	                $('.caption').animate({
+	                    bottom: 0
+	                }, 200);
+	                if (window.console && console.log) {
+	                    // example return of current slide number
+	                    console.log('animationComplete on slide: ', current);
+	                };
+	            },
+	            slidesLoaded: function () {
+	                $('.caption').animate({
+	                    bottom: 0
+	                }, 200);
+	            }
+	        });
+	    });
+	</script>
+   
+    
+
+	
+    <div id="show">
+	<div id="container">
+		<div id="example">
+			
+			<div id="slides">
+				<div class="slides_container">
+					<div class="slide">
+						<a href="Slide1" title="145.365 - Happy Bokeh Thursday! | Flickr - Photo Sharing!" target="_blank"><img src="../../Content/images/show/slide-1.jpg" width="570" height="270" alt="Slide 1"></a>
+						<div class="caption" style="bottom:0">
+							<p>Slide1</p>
+						</div>
+					</div>
+					<div class="slide">
+						<a href="Slide2" title="Taxi | Flickr - Photo Sharing!" target="_blank"><img src="../../Content/images/show/slide-2.jpg" width="570" height="270" alt="Slide 2"></a>
+						<div class="caption">
+							<p>Slide2</p>
+						</div>
+					</div>
+					<div class="slide">
+						<a href="Slide3" title="Happy Bokeh raining Day | Flickr - Photo Sharing!" target="_blank"><img src="../../Content/images/show/slide-3.jpg" width="570" height="270" alt="Slide 3"></a>
+						<div class="caption">
+							<p>Slide3</p>
+						</div>
+					</div>
+					<div class="slide">
+						<a href="Slide4" title="We Eat Light | Flickr - Photo Sharing!" target="_blank"><img src="../../Content/images/show/slide-4.jpg" width="570" height="270" alt="Slide 4"></a>
+						<div class="caption">
+							<p>Slide4</p>
+						</div>
+					</div>
+					<div class="slide">
+						<a href="Slide5" title="&ldquo;I must go down to the sea again, to the lonely sea and the sky; and all I ask is a tall ship and a star to steer her by.&rdquo; | Flickr - Photo Sharing!" target="_blank"><img src="../../Content/images/show/slide-5.jpg" width="570" height="270" alt="Slide 5"></a>
+						<div class="caption">
+							<p>&ldquo;Slide5&rdquo;</p>
+						</div>
+					</div>
+					<div class="slide">
+						<a href="Slide6" title="twelve.inch | Flickr - Photo Sharing!" target="_blank"><img src="../../Content/images/show/slide-6.jpg" width="570" height="270" alt="Slide 6"></a>
+						<div class="caption">
+							<p>Slide6</p>
+						</div>
+					</div>
+					<div class="slide">
+						<a href="Slide7" title="Save my love for loneliness | Flickr - Photo Sharing!" target="_blank"><img src="../../Content/images/show/slide-7.jpg" width="570" height="270" alt="Slide 7"></a>
+						<div class="caption">
+							<p>Slide7</p>
+						</div>
+					</div>
+				</div>
+				
+			</div>
+			
+		</div>
+		
+	</div>
+    </div>
+

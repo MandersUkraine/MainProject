@@ -1,0 +1,93 @@
+﻿@{
+    ViewBag.Title = "Cole & Son slide";
+}
+
+<script type="text/javascript">
+    $(document).ready(function () {
+        var timer, last;
+        var i = 1;
+        var limit = $("#bannerImgCS  li").size();
+        var active = true;
+
+        animate(i, 4000);
+
+        function animate(i, last, time) {
+            timer = setTimeout(function () {
+                i = doBanner(i);
+                last = i;
+                if (i > limit - 1) { i = 0; }
+                i++;
+                animate(i, last, 5000);
+            }, time);
+        }
+
+        function doBanner(i) {
+            $("#bannerImgCS  li:visible").hide();
+            $("#bannerTextCS  li:visible div").hide();
+            $("#bannerImgCS  li:nth-child(" + i + ")").show();
+
+            $("#bannerTextCS  li:nth-child(" + i + ") div").show(200);
+            return i;
+        }
+
+        $("#bannerTextCS  li").click(function () {
+            i = (parseInt($(this).attr('id').substr(3, 3)));
+            if (active) {
+                clearTimeout(timer);
+                doBanner(i);
+                active = false;
+            } else {
+                animate(i, 5000);
+                active = true;
+            }
+        });
+
+    });
+
+        </script>
+        
+
+
+<div id="logoCat"><a class="no_color" href="@Url.Action("Cole_and_Son", "Products")"><img class="ui-corner-all" src="../../Content/images/CS/logo.gif" /></a> 
+</div>
+
+
+
+<div id="bannerBoxCS">
+    <ul id="bannerImgCS" class="bannerImg ">
+        <li style="display: none;"><a class="no_color" href="@Url.Action("Cole_and_Son_wallpaper", "Products")"><img class="ui-corner-all" width="230" height="290" alt="Cole & Son Обои" title="Cole & Son Обои" src="@Url.Content("~/Content/images/CS/home_CS_1.jpg")"></a></li>
+        <li style="display: none;"><a class="no_color" href="@Url.Action("Cole_and_Son", "Products")"><img class="ui-corner-all" width="230" height="290" alt="Cole & Son" title="Cole & Son" src="@Url.Content("~/Content/images/CS/home_CS_2.jpg")"></a></li>
+        <li style="display: list-item;"><a class="no_color" href="@Url.Action("Cole_and_Son_catalog", "Products")"><img class="ui-corner-all" width="230" height="290" alt="Каталог компании Cole & Son" title="Каталог компании Cole & Son" src="@Url.Content("~/Content/images/CS/home_CS_3.jpg")"></a></li>
+    </ul>
+    
+    <ul id="bannerTextCS" class="bannerText ">
+        <li id="txt1">
+            <h3>
+                <a>Обои Cole & Son </a></h3>
+            <div style="display: none;">
+                <p> <a class="no_color" href="@Url.Action("Cole_and_Son_wallpaper", "Products")">Обои компании Cole & Son </a>   </p>
+            </div>
+        </li>
+        <li id="txt2">
+            <h3>
+                <a>Cole & Son</a></h3>
+            <div style="display: none;">
+                <p><a class="no_color" href="@Url.Action("Cole_and_Son", "Products")">О компании Cole & Son. История компании в фотографиях и видео.</a></p>
+            </div>
+        </li>
+        <li id="txt3">
+            <h3>
+                <a>Каталог компании Cole & Son</a></h3>
+            <div style="display: none;">
+                <p><a class="no_color" href="@Url.Action("Cole_and_Son_catalog", "Products")">База каталога временно не доступна. Вы сможете ознакомится позже.</a></p>
+            </div>
+        </li>
+    </ul>
+</div>
+
+
+
+
+
+
+

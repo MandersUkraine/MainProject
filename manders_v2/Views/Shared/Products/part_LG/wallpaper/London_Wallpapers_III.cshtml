@@ -1,0 +1,169 @@
+﻿@{
+    ViewBag.Title = "Little Greene Коллекция Лондон III.";
+    var SLIII = Session["SLIII"] == null ? true : false;
+    Session["SLIII"] = "SLIII";
+}
+@*@if (SLIII == true)
+{
+    <script type="text/javascript">
+        var wh = {
+            modal: true,
+            resizable: false,
+            draggable: false,
+            height: 170,
+            width: 630,
+            hide: "blind"
+        };
+        $(function () {
+            $("#inform_w").dialog(wh);
+        });
+    </script>
+          
+}*@
+<script type="text/javascript">
+    var opt = {
+        autoOpen: true,
+        maxHeight: 400,
+        maxWidth: 700,
+        minHeight: 300,
+        minWidth: 600,
+        show: {
+            effect: "blind",
+            duration: 1000
+        },
+        hide: {
+            effect: "scale",
+            duration: 1000
+        }
+    };
+
+
+    $(function () {
+
+
+        $(".btn_open").click(function () {
+            $("#" + this.id.substr(2)).dialog(opt);
+
+
+
+
+
+        });
+
+
+    });
+
+
+</script>
+<div class="ui-widget-content ui-corner-all" style="padding: 5px; text-align: center;">
+    <div id="inform_w" title="Информацмя!" style="display: none;">
+        <p>Для удобства пользователей доступно перетаскивание окна и одновременное открытие нескольких окон.</p>
+        <p>For the convenience of users available dragging windows and simultaneous opening of multiple windows.</p>
+    </div>
+
+    <div class="category-head" title="Доступно одновременное открытие нескольких окон.">
+        <h2 style="padding-top: 2px;">Объявляем о нашей новой коллекции</h2>
+        <h2 style="padding-bottom: 7px;">- "Лондон III"
+        </h2>
+    </div>
+    <div class="tab_of_coll">
+        <table border="0" cellpadding="0" cellspacing="0" width="100%">
+            <tbody>
+                <tr>
+                    <td style="width: 25%">
+
+                        <h5 title="High Street c.1885">High Street c.1885</h5>
+                        <button class="btn_open" id="b_high-street-c-1885" title="High Street c.1885">
+                            <img src="http://www.littlegreene.eu/media/catalog/category/High_Street.jpg" title="High Street c.1885" alt="High Street c.1885" width="100">
+                        </button>
+
+                    </td>
+                    <td style="width: 25%">
+
+                        <h5 title="Crowe Hall Lane c.1898">Crowe Hall Lane c.1898</h5>
+                        <button class="btn_open" id="b_crowe-hall-lane-c-1898" title="Crowe Hall Lane c.1898">
+                            <img src="http://www.littlegreene.eu/media/catalog/category/Crowe.jpg" title="Crowe Hall Lane c.1898" alt="Crowe Hall Lane c.1898" width="100">
+                        </button>
+
+
+                    </td>
+                    <td style="width: 25%">
+                        <h5 title="New Bond Street c.1690">New Bond Street c.1690</h5>
+                        <button class="btn_open" id="b_new-bond-street-c-1690" title="New Bond Street c.1690">
+                            <img src="http://www.littlegreene.eu/media/catalog/category/New_Bond_street.jpg" title="New Bond Street c.1690" alt="New Bond Street c.1690" width="100">
+                        </button>
+
+
+                    </td>
+                    <td style="width: 25%">
+
+
+                        <h5 title="North End Road c.1840">North End Road c.1840</h5>
+
+                        <button class="btn_open" id="b_north-end-road-c-1840" title="North End Road c.1840">
+                            <img src="http://www.littlegreene.eu/media/catalog/category/North_End_Road.jpg" title="North End Road c.1840" alt="North End Road c.1840" width="100">
+                        </button>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td style="width: 25%">
+
+                        <h5 title="Wilton c.1760">Wilton c.1760</h5>
+                        <button class="btn_open" id="b_wilton-c-1760" title="Wilton c.1760">
+                            <img src="http://www.littlegreene.eu/media/catalog/category/Wilton.jpg" title="Wilton c.1760" alt="Wilton c.1760" width="100">
+                        </button>
+
+                    </td>
+                    <td style="width: 25%">
+                        <h5 title="Crooms Hill c.1760">Crooms Hill c.1760</h5>
+                        <button class="btn_open" id="b_crooms-hill-c-1760" title="Crooms Hill c.1760">
+                            <img src="http://www.littlegreene.eu/media/catalog/category/Crooms_Hill.jpg" title="Crooms Hill c.1760" alt="Crooms Hill c.1760" width="100">
+                        </button>
+
+
+
+                    </td>
+                    <td style="width: 25%">
+                        <h5 title="Grosvenor Street c.1830">Grosvenor Street c.1830</h5>
+
+                        <button class="btn_open" id="b_grosvenor-street-c-1830" title="Grosvenor Street c.1830">
+                            <img src="http://www.littlegreene.eu/media/catalog/category/Grosvenor.jpg" title="Grosvenor Street c.1830" alt="Grosvenor Street c.1830" width="100">
+                        </button>
+
+
+                    </td>
+                    <td style="width: 25%">&nbsp;</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+</div>
+<div class="coll">
+    <div id="high-street-c-1885" title="High Street c.1885" style="display: none;">
+        @Html.Partial("part_LG/wallpaper/London_Wallpapers_III_part/high-street-c-1885")
+    </div>
+    <div id="crowe-hall-lane-c-1898" title="Crowe Hall Lane c.1898" style="display: none;">
+        @Html.Partial("part_LG/wallpaper/London_Wallpapers_III_part/crowe-hall-lane-c-1898")
+    </div>
+
+    <div id="new-bond-street-c-1690" title="New Bond Street c.1690" style="display: none;">
+        @Html.Partial("part_LG/wallpaper/London_Wallpapers_III_part/new-bond-street-c-1690")
+    </div>
+    <div id="north-end-road-c-1840" title="North End Road c.1840" style="display: none;">
+        @Html.Partial("part_LG/wallpaper/London_Wallpapers_III_part/north-end-road-c-1840")
+    </div>
+    <div id="wilton-c-1760" title="Wilton c.1760" style="display: none;">
+        @Html.Partial("part_LG/wallpaper/London_Wallpapers_III_part/wilton-c-1760")
+    </div>
+    <div id="crooms-hill-c-1760" title="Crooms Hill c.1760" style="display: none;">
+        @Html.Partial("part_LG/wallpaper/London_Wallpapers_III_part/crooms-hill-c-1760")
+    </div>
+    <div id="grosvenor-street-c-1830" title="Grosvenor Street c.1830" style="display: none;">
+        @Html.Partial("part_LG/wallpaper/London_Wallpapers_III_part/grosvenor-street-c-1830")
+    </div>
+
+
+</div>
+

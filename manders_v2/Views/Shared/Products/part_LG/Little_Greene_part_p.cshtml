@@ -1,0 +1,176 @@
+﻿@{
+    ViewBag.Title = "Little Greene Коллекция.";
+}
+<script type="text/javascript">
+    var opt = {
+        autoOpen: true,
+        maxHeight: 400,
+        maxWidth: 700,
+        minHeight: 300,
+        minWidth: 600,
+        show: {
+            effect: "blind",
+            duration: 1000
+        },
+        hide: {
+            effect: "scale",
+            duration: 1000
+        }
+    };
+    $(function () {
+        $(".btn_open").click(function () {
+            $("#" + this.id.substr(2)).dialog(opt);
+
+        });
+
+
+    });
+</script>
+
+<div class="ui-widget-content ui-corner-all" style="padding: 5px; text-align: justify;">
+    <h2 style="padding-bottom: 5px;">
+        Предлагаемые коллекции красок</h2>
+    <div>
+        <p>
+            Краски Little Greene производится в широком диапазоне на экологически чистых водной
+            основе и на основе масляной формулы.</p>
+        <div class="tab_of_coll">
+            <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                <tbody>
+                    <tr>
+                        <td style="width: 25%">
+                            <h5 title="Интелектуальные матово-эмульсионные краски Little Greene">
+                                Интелектуальные матово-эмульсионные краски Little Greene</h5>
+                            <button class="btn_open" id="b_ultimatt-emulsion">
+                                <img src="http://www.littlegreene.eu/media/catalog/category/Intelligent_Matt.jpg"
+                                    width="100" alt="Intelligent Matt Emulsion Paint" title="Интелектуальные матово-эмульсионные краски Little Greene" /></button>
+                        </td>
+                        <td style="width: 25%">
+                            <h5 title="Абсолютно матово-эмульсионная краска">
+                                Абсолютно матово-эмульсионная краска</h5>
+                            <button class="btn_open" id="b_acrylic-matt-emulsion">
+                                <img src="http://www.littlegreene.eu/media/catalog/category/file_58_2.jpg" width="100"
+                                    alt="Absolute Matt Emulsion Paint" title="Абсолютно матово-эмульсионная краска">
+                            </button>
+                        </td>
+                        <td style="width: 25%">
+                            <h5 title="Краска эмульсионная атласная">
+                                Краска эмульсионная атласная</h5>
+                            <button class="btn_open" id="b_acrylic-satin-emulsion" title="Satin Emulsion Paint">
+                                <img src="http://www.littlegreene.eu/media/catalog/category/file_78.jpg" width="100"
+                                    alt="Satin Emulsion Paint" title="Краска эмульсионная атласная">
+                            </button>
+                        </td>
+                        <td style="width: 25%">
+                            <h5 title="Интеллектуальные краски 'яичная скорлупа'">
+                                Интеллектуальные краски 'яичная скорлупа'</h5>
+                            <button class="btn_open" id="b_acrylic-eggshell" title="Intelligent Eggshell Paint">
+                                <img src="http://www.littlegreene.eu/media/catalog/category/Intelligent_Eggshell.jpg"
+                                    width="100" alt="Intelligent Eggshell Paint" title="Интеллектуальные краски 'яичная скорлупа'">
+                            </button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="width: 25%">
+                            <h5 title="Акриловые глянцевые краски">
+                                Акриловые глянцевые краски</h5>
+                            <button class="btn_open" id="b_acrylic-gloss" title="Acrylic Gloss Paint">
+                                <img src="http://www.littlegreene.eu/media/catalog/category/Acrylic_Gloss.jpg" width="100"
+                                    alt="Acrylic Gloss Paint" title="Акриловые глянцевые краски">
+                            </button>
+                        </td>
+                        <td style="width: 25%">
+                            <h5 title="Кирпичная Краска">
+                                Кирпичная Краска</h5>
+                            <button class="btn_open" id="b_exterior-masonry" title="Masonry Paint">
+                                <img src="http://www.littlegreene.eu/media/catalog/category/file_62_1.jpg" width="100"
+                                    alt="Masonry Paint" title="Кирпичная Краска">
+                            </button>
+                        </td>
+                        <td style="width: 25%">
+                            <h5 title="Distemper - Воздухопроницаемая краска.">
+                                Distemper - Воздухопроницаемая краска.</h5>
+                            <button class="btn_open" id="b_distemper" title="Distemper">
+                                <img src="http://www.littlegreene.eu/media/catalog/category/file_77.jpg" width="100"
+                                    alt="Distemper" title="Distemper - Воздухопроницаемая краска.">
+                            </button>
+                        </td>
+                        <td style="width: 25%">
+                            <h5 title="Limewash - Для пористых поверхностей.">
+                                Limewash - Для пористых поверхностей.</h5>
+                            <button class="btn_open" id="b_limewash" title="Limewash">
+                                <img src="http://www.littlegreene.eu/media/catalog/category/Limewash.jpg" width="100"
+                                    alt="Limewash" title="Limewash - Для пористых поверхностей.">
+                            </button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="width: 25%">
+                            <h5 title="Традиционные масляные краски 'Яичная скорлупа'">
+                                Традиционные масляные краски "Яичная скорлупа"</h5>
+                            <button class="btn_open" id="b_oil-eggshell" title="Traditional Oil Eggshell Paint">
+                                <img src="http://www.littlegreene.eu/media/catalog/category/file_64.jpg" width="100"
+                                    alt="Traditional Oil Eggshell Paint" title="Традиционные масляные краски 'Яичная скорлупа'">
+                            </button>
+                        </td>
+                        <td style="width: 25%">
+                            <h5 title="Традиционная масляная глянцевая краска">
+                                Традиционная масляная глянцевая краска</h5>
+                            <button class="btn_open" id="b_oil-gloss" title="Traditional Oil Gloss Paint">
+                                <img src="http://www.littlegreene.eu/media/catalog/category/file_65.jpg" width="100"
+                                    alt="Traditional Oil Gloss Paint" title="Традиционная масляная глянцевая краска">
+                            </button>
+                        </td>
+                        <td style="width: 25%">
+                            <h5 title="Краски для пола">
+                                Краски для пола</h5>
+                            <button class="btn_open" id="b_floor-paint" title="Floor Paint">
+                                <img src="http://www.littlegreene.eu/media/catalog/category/file_66.jpg" width="100"
+                                    alt="Floor Paint" title="Краски для пола">
+                            </button>
+                        </td>
+                        <td style="width: 25%">
+                            &nbsp;
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <div class="coll">
+    <div id="ultimatt-emulsion" title="Интелектуальные матово-эмульсионные краски Little Greene"
+        style="display: none;">
+        @Html.Partial("part_LG/paint/Intelligent_Matt_Emulsion_Paint")
+    </div>
+    <div id="acrylic-matt-emulsion" title="Абсолютно матово-эмульсионная краска" style="display: none;">
+        @Html.Partial("part_LG/paint/Absolute_Matt_Emulsion_Paint")
+    </div>
+    <div id="acrylic-satin-emulsion" title="Краска эмульсионная атласная" style="display: none;">
+        @Html.Partial("part_LG/paint/Satin_Emulsion_Paint")
+    </div>
+    <div id="acrylic-eggshell" title="Интеллектуальные краски 'яичная скорлупа'" style="display: none;">
+        @Html.Partial("part_LG/paint/Intelligent_Eggshell_Paint")
+    </div>
+    <div id="acrylic-gloss" title="Акриловые глянцевые краски" style="display: none;">
+        @Html.Partial("part_LG/paint/Acrylic_Gloss_Paint")
+    </div>
+    <div id="exterior-masonry" title="Кирпичная Краска" style="display: none;">
+        @Html.Partial("part_LG/paint/Masonry_Paint")
+    </div>
+    <div id="distemper" title="Distemper - Воздухопроницаемая краска." style="display: none;">
+        @Html.Partial("part_LG/paint/Distemper")
+    </div>
+    <div id="limewash" title="Limewash - Для пористых поверхностей." style="display: none;">
+        @Html.Partial("part_LG/paint/Limewash")
+    </div>
+    <div id="oil-eggshell" title="Традиционные масляные краски 'Яичная скорлупа'" style="display: none;">
+        @Html.Partial("part_LG/paint/Traditional_Oil_Eggshell_Paint")
+    </div>
+    <div id="oil-gloss" title="Традиционная масляная глянцевая краска" style="display: none;">
+        @Html.Partial("part_LG/paint/Traditional_Oil_Gloss_Paint")
+    </div>
+    <div id="floor-paint" title="Краски для пола" style="display: none;">
+        @Html.Partial("part_LG/paint/Floor_Paint")
+    </div>
+    </div>
+</div>

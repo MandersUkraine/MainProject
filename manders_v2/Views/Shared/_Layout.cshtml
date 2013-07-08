@@ -1,359 +1,453 @@
 ﻿<!DOCTYPE html>
 <html lang="ru">
-    <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-        <meta charset="utf-8" />
-        <title>@ViewBag.Title — приложение ASP.NET MVC</title>
-        
-        <meta name="viewport" content="width=device-width" />
-        <link href="@Url.Content("~/Tools/bootstrap-master/docs/assets/css/bootstrap.css")" rel="stylesheet" />
-        <link href="@Url.Content("~/Tools/bootstrap-master/docs/assets/css/bootstrap-responsive.css")" rel="stylesheet" />
-     
-     <style>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 
-    /* GLOBAL STYLES
+
+
+    <meta charset="utf-8" />
+    <meta name='yandex-verification' content='4581619704e1c5b1' />
+
+    <meta name="description" content="Элитные обои, английские краски, английский плинтус: sanderson, william howard, farrow ball, little green Manders manders.com.ua">
+    <meta name="Keywords" content="Manders Киев, Manders Украина, Farrow & Ball, краски Farrow & Ball, обои Farrow & Ball, Little Green, краски Little Green, обои Little Green, William Howard, Sanderson, обои Sanderson, ткани Sanderson, Morris & Co, обои Morris & Co, ткани Morris & Co, Zoffany, обои Zoffany, ткани Zoffany,  Сole & Son, обои Сole & Son, ткани Сole & Son, Swaffer, обои Swaffer, ткани Swaffer, краски, обои, плинтус William Howard">
+    <meta name="msvalidate.01" content="841A2EC7CAC2DC5AB66DE79C595C0260" />
+    <script type="text/javascript">
+
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-35623355-1']);
+        _gaq.push(['_setDomainName', 'manders.com.ua']);
+        _gaq.push(['_trackPageview']);
+
+        (function () {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        })();
+
+    </script>
+    <!-- Place this tag in your head or just before your close body tag. -->
+    <script type="text/javascript" src="https://apis.google.com/js/plusone.js">
+  {lang: 'ru'}
+    </script>
+    <title>@ViewBag.Title - Элитные обои, английские краски, английский плинтус: sanderson, william howard, farrow ball, little green | Manders</title>
+    <link href="@Url.Content("~/favicon.ico")" rel="shortcut icon" type="image/x-icon" />
+    <meta name="viewport" content="width=device-width" />
+    @RenderSection("stile_section", required: false)
+
+
+
+
+    <link href="@Url.Content("~/Tools/bootstrap-master/docs/assets/css/bootstrap.css")" rel="stylesheet" />
+    <link href="@Url.Content("~/Tools/bootstrap-master/docs/assets/css/bootstrap-responsive.css")" rel="stylesheet" />
+    
+    <style>
+        /* GLOBAL STYLES
     -------------------------------------------------- */
-    /* Padding below the footer and lighter body text */
+        /* Padding below the footer and lighter body text */
 
-    body {
-      padding-bottom: 40px;
-      color: #5a5a5a;
-    }
-
-
-
-    /* CUSTOMIZE THE NAVBAR
-    -------------------------------------------------- */
-
-    /* Special class on .container surrounding .navbar, used for positioning it into place. */
-    .navbar-wrapper {
-      position: fixed;
-      top: 0;
-      left: 0;
-      right: 0;
-      z-index: 10;
-      margin-top: 20px;
-      margin-bottom: -90px; /* Negative margin to pull up carousel. 90px is roughly margins and height of navbar. */
-    }
-    .navbar-wrapper .navbar {
-
-    }
-
-    /* Remove border and change up box shadow for more contrast */
-    .navbar .navbar-inner {
-      border: 0;
-      -webkit-box-shadow: 0 2px 10px rgba(0,0,0,.25);
-         -moz-box-shadow: 0 2px 10px rgba(0,0,0,.25);
-              box-shadow: 0 2px 10px rgba(0,0,0,.25);
-    }
-
-    /* Downsize the brand/project name a bit */
-    .navbar .brand {
-      padding: 14px 20px 16px; /* Increase vertical padding to match navbar links */
-      font-size: 16px;
-      font-weight: bold;
-      text-shadow: 0 -1px 0 rgba(0,0,0,.5);
-    }
-
-    /* Navbar links: increase padding for taller navbar */
-    .navbar .nav > li > a {
-      padding: 15px 20px;
-    }
-
-    /* Offset the responsive button for proper vertical alignment */
-    .navbar .btn-navbar {
-      margin-top: 10px;
-    }
+        body {
+            padding-bottom: 40px;
+            color: #5a5a5a;
+        }
 
 
 
-    /* CUSTOMIZE THE CAROUSEL
+        /* CUSTOMIZE THE NAVBAR
     -------------------------------------------------- */
 
-    /* Carousel base class */
-    .carousel {
-      margin-bottom: 60px;
-    }
+        /* Special class on .container surrounding .navbar, used for positioning it into place. */
+        .navbar-wrapper {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 10;
+            margin-top: 20px;
+            margin-bottom: -90px; /* Negative margin to pull up carousel. 90px is roughly margins and height of navbar. */
+        }
 
-    .carousel .container {
-      position: relative;
-      z-index: 9;
-    }
+            .navbar-wrapper .navbar {
+            }
 
-    .carousel-control {
-      height: 80px;
-      margin-top: 0;
-      font-size: 120px;
-      text-shadow: 0 1px 1px rgba(0,0,0,.4);
-      background-color: transparent;
-      border: 0;
-      z-index: 10;
-    }
+        /* Remove border and change up box shadow for more contrast */
+        .navbar .navbar-inner {
+            border: 0;
+            -webkit-box-shadow: 0 2px 10px rgba(0,0,0,.25);
+            -moz-box-shadow: 0 2px 10px rgba(0,0,0,.25);
+            box-shadow: 0 2px 10px rgba(0,0,0,.25);
+        }
 
-    .carousel .item {
-      height: 500px;
-    }
-    .carousel img {
-      position: absolute;
-      top: 0;
-      left: 0;
-      min-width: 100%;
-      height: 500px;
-    }
+        /* Downsize the brand/project name a bit */
+        .navbar .brand {
+            padding: 14px 20px 16px; /* Increase vertical padding to match navbar links */
+            font-size: 16px;
+            font-weight: bold;
+            text-shadow: 0 -1px 0 rgba(0,0,0,.5);
+        }
 
-    .carousel-caption {
-      background-color: transparent;
-      position: static;
-      max-width: 550px;
-      padding: 0 20px;
-      margin-top: 100px;
-    }
-    .carousel-caption h1,
-    .carousel-caption .lead {
-      margin: 0;
-      line-height: 1.25;
-      color: #fff;
-      text-shadow: 0 1px 1px rgba(0,0,0,.4);
-    }
-    .carousel-caption .btn {
-      margin-top: 10px;
-    }
+        /* Navbar links: increase padding for taller navbar */
+        .navbar .nav > li > a {
+            padding: 15px 20px;
+        }
+
+        /* Offset the responsive button for proper vertical alignment */
+        .navbar .btn-navbar {
+            margin-top: 10px;
+        }
 
 
 
-    /* MARKETING CONTENT
+        /* CUSTOMIZE THE CAROUSEL
     -------------------------------------------------- */
 
-    /* Center align the text within the three columns below the carousel */
-    .marketing .span4 {
-      text-align: center;
-    }
-    .marketing h2 {
-      font-weight: normal;
-    }
-    .marketing .span4 p {
-      margin-left: 10px;
-      margin-right: 10px;
-    }
+        /* Carousel base class */
+        .carousel {
+            margin-bottom: 60px;
+        }
+
+            .carousel .container {
+                position: relative;
+                z-index: 9;
+            }
+
+        .carousel-control {
+            height: 80px;
+            margin-top: 0;
+            font-size: 120px;
+            text-shadow: 0 1px 1px rgba(0,0,0,.4);
+            background-color: transparent;
+            border: 0;
+            z-index: 10;
+        }
+
+        .carousel .item {
+            height: 500px;
+        }
+
+        .carousel img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            min-width: 100%;
+            height: 500px;
+        }
+
+        .carousel-caption {
+            background-color: transparent;
+            position: static;
+            max-width: 550px;
+            padding: 0 20px;
+            margin-top: 100px;
+        }
+
+            .carousel-caption h1,
+            .carousel-caption .lead {
+                margin: 0;
+                line-height: 1.25;
+                color: #fff;
+                text-shadow: 0 1px 1px rgba(0,0,0,.4);
+            }
+
+            .carousel-caption .btn {
+                margin-top: 10px;
+            }
 
 
-    /* Featurettes
+
+        /* MARKETING CONTENT
+    -------------------------------------------------- */
+
+        /* Center align the text within the three columns below the carousel */
+        .marketing .span4 {
+            text-align: center;
+        }
+
+        .marketing h2 {
+            font-weight: normal;
+        }
+
+        .marketing .span4 p {
+            margin-left: 10px;
+            margin-right: 10px;
+        }
+
+
+        /* Featurettes
     ------------------------- */
 
-    .featurette-divider {
-      margin: 80px 0; /* Space out the Bootstrap <hr> more */
-    }
-    .featurette {
-      padding-top: 120px; /* Vertically center images part 1: add padding above and below text. */
-      overflow: hidden; /* Vertically center images part 2: clear their floats. */
-    }
-    .featurette-image {
-      margin-top: -120px; /* Vertically center images part 3: negative margin up the image the same amount of the padding to center it. */
-    }
+        .featurette-divider {
+            margin: 80px 0; /* Space out the Bootstrap <hr> more */
+        }
 
-    /* Give some space on the sides of the floated elements so text doesn't run right into it. */
-    .featurette-image.pull-left {
-      margin-right: 40px;
-    }
-    .featurette-image.pull-right {
-      margin-left: 40px;
-    }
+        .featurette {
+            padding-top: 120px; /* Vertically center images part 1: add padding above and below text. */
+            overflow: hidden; /* Vertically center images part 2: clear their floats. */
+        }
 
-    /* Thin out the marketing headings */
-    .featurette-heading {
-      font-size: 50px;
-      font-weight: 300;
-      line-height: 1;
-      letter-spacing: -1px;
-    }
+        .featurette-image {
+            margin-top: -120px; /* Vertically center images part 3: negative margin up the image the same amount of the padding to center it. */
+        }
+
+            /* Give some space on the sides of the floated elements so text doesn't run right into it. */
+            .featurette-image.pull-left {
+                margin-right: 40px;
+            }
+
+            .featurette-image.pull-right {
+                margin-left: 40px;
+            }
+
+        /* Thin out the marketing headings */
+        .featurette-heading {
+            font-size: 50px;
+            font-weight: 300;
+            line-height: 1;
+            letter-spacing: -1px;
+        }
 
 
 
-    /* RESPONSIVE CSS
+        /* RESPONSIVE CSS
     -------------------------------------------------- */
 
-    @@media (max-width: 979px) {
+        @@media (max-width: 979px) {
 
-      .container.navbar-wrapper {
-        margin-bottom: 0;
-        width: auto;
-      }
-      .navbar-inner {
-        border-radius: 0;
-        margin: -20px 0;
-      }
+            .container.navbar-wrapper {
+                margin-bottom: 0;
+                width: auto;
+            }
 
-      .carousel .item {
-        height: 500px;
-      }
-      .carousel img {
-        width: auto;
-        height: 500px;
-      }
+            .navbar-inner {
+                border-radius: 0;
+                margin: -20px 0;
+            }
 
-      .featurette {
-        height: auto;
-        padding: 0;
-      }
-      .featurette-image.pull-left,
-      .featurette-image.pull-right {
-        display: block;
-        float: none;
-        max-width: 40%;
-        margin: 0 auto 20px;
-      }
-    }
+            .carousel .item {
+                height: 500px;
+            }
+
+            .carousel img {
+                width: auto;
+                height: 500px;
+            }
+
+            .featurette {
+                height: auto;
+                padding: 0;
+            }
+
+            .featurette-image.pull-left,
+            .featurette-image.pull-right {
+                display: block;
+                float: none;
+                max-width: 40%;
+                margin: 0 auto 20px;
+            }
+        }
 
 
-    @@media (max-width: 767px) {
+        @@media (max-width: 767px) {
 
-      .navbar-inner {
-        margin: -20px;
-      }
+            .navbar-inner {
+                margin: -20px;
+            }
 
-      .carousel {
-        margin-left: -20px;
-        margin-right: -20px;
-      }
-      .carousel .container {
+            .carousel {
+                margin-left: -20px;
+                margin-right: -20px;
+            }
 
-      }
-      .carousel .item {
-        height: 300px;
-      }
-      .carousel img {
-        height: 300px;
-      }
-      .carousel-caption {
-        width: 65%;
-        padding: 0 70px;
-        margin-top: 100px;
-      }
-      .carousel-caption h1 {
-        font-size: 30px;
-      }
-      .carousel-caption .lead,
-      .carousel-caption .btn {
-        font-size: 18px;
-      }
+                .carousel .container {
+                }
 
-      .marketing .span4 + .span4 {
-        margin-top: 40px;
-      }
+                .carousel .item {
+                    height: 300px;
+                }
 
-      .featurette-heading {
-        font-size: 30px;
-      }
-      .featurette .lead {
-        font-size: 18px;
-        line-height: 1.5;
-      }
+                .carousel img {
+                    height: 300px;
+                }
 
-    }
+            .carousel-caption {
+                width: 65%;
+                padding: 0 70px;
+                margin-top: 100px;
+            }
+
+                .carousel-caption h1 {
+                    font-size: 30px;
+                }
+
+                .carousel-caption .lead,
+                .carousel-caption .btn {
+                    font-size: 18px;
+                }
+
+            .marketing .span4 + .span4 {
+                margin-top: 40px;
+            }
+
+            .featurette-heading {
+                font-size: 30px;
+            }
+
+            .featurette .lead {
+                font-size: 18px;
+                line-height: 1.5;
+            }
+        }
     </style>
 
     <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
     <!--[if lt IE 9]>
       <script src="@Url.Content("~/Tools/bootstrap-master/docs/assets/js/html5shiv.js")"></script>
     <![endif]-->
-        <!-- Fav and touch icons -->
-        <link rel="apple-touch-icon-precomposed" sizes="144x144" href="@Url.Content("~/Tools/bootstrap-master/docs/assets/ico/apple-touch-icon-144-precomposed.png")">
-        <link rel="apple-touch-icon-precomposed" sizes="114x114" href="@Url.Content("~/Tools/bootstrap-master/docs/assets/ico/apple-touch-icon-114-precomposed.png")">
-        <link rel="apple-touch-icon-precomposed" sizes="72x72" href="@Url.Content("~/Tools/bootstrap-master/docs/assets/ico/apple-touch-icon-72-precomposed.png")">
-        <link rel="apple-touch-icon-precomposed" href="@Url.Content("~/Tools/bootstrap-master/docs/assets/ico/apple-touch-icon-57-precomposed.png")">
-        <link rel="shortcut icon" href="@Url.Content("~/Tools/bootstrap-master/docs/assets/ico/favicon.png")">
-        <link rel="shortcut icon" href="@Url.Content("~/Tools/bootstrap-master/docs/assets/ico/favicon.ico")" type="image/x-icon" />
-    </head>
-    <body>
+    <!-- Fav and touch icons -->
+ 
+
+
+</head>
+<body>
 
 
 
     <!-- NAVBAR
     ================================================== -->
     <div class="navbar-wrapper">
-      <!-- Wrap the .navbar in .container to center it within the absolutely positioned parent. -->
-      <div class="container">
+        <!-- Wrap the .navbar in .container to center it within the absolutely positioned parent. -->
+        <div class="container">
 
-        <div class="navbar navbar-inverse">
-          <div class="navbar-inner">
-            <!-- Responsive Navbar Part 1: Button for triggering responsive navbar (not covered in tutorial). Include responsive CSS to utilize. -->
-            <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-            </button>
-            <a class="brand" href="#">Manders</a>
-            <!-- Responsive Navbar Part 2: Place all navbar contents you want collapsed withing .navbar-collapse.collapse. -->
-            <div class="nav-collapse collapse">
-              <ul class="nav">
-                <li class="active">@Html.ActionLink("Домашняя страница", "Index", "Home")</li>
-                <li>@Html.ActionLink("О нас", "About", "Home")</li>
-                <li>@Html.ActionLink("Контакт", "Contact", "Home")</li>
-                <!-- Read about Bootstrap dropdowns at http://twitter.github.com/bootstrap/javascript.html#dropdowns -->
-                <li class="dropdown">
-                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Ассортимент<b class="caret"></b></a>
-                  <ul class="dropdown-menu">
-                    <li class="nav-header">Краски</li>
-                      <li><a href="#">F&B</a></li>
-                    <li><a href="#">LG</a></li>
-                    <li><a href="#">Sanderson</a></li>
-                    <li class="divider"></li>
-                    <li class="nav-header">Обои</li>
-                    <li><a href="#">Separated link</a></li>
-                    <li><a href="#">One more separated link</a></li>
-                      <li class="nav-header">Текстиль</li>
-                      <li><a href="#">Separated link</a></li>
-                    <li><a href="#">One more separated link</a></li>
-                  </ul>
-                </li>
-              </ul>
-            </div><!--/.nav-collapse -->
-          </div><!-- /.navbar-inner -->
-        </div><!-- /.navbar -->
+            <div class="navbar navbar-inverse">
+                <div class="navbar-inner">
+                    <!-- Responsive Navbar Part 1: Button for triggering responsive navbar (not covered in tutorial). Include responsive CSS to utilize. -->
+                    <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <!-- <a class="active brand" href="@Url.Action("Index", "Home")" title="@ViewBag.Title - Элитные обои, английские краски, английский плинтус: sanderson, william howard, farrow ball, little green | Manders">Manders</a> -->
+                    <!-- Responsive Navbar Part 2: Place all navbar contents you want collapsed withing .navbar-collapse.collapse. -->
+                    <div class="nav-collapse collapse">
+                        <ul class="nav">
+                            <li class="active">
+                                <a class="brand" href="@Url.Action("Index", "Home")" title="@ViewBag.Title - Элитные обои, английские краски, английский плинтус: sanderson, william howard, farrow ball, little green | Manders">Manders</a>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Ассортимент<b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    <li>@Html.ActionLink("Весь ассортимент", "All", "Products")</li>
+                                    <li class="divider"></li>
+                                    <li class="nav-header">Плинтуса</li>
+                                    <li>@Html.ActionLink("William Howard", "William_Howard", "Products")</li>
+                                    <li class="divider"></li>
+                                    <li class="nav-header">Краски</li>
+                                    <li>@Html.ActionLink("Краски компании Farrow & Ball", "Farrow_and_Ball_paints", "Products")</li>
+                                    <li>@Html.ActionLink("Краски компании Little Greene", "Little_Greene_Paints", "Products")</li>
+                                    <li class="divider"></li>
+                                    <li class="nav-header">Обои</li>
+                                    <li>@Html.ActionLink("Обои компании Farrow & Ball", "Farrow_and_Ball_wallpaper", "Products")</li>
+                                    <li>@Html.ActionLink("Обои комапнии Little Greene", "Little_Greene_Wallpaper", "Products")</li>
+                                    <li>@Html.ActionLink("Обои компании Sanderson", "Sanderson_wallpaper", "Products")</li>
+                                    <li>@Html.ActionLink("Обои компании Zoffany", "Zoffany_wallpaper", "Products")</li>
+                                    <li>@Html.ActionLink("Обои компании Morris & Co", "Morris_and_Co_wallpaper", "Products")</li>
+                                    <li>@Html.ActionLink("Обои компании Anne and Robert Swaffer", "Swaffer_wallpaper", "Products")</li>
+                                    <li class="divider"></li>
+                                    <li class="nav-header">Текстиль</li>
+                                    <li>@Html.ActionLink("Текстиль компании Sanderson", "Sanderson_textile", "Products")</li>
+                                    <li>@Html.ActionLink("Текстиль компании Zoffany", "Zoffany_textile", "Products")</li>
+                                    <li>@Html.ActionLink("Текстиль компании Morris & Co", "Morris_and_Co_textile", "Products")</li>
+                                    <li>@Html.ActionLink("Текстиль компании Anne and Robert Swaffer", "Swaffer_textile", "Products")</li>
 
-      </div> <!-- /.container -->
-    </div><!-- /.navbar-wrapper -->
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Материалы<b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    <li>@Html.ActionLink("Рекомендации", "Advice", "Home")</li>
+                                    <li class="divider"></li>
+                                    <li class="nav-header">Новости</li>
+                                    <li>@Html.ActionLink("Новости сайта", "News", "Home")</li>
+                                    <li class="divider"></li>
+                                    <li class="nav-header">Фото и видео галереи</li>
+                                    <li>@Html.ActionLink("Видео контент", "Video", "Home")</li>
+                                    <li>@Html.ActionLink("Фотоаглерея", "Gallery", "Home")</li>
+                                    <li class="divider"></li>
+                                    <li class="nav-header">Каталоги</li>
+                                    <li>@Html.ActionLink("William Howard", "William_Howard", "Products")</li>
+                                    <li>@Html.ActionLink("Farrow & Ball", "Farrow_and_Ball_wallpaper", "Products")</li>
+                                    <li>@Html.ActionLink("Little Greene", "Little_Greene_Wallpaper", "Products")</li>
+                                    <li>@Html.ActionLink("Sanderson", "Sanderson_wallpaper", "Products")</li>
+                                    <li>@Html.ActionLink("Zoffany", "Zoffany_wallpaper", "Products")</li>
+                                    <li>@Html.ActionLink("Morris & Co", "Morris_and_Co_wallpaper", "Products")</li>
+                                    <li>@Html.ActionLink("Anne and Robert Swaffer", "Swaffer_wallpaper", "Products")</li>
+                                    <li class="divider"></li>
+                                    <li class="nav-header">Обзоры</li>
+                                    <li>@Html.ActionLink("Текстиль компании Sanderson", "Sanderson_textile", "Products")</li>
+                                    <li>@Html.ActionLink("Текстиль компании Zoffany", "Zoffany_textile", "Products")</li>
+                                    <li>@Html.ActionLink("Текстиль компании Morris & Co", "Morris_and_Co_textile", "Products")</li>
+                                    <li>@Html.ActionLink("Текстиль компании Anne and Robert Swaffer", "Swaffer_textile", "Products")</li>
+
+                                </ul>
+                            </li>
+                            <li>@Html.ActionLink("О нас", "About", "Home")</li>
+                            <li>@Html.ActionLink("Контакт", "Contact", "Home")</li>
+                            <!-- Read about Bootstrap dropdowns at http://twitter.github.com/bootstrap/javascript.html#dropdowns -->
+
+                            <li><a href="@Url.Action("Contact", "Home")">+38 (044) 289-53-89 & 289-78-88, (067) 645-06-99 </a></li>
+                        </ul>
+                    </div>
+                    <!--/.nav-collapse -->
+                </div>
+                <!-- /.navbar-inner -->
+            </div>
+            <!-- /.navbar -->
+
+        </div>
+        <!-- /.container -->
+    </div>
+    <!-- /.navbar-wrapper -->
 
 
 
     <!-- Carousel
     ================================================== -->
     <div id="myCarousel" class="carousel slide">
-      <div class="carousel-inner">
-        <div class="item active">
-          <img src="@Url.Content("~/Tools/bootstrap-master/docs/assets/img/examples/slide-01.jpg")" alt="">
-          <div class="container">
-            <div class="carousel-caption">
-              <h1>Краски от ведущих производителей Англии.</h1>
-              <p class="lead">Особенные достоинства английских красок – это  их удивительные цвета, которые так необходимы жителям крупных городов, чтобы добавить яркости и уюта в свою жизнь. У каких других производителей вы найдете такую потрясающею цветовую палитру?</p>
-              <a class="btn btn-large btn-primary" href="#">Узнайте больше как украсить свой дом.</a>
+        <div class="carousel-inner">
+            <div class="item active">
+                <img src="@Url.Content("~/Tools/bootstrap-master/docs/assets/img/examples/slide-01.jpg")" alt="">
+                <div class="container">
+                    <div class="carousel-caption">
+                        <h1>Краски от ведущих производителей Англии.</h1>
+                        <p class="lead">Особенные достоинства английских красок – это  их удивительные цвета, которые так необходимы жителям крупных городов, чтобы добавить яркости и уюта в свою жизнь. У каких других производителей вы найдете такую потрясающею цветовую палитру?</p>
+                        <a class="btn btn-large btn-primary" href="#">Узнайте больше как украсить свой дом.</a>
+                    </div>
+                </div>
             </div>
-          </div>
-        </div>
-        <div class="item">
-          <img src="@Url.Content("~/Tools/bootstrap-master/docs/assets/img/examples/slide-02.jpg")" alt="">
-          <div class="container">
-            <div class="carousel-caption">
-              <h1>Обои от лучших произаодителей Англии.</h1>
-              <p class="lead">В создании интерьера всегда особая роль отводится стенам. Самый распространенный способ отделки стен – покрытие нашими обоями. Их назвают предметом искусства. Их создают по эскизам знаменитых дизайнеров, художников, иногда – на заказ.</p>
-              <a class="btn btn-large btn-primary" href="#">Хотите узнать больше?</a>
+            <div class="item">
+                <img src="@Url.Content("~/Tools/bootstrap-master/docs/assets/img/examples/slide-02.jpg")" alt="">
+                <div class="container">
+                    <div class="carousel-caption">
+                        <h1>Обои от лучших произаодителей Англии.</h1>
+                        <p class="lead">В создании интерьера всегда особая роль отводится стенам. Самый распространенный способ отделки стен – покрытие нашими обоями. Их назвают предметом искусства. Их создают по эскизам знаменитых дизайнеров, художников, иногда – на заказ.</p>
+                        <a class="btn btn-large btn-primary" href="#">Хотите узнать больше?</a>
+                    </div>
+                </div>
             </div>
-          </div>
-        </div>
-        <div class="item">
-          <img src="@Url.Content("~/Tools/bootstrap-master/docs/assets/img/examples/slide-03.jpg")" alt="">
-          <div class="container">
-            <div class="carousel-caption">
-              <h1>Текстиль для Вашего дома.</h1>
-              <p class="lead">Только от лучших производителей Англии. Украсить свои окна лучшим от лучших Sanderson, Morris & Co, Swaffer, Zoffany   　</p>
-              <a class="btn btn-large btn-primary" href="#">для Вас.</a>
+            <div class="item">
+                <img src="@Url.Content("~/Tools/bootstrap-master/docs/assets/img/examples/slide-03.jpg")" alt="">
+                <div class="container">
+                    <div class="carousel-caption">
+                        <h1>Текстиль для Вашего дома.</h1>
+                        <p class="lead">Только от лучших производителей Англии. Украсить свои окна лучшим от лучших Sanderson, Morris & Co, Swaffer, Zoffany   　</p>
+                        <a class="btn btn-large btn-primary" href="#">для Вас.</a>
+                    </div>
+                </div>
             </div>
-          </div>
         </div>
-      </div>
-      <a class="left carousel-control" href="#myCarousel" data-slide="prev">&lsaquo;</a>
-      <a class="right carousel-control" href="#myCarousel" data-slide="next">&rsaquo;</a>
-    </div><!-- /.carousel -->
+        <a class="left carousel-control" href="#myCarousel" data-slide="prev">&lsaquo;</a>
+        <a class="right carousel-control" href="#myCarousel" data-slide="next">&rsaquo;</a>
+    </div>
+    <!-- /.carousel -->
 
 
 
@@ -362,72 +456,17 @@
     <!-- Wrap the rest of the page in another container to center all the content. -->
 
     <div class="container marketing">
+        
+        @RenderBody()
 
-      <!-- Three columns of text below the carousel -->
-      <div class="row">
-          <div class="span 12">
-               @RenderSection("featured", required: false)
-               @RenderBody()
-          </div>
-        <div class="span4">
-          <img class="img-circle" data-src="holder.js/140x140">
-          <h2>Heading</h2>
-          <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna, vel scelerisque nisl consectetur et.</p>
-          <p><a class="btn" href="#">View details &raquo;</a></p>
-        </div><!-- /.span4 -->
-        <div class="span4">
-          <img class="img-circle" data-src="holder.js/140x140">
-          <h2>Heading</h2>
-          <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-          <p><a class="btn" href="#">View details &raquo;</a></p>
-        </div><!-- /.span4 -->
-        <div class="span4">
-          <img class="img-circle" data-src="holder.js/140x140">
-          <h2>Heading</h2>
-          <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-          <p><a class="btn" href="#">View details &raquo;</a></p>
-        </div><!-- /.span4 -->
-      </div><!-- /.row -->
+        <!-- FOOTER -->
+        <footer>
+            <p class="pull-right"><a href="#">Back to top</a></p>
+            <p>&copy; 2013 Company, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
+        </footer>
 
-
-      <!-- START THE FEATURETTES -->
-
-      <hr class="featurette-divider">
-
-      <div class="featurette">
-        <img class="featurette-image pull-right" src="@Url.Content("~/Tools/bootstrap-master/docs/assets/img/examples/browser-icon-chrome.png")">
-        <h2 class="featurette-heading">First featurette headling. <span class="muted">It'll blow your mind.</span></h2>
-        <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
-      </div>
-
-      <hr class="featurette-divider">
-
-      <div class="featurette">
-        <img class="featurette-image pull-left" src="@Url.Content("~/Tools/bootstrap-master/docs/assets/img/examples/browser-icon-firefox.png")">
-        <h2 class="featurette-heading">Oh yeah, it's that good. <span class="muted">See for yourself.</span></h2>
-        <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
-      </div>
-
-      <hr class="featurette-divider">
-
-      <div class="featurette">
-        <img class="featurette-image pull-right" src="@Url.Content("~/Tools/bootstrap-master/docs/assets/img/examples/browser-icon-safari.png")">
-        <h2 class="featurette-heading">And lastly, this one. <span class="muted">Checkmate.</span></h2>
-        <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
-      </div>
-
-      <hr class="featurette-divider">
-
-      <!-- /END THE FEATURETTES -->
-
-
-      <!-- FOOTER -->
-      <footer>
-        <p class="pull-right"><a href="#">Back to top</a></p>
-        <p>&copy; 2013 Company, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
-      </footer>
-
-    </div><!-- /.container -->
+    </div>
+    <!-- /.container -->
 
 
 
@@ -447,15 +486,17 @@
     <script src="@Url.Content("~/Tools/bootstrap-master/docs/assets/js/bootstrap-collapse.js")"></script>
     <script src="@Url.Content("~/Tools/bootstrap-master/docs/assets/js/bootstrap-carousel.js")"></script>
     <script src="@Url.Content("~/Tools/bootstrap-master/docs/assets/js/bootstrap-typeahead.js")"></script>
+    @RenderSection("Script", required: false)
     <script>
-      !function ($) {
-        $(function(){
-          // carousel demo
-          $('#myCarousel').carousel()
-        })
-      }(window.jQuery)
+        !function ($) {
+            $(function () {
+                // carousel demo
+                $('#myCarousel').carousel()
+            })
+        }(window.jQuery)
     </script>
     <script src="@Url.Content("~/Tools/bootstrap-master/docs/assets/js/holder/holder.js")"></script>
-  </body>
+    @RenderSection("ScriptSection", required: false)
+</body>
 </html>
 

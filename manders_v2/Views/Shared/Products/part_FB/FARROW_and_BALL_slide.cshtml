@@ -1,0 +1,105 @@
+﻿@{
+    ViewBag.Title = "FARROW & BALL";
+   
+}
+        
+        <script type="text/javascript">
+            $(document).ready(function () {
+                var timer, last;
+                var i = 1;
+                var limit = $("#bannerImgFB  li").size();
+                var active = true;
+
+                animate(i, 4000);
+
+                function animate(i, last, time) {
+                    timer = setTimeout(function () {
+                        i = doBanner(i);
+                        last = i;
+                        if (i > limit - 1) { i = 0; }
+                        i++;
+                        animate(i, last, 5000);
+                    }, time);
+                }
+
+                function doBanner(i) {
+                    $("#bannerImgFB  li:visible").hide();
+                    $("#bannerTextFB  li:visible div").hide();
+                    $("#bannerImgFB  li:nth-child(" + i + ")").show();
+
+                    $("#bannerTextFB  li:nth-child(" + i + ") div").show(200);
+                    return i;
+                }
+
+                $("#bannerTextFB  li").click(function () {
+                    i = (parseInt($(this).attr('id').substr(3, 3)));
+                    if (active) {
+                        clearTimeout(timer);
+                        doBanner(i);
+                        active = false;
+                    } else {
+                        animate(i, 5000);
+                        active = true;
+                    }
+                });
+
+            });
+
+        </script>
+
+  
+
+<div id="logoCat_"> 
+        <a class="no_color" href="@Url.Action("FARROW_and_BALL", "Products")" title="Краски и обои кампании Farrow & Ball"><img class="ui-corner-all" src="../../Content/images/FB/print_logo.gif"/></a>
+   </div>
+
+
+<div id="bannerBoxFB">
+    <ul id="bannerImgFB" class="bannerImg ">
+        <li style="display: none;"><a class="no_color" href="@Url.Action("FARROW_and_BALL_paints", "Products")"><img class="ui-corner-all" width="230" height="290" alt="Краски FARROW & BALL" title="Краски FARROW & BALL" src="@Url.Content("~/Content/images/FB/slide_main/home_FB_1.jpg")"></a></li>
+        <li style="display: none;"><a class="no_color" href="@Url.Action("FARROW_and_BALL_wallpaper", "Products")"><img class="ui-corner-all" width="230" height="290" alt="FARROW & BALL Обои" title="FARROW & BALL Обои" src="@Url.Content("~/Content/images/FB/slide_main/home_FB_2.jpg")"></a></li>
+        <li style="display: none;"><a class="no_color" href="@Url.Action("FARROW_and_BALL", "Products")"><img class="ui-corner-all" width="230" height="290" alt="FARROW & BALL" title="FARROW & BALL" src="@Url.Content("~/Content/images/FB/slide_main/home_FB_3.jpg")"></a></li>
+        <li style="display: list-item;"><a class="no_color" href="@Url.Action("FARROW_and_BALL_catalog", "Products")"><img class="ui-corner-all" width="230" height="290" alt="Каталог компании FARROW & BALL" title="Каталог компании FARROW & BALL" src="@Url.Content("~/Content/images/FB/slide_main/home_FB_4.jpg")"></a></li>
+    </ul>
+    
+    <ul id="bannerTextFB" class="bannerText ">
+        <li id="txt1">
+            <h3>
+                <a>Краски FARROW & BALL</a></h3>
+            <div style="display: none;">
+                <p>Краски <b> Farrow &amp; Ball</b> возникли и всегда производились в графстве <b>Дорсет</b>,<b> Англия</b>. Да, именно так.</p>
+                
+            </div>
+        </li>
+        <li id="txt2">
+            <h3>
+                <a>Обои FARROW & BALL </a></h3>
+            <div style="display: none;">
+                <p>
+                    Наши обои берут свое начало от подлинных образцов XVIII-го и XIX-го столетий, поэтому они обладают непреходящим и неподвластным времени очарованием.
+                    Кроме того Вы сможете познакомиться с идеями наших современных дизайнеров на нашем веб-сайте.
+                    </p>
+            </div>
+        </li>
+        <li id="txt3">
+            <h3>
+                <a>FARROW & BALL</a></h3>
+            <div style="display: none;">
+                <p>
+                Тренд 2013 года.
+                    Цвета в 2013 году создают ощущение непрерывности потока и преобразовуют уют домашнего окружения и предают спокойствие.
+                    Несмотря на то, поразительно отличаются оттенками, Farrow & Ball's Cornforth White, French Gray , Stone Blue и Black Blue могут быть использованы для создания этих гармоничным, слегка ностальгическое, декоративных схем.</p>
+            </div>
+        </li>
+        <li id="txt4">
+            <h3>
+                <a>Каталог компании FARROW & BALL</a></h3>
+            <div style="display: none;">
+                <p> База временно не доступна                   </p>
+            </div>
+        </li>
+    </ul>
+</div>
+
+
+    

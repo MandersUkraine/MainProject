@@ -1,0 +1,103 @@
+﻿@{
+    ViewBag.Title = "Slide SANDERSON";
+}
+
+
+    
+        <script type="text/javascript">
+            $(document).ready(function () {
+                var timer, last;
+                var i = 1;
+                var limit = $("#bannerImgSN  li").size();
+                var active = true;
+
+                animate(i, 4000);
+
+                function animate(i, last, time) {
+                    timer = setTimeout(function () {
+                        i = doBanner(i);
+                        last = i;
+                        if (i > limit - 1) { i = 0; }
+                        i++;
+                        animate(i, last, 5000);
+                    }, time);
+                }
+
+                function doBanner(i) {
+                    $("#bannerImgSN  li:visible").hide();
+                    $("#bannerTextSN  li:visible div").hide();
+                    $("#bannerImgSN  li:nth-child(" + i + ")").show();
+
+                    $("#bannerTextSN  li:nth-child(" + i + ") div").show(200);
+                    return i;
+                }
+
+                $("#bannerTextSN  li").click(function () {
+                    i = (parseInt($(this).attr('id').substr(3, 3)));
+                    if (active) {
+                        clearTimeout(timer);
+                        doBanner(i);
+                        active = false;
+                    } else {
+                        animate(i, 5000);
+                        active = true;
+                    }
+                });
+
+            });
+
+        </script>
+
+  
+
+<div id="logoCat">
+<a class="no_color" href="@Url.Action("SANDERSON", "Products")" title="Продукция компании Sanderson"><img class="ui-corner-all" src="../../Content/images/Sanderson/logo_sanderson.gif" /></a>
+</div>
+
+
+<div id="bannerBoxSN">
+    <ul id="bannerImgSN" class="bannerImg ">
+        <li style="display: none;"><a class="no_color" href="@Url.Action("SANDERSON_textile", "Products")"><img class="ui-corner-all" width="230" height="290" alt="Текстиль SANDERSON" title="Текстиль компании SANDERSON" src="@Url.Content("~/Content/images/Sanderson/home/maycott_wallpaper_thumb.jpg")"></a></li>
+        <li style="display: none;"><a class="no_color" href="@Url.Action("SANDERSON_wallpaper", "Products")"><img class="ui-corner-all" width="230" height="290" alt="SANDERSON Обои" title="SANDERSON Обои" src="@Url.Content("~/Content/images/Sanderson/home/richmond_wallpaper_thumb.jpg")"></a></li>
+        <li style="display: none;"><a class="no_color" href="@Url.Action("SANDERSON", "Products")"><img class="ui-corner-all" width="230" height="290" alt="SANDERSON" title="SANDERSON" src="@Url.Content("~/Content/images/Sanderson/home/50s-wallpaper-thumb.jpg")"></a></li>
+        <li style="display: list-item;"><a class="no_color" href="@Url.Action("SANDERSON_catalog", "Products")"><img class="ui-corner-all" width="230" height="290" alt="Каталог компании SANDERSON" title="Каталог компании SANDERSON" src="@Url.Content("~/Content/images/Sanderson/home/Sanderson_Bloomsbury-Wallpaper_02.jpg")"></a></li>
+    </ul>
+    
+    <ul id="bannerTextSN" class="bannerText ">
+        <li id="txt1">
+            <h3>
+                <a>Текстиль SANDERSON</a></h3>
+            <div style="display: none;">
+                <p>База временно не доступна</p>
+                
+            </div>
+        </li>
+        <li id="txt2">
+            <h3>
+                <a>Обои SANDERSON </a></h3>
+            <div style="display: none;">
+                <p>      База временно не доступна                  </p>
+            </div>
+        </li>
+        <li id="txt3">
+            <h3>
+                <a>SANDERSON</a></h3>
+            <div style="display: none;">
+                <p>
+                База временно не доступна</p>
+            </div>
+        </li>
+        <li id="txt4">
+            <h3>
+                <a>Каталог компании SANDERSON</a></h3>
+            <div style="display: none;">
+                <p>
+                    База временно не доступна</p>
+            </div>
+        </li>
+    </ul>
+</div>
+
+
+    
+

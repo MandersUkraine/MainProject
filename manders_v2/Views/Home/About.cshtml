@@ -1,34 +1,46 @@
 ﻿@{
-    ViewBag.Title = "About";
+    ViewBag.Title = "О нас - manders.com.ua";
 }
 
-<hgroup class="title">
-    <h1>@ViewBag.Title.</h1>
-    <h2>@ViewBag.Message</h2>
-</hgroup>
+<div>
+    <div>
+        <h2 class="featurette-heading">@ViewBag.Message</h2>
 
-<article>
-    <p>
-        Use this area to provide additional information.
-    </p>
+    </div>
+    <div class="featurette">
+        <p class="lead">
+            Компания <b>MANDERS "МАНДЕРС"</b>является поставщиком английских декоративных материалов<b> в России с 1996 года и в Украине с 2010 года</b>. 
+        Имеет четыре салона/магазина: два в Москве, один в Санкт-Петербурге, один в Киеве. 
+        <b>Успешно развивает дилерское направление.</b> Ежегодно компания участвует в специализированных выставках,  таких как <b>«МОСБИЛД», «Неделя декора», «Фестиваль-выставка Seasons»</b>.
+         Компания  сотрудничает <b>с журналами "МЕЗОНИН", "АD", "Seasons", "Лучшие интерьеры", "Архидея".</b>
+            С участием материалов нашей компании выходят в эфир программы 1-го канала и НТB:<b> "Квартирный вопрос", "Дачный ответ", "Фазенда".</b>
+            Заводы-производители ежегодно участвуют <b>в международных выставках во Франции и Италии.</b>
+        </p>
 
-    <p>
-        Use this area to provide additional information.
-    </p>
+        <p class="lead">
+            С применением красок компании <b>MANDERS</b> выкрашены: гостиницы <b>Националь и Марриотт-Тверская</b>, 
+        торговые центры <b>ЦУМ и Жукоффка</b>, <b>Музей изобразительных искусств им. А.С. Пушкина</b>, бутики <b>Dolce&Gabbana и Prado</b>, сервисный центр <b>Bentley</b> и первый в России салон мототехники <b>Harley-Davidson</b>, 
+        развлекательный центр <b>Самолет-Боулинг</b>, рестораны <b>Белый Квадрат, Пикадилли, Вильям Басс, сетевые рестораны Шеш-Беш, Джон Булл Паб, Молли Гвинз Паб</b>, офисы <b>British Petroleum-ТНК, ЛУКойл-Нефтехим, Сибнефть, Bloomberg 
+        (информационное агентство), Shlumberger (геологоразведка), Mary Cay (косметика)</b>, торговые центры <b>Три кита, Гранд-2, МЕГА</b>, филиалы Банка <b>Москвы, Balchug Plaza</b>, клуб <b>Визард (Нижний Новгород)</b>, 
+        салоны в торговых центрах <b>Киянка Нова (мебель), 4 room, салон Мебельные технологии</b>, салоны брендовой одежды и прочие частные объекты известных публичных лиц и не только.
+        <p class="lead">В салонах Вам предоставят бесплатно палитры красок, подробно расскажут о материалах, продемонстрируют каталоги  цвета красок, обоев, тканей, плинтус  и пр. продукции.</p>
 
-    <p>
-        Use this area to provide additional information.
-    </p>
-</article>
-
-<aside>
-    <h3>Aside Title</h3>
-    <p>
-        Use this area to provide additional information.
+        </p>
+    </div>
+    @Html.Partial("Products/_AllProducts")
+   <div>
+    <h3 class="featurette-heading">Пройтись по сайту</h3>
+    <p class="lead"> Карта сайта.
     </p>
     <ul>
-        <li>@Html.ActionLink("Home", "Index", "Home")</li>
-        <li>@Html.ActionLink("About", "About", "Home")</li>
-        <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
+        <li>@Html.ActionLink("Manders Brends", "Index", "Home")</li>
+        <li>@Html.ActionLink("Контакты", "Contact", "Home")</li>
+        <li>@Html.ActionLink("Рекомендации", "Advice", "Home")</li>
+        <li>@Html.ActionLink("Документация", "Manuals", "Home")</li>
+        <li>@Html.ActionLink("Видео", "Video", "Home")</li>
     </ul>
-</aside>
+</div>
+</div>
+
+
+

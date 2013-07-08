@@ -10,15 +10,11 @@ namespace manders_v2.Controllers
     {
         public ActionResult Index()
         {
-            ViewBag.Message = "Элитные обои, мебель, элитный текстиль, английские краски в Украине";
+            ViewBag.Message = "Элитные обои, изысканый текстиль, английские краски, качество в Украине";
 
             return View();
         }
-        public ActionResult Other()
-        {
-            return View();
-        }
-
+       
         public ActionResult About()
         {
             ViewBag.Message = "Компания MANDERS – эксклюзивный поставщик английских декоративных материалов";
@@ -28,21 +24,23 @@ namespace manders_v2.Controllers
 
         public ActionResult Contact()
         {
-            ViewBag.Message = "Your contact page.";
+            ViewBag.Message = "Связаться с нами";
 
             return View();
         }
-
         public ActionResult Advice()
         {
+            ViewBag.Message = "Рекомендации для получения наилучшего результата.";
             return View();
         }
-        public ActionResult Manuals()
+        public ActionResult News()
         {
+            ViewBag.Message = "Новости обои, текстиля, красок на нашем сайте в Украине и за ее пределами";
             return View();
         }
-        public ActionResult Video()
+       public ActionResult Video()
         {
+            ViewBag.Message = "Видео материалы характеризующие то чем мы занимаемся";
             return View();
         }
 
@@ -51,5 +49,12 @@ namespace manders_v2.Controllers
             ViewBag.Message = "Галерея фотографий";
             return View();
         }
+        
+        public ActionResult Manuals()
+        {
+            ViewBag.Message = "Каталоги, документация, вырезки ...";
+            return View();
+        }
+       
     }
 }

@@ -1,0 +1,105 @@
+﻿@{
+    ViewBag.Title = "Slide Little Greene";
+}
+
+        
+
+        <script type="text/javascript">
+            $(document).ready(function () {
+                var timer, last;
+                var i = 1;
+                var limit = $("#bannerImgLG li").size();
+                var active = true;
+
+                animate(i, 4000);
+
+                function animate(i, last, time) {
+                    timer = setTimeout(function () {
+                        i = doBanner(i);
+                        last = i;
+                        if (i > limit - 1) { i = 0; }
+                        i++;
+                        animate(i, last, 5000);
+                    }, time);
+                }
+
+                function doBanner(i) {
+                    $("#bannerImgLG li:visible").hide();
+                    $("#bannerTextLG li:visible div").hide();
+                    $("#bannerImgLG li:nth-child(" + i + ")").show();
+
+                    $("#bannerTextLG li:nth-child(" + i + ") div").show(200);
+                    return i;
+                }
+
+                $("#bannerTextLG li").click(function () {
+                    i = (parseInt($(this).attr('id').substr(3, 3)));
+                    if (active) {
+                        clearTimeout(timer);
+                        doBanner(i);
+                        active = false;
+                    } else {
+                        animate(i, 5000);
+                        active = true;
+                    }
+                });
+
+            });
+
+        </script>
+
+<div id="logoCat">
+    <a class="no_color" href="@Url.Action("Little_Greene", "Products")" title="Продукция Little Greene"><img class="ui-corner-all" src="../../Content/images/LG/logo_from_site.png" /></a>
+</div>
+
+
+
+<div id="bannerBoxLG" class="bannerBox">
+    <ul id="bannerImgLG" class="bannerImg">
+        <li style="display: none;"><a class="no_color" href="@Url.Action("Little_Greene_paints", "Products")"><img class="ui-corner-all" width="630" height="300" alt="Краски Little Greene" title="Краски Little Greene. Нажмите для перехода." src="@Url.Content("~/Content/images/LG/banner2.jpg")"></a></li>
+        <li style="display: none;"><a class="no_color" href="@Url.Action("Little_Greene_wallpaper", "Products")"><img class="ui-corner-all" width="630" height="300" alt="Little Greene Обои" title="Little Greene Обои. Нажмите для перехода." src="@Url.Content("~/Content/images/LG/banner4.jpg")"></a></li>
+        <li style="display: none;"><a class="no_color" href="@Url.Action("Little_Greene", "Products")"><img class="ui-corner-all" width="630" height="300" alt="Little Greene" title="O Little Greene. Нажмите для перехода." src="@Url.Content("~/Content/images/LG/banner3.jpg")"></a></li>
+        <li style="display: list-item;"><a class="no_color" href="@Url.Action("Little_Greene_catalog", "Products")"><img class="ui-corner-all" width="630" height="300" alt="Коллекция" title="Коллекция Little Greene. Нажмите для перехода." src="@Url.Content("~/Content/images/LG/banner1.jpg")"></a></li>
+    </ul>
+    
+    <ul id="bannerTextLG" class="bannerText">
+        <li id="txt1">
+            <h3>
+                <a>Краски Little Greene</a></h3>
+            <div style="display: none;">
+                <p>
+                    @Html.ActionLink("Little Greene", "Little_Greene_paints", "Products", null, new {title = "краски компании Little Greene" })  дарит Вам две палитры – Цвета Англии ‘The Colours of England’ и Цветные шкалы ‘Colour Scales’ – 164 красивых оттенков из наших архивов и архивов English Heritage.
+                </p>
+            </div>
+        </li>
+        <li id="txt2">
+            <h3>
+                <a>Обои Little Greene </a></h3>
+            <div style="display: none;">
+                <p>
+                    Дизайнеры компании @Html.ActionLink("Little Greene", "Little_Greene_wallpaper", "Products", null, new {title = "обои компании Little Greene" }) при разработке рисунков обоев, обратились к творческому наследию прошлого, взяв за основу исторические образцы. Каждая модель из восьми образцов имеет исторический прототип.</p>
+            </div>
+        </li>
+        <li id="txt3">
+            <h3>
+                <a>Little Greene</a></h3>
+            <div style="display: none;">
+                <p>
+                    В @Html.ActionLink("Little Greene", "Little_Greene", "Products", null, new {title = "Little Greene на нашем сайте" }) философия заключается в обеспечении лучшего качества краски и обоев по доступным ценам с отличным сервисом.</p>
+            </div>
+        </li>
+        <li id="txt4">
+            <h3>
+                <a>Каталог Little Greene</a></h3>
+            <div style="display: block;">
+                <p>Ошибка загрузки базы данных.</p>
+            </div>
+        </li>
+    </ul>
+</div>
+
+
+
+    
+
+

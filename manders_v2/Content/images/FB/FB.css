@@ -1,0 +1,13 @@
+﻿div .FB {
+    background: none repeat scroll 0 0 #2A2B2F;
+    width: 280px;
+    position: relative;
+    z-index: 4;
+}
+
+.FB a {
+    background: transparent url('sprite-main.png') no-repeat scroll -1px -1px;
+    display: block;
+    height: 54px;
+    width: 275px;
+}
