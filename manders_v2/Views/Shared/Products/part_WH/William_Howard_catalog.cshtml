@@ -1,0 +1,23 @@
+﻿@{
+    ViewBag.Title = "Каталоги компании William Howard";
+}
+
+<h2 class="featurette-heading">@ViewBag.Title</h2>
+<hr class="featurette-divider">
+
+<div class="">
+    <h2 class="featureette-heading">Каталог компании в PDF</h2>
+    <img src="@Url.Content("~/Content/images/WH/pdf/catalog.png")" title="Каталог компании W. Howard Limited"/>
+    <a class="btn btn-large btn-primary" href="@Url.Content("~/Content/images/WH/pdf/brochure.pdf")" target="_blank" title="Скачать каталог с нашего сайта на Ваш копьютер">Скачать каталог с нашего сайта</a>
+    
+    <button id="openepdf" class="btn btn-large btn-primary" title="Открыть каталог на нашем сайте для просмотра в отдельном окне">Открыть каталог на нашем сайте</button>
+    
+    <div id="catalogpdf" title="Каталог компании William Howard на нашем сайте">
+        <iframe class="scribd_iframe_embed" 
+            src="http://www.scribd.com/embeds/114018875/content?start_page=1&view_mode=scroll&access_key=key-fpah5yh2w1u10okce82&show_recommendations=false" 
+            data-auto-height="true" data-aspect-ratio="1.4160125588697" scrolling="no" id="doc_21793" width="null" height="null" frameborder="0" style="min-width: 1000px; min-height: 750px;"></iframe>
+        <script type="text/javascript">(function () { var scribd = document.createElement("script"); scribd.type = "text/javascript"; scribd.async = true; scribd.src = "http://www.scribd.com/javascripts/embed_code/inject.js"; var s = document.getElementsByTagName("script")[0]; s.parentNode.insertBefore(scribd, s); })();</script>
+    </div>
+    
+    @Html.Partial("Products/part_WH/William_Howard_prod")
+</div>

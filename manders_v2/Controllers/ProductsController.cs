@@ -15,6 +15,34 @@ namespace manders_v2.Controllers
         {
             return View();
         }
+        public ActionResult Catalogs()
+        {
+            return View();
+        }
+        public ActionResult Paints()
+        {
+            return View();
+        }
+        public ActionResult Wallpapers()
+        {
+            return View();
+        }
+        public ActionResult Plinth()
+        {
+            return View();
+        }
+        public ActionResult Textile()
+        {
+            return View();
+        }
+        public ActionResult William_Howard()
+        {
+            return View();
+        }
+        public ActionResult William_Howard_catalog()
+        {
+            return View();
+        }
 
     }
 }

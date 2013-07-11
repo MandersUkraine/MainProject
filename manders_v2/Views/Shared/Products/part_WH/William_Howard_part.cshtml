@@ -1,8 +1,10 @@
-﻿<div>
-<h1>Добро пожаловать в W. Howard Limited </h1>
-        <h2>Революционные технологии ...</h2>
+﻿
+
+<div>
+<h1 class="featurette-heading">Добро пожаловать в W. Howard Limited </h1>
+        <h2 class="featurette-heading">Революционные технологии ...</h2>
     
-<div style="padding: 7px 5px 5px 5px">
+<div style="background-color: #000000; padding : 7px 5px 5px 5px; margin-right: 10px" class="featurette pull-left ui-corner-all">
 <iframe width="640" height="360" src="http://www.youtube.com/embed/ZIyD5BmcwF4?rel=0" frameborder="0" allowfullscreen></iframe>
 </div>
 <div >
@@ -11,7 +13,8 @@
 Кроме профилей из МДФ, мы также предлагаем композитные деревянные плиты.
 </p>
 <div>
-    <a href="@Url.Action("William_Howard_catalog", "Products")"><img src="@Url.Content("~/Content/images/WH/pdf/catalog.png")" title="Каталог компании W. Howard Limited"/></a>
+    <a href="@Url.Action("William_Howard", "Products", new { partWH = "Products/part_WH/William_Howard_catalog" })"><img src="@Url.Content("~/Content/images/WH/pdf/catalog.png")" title="Каталог компании W. Howard Limited"/></a>
+   
 </div>
 <h2>Забота об окружающей среде</h2> 
 

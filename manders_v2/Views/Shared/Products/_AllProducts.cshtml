@@ -4,20 +4,20 @@
 
     <div class="featurette">
         <a href="@Url.Action("William_Howard", "Products")" title="William Howard	Плинтус, молдинги из МДФ">
-            <img class="featurette-image pull-left" src="@Url.Content("~/Content/images/WH/logo_WH.jpg")" alt="William Howard"/></a>
+            <img class="featurette-image pull-left ui-corner-all" src="@Url.Content("~/Content/images/WH/WHowardrgb.jpg")" alt="William Howard" width=320px;/></a>
         <h2 class="featurette-heading">William Howard.<span class="muted">Плинтус, молдинги из МДФ.</span></h2>
-        <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
-        <ul>
-            <li>@Html.ActionLink("William Howard", "William_Howard", "Products")</li>
-        </ul>
+        <p class="lead">W. Howard Limited является ведущей компанией по производству профилей из МДФ в Великобритании. Наша продукция включает плинтусы, архитравы, внутренние подоконники, дверные коробки и дверные наличники. Ассортимент состоит из более чем 200 наименований профилей различных размеров с прогрунтованным, фанерным или ламинированным покрытием. Хотя у нас есть широкий спектр готовой продукции, мы также можем изготовить изделие на заказ.</p>
+        
+            @Html.ActionLink("William Howard", "William_Howard", "Products", null, new {@class="btn btn-large btn-primary", title="О компании William Howard" })
+        
     </div>
     <hr class="featurette-divider">
 
     <div class="featurette">
-        <a href="@Url.Action("Farrow_and_Ball", "Products")" title="Brand Farrow & Ball">
+        @*<a href="@Url.Action("Farrow_and_Ball", "Products")" title="Brand Farrow & Ball">
             <img class="featurette-image pull-right" src="@Url.Content("~/Content/images/FB/print_logo.gif")">
-        </a>
-        <div class="FB pull-right">
+        </a>*@
+        <div class="FB featurette-image pull-right ui-corner-all">
             <a href="@Url.Action("Farrow_and_Ball", "Products")" title="Brand Farrow & Ball"></a>
         </div>
         <h2 class="featurette-heading">Farrow & Ball. <span class="muted">Краски, обои.</span></h2>
