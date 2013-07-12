@@ -35,11 +35,12 @@ namespace manders_v2.Controllers
         {
             return View();
         }
-        public ActionResult William_Howard()
+        public ActionResult William_Howard(string id)
         {
-            return View();
+
+            return View((object) id);
         }
-        public ActionResult William_Howard_catalog()
+        public ActionResult Farrow_and_Ball()
         {
             return View();
         }

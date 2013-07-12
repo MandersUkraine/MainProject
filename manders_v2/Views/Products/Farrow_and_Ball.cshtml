@@ -1,0 +1,15 @@
+﻿@model string
+@{
+    
+    ViewBag.Title = "Краска & Обои люкс от Farrow & Ball из Великобритании теперь доступны на Украине.";
+    var part = Model != null ? Model.Replace("__", "/") : "Products/part_FB/Farrow_and_Ball";
+}
+
+<h2 class="featurette-heading">@ViewBag.Title</h2>
+
+
+
+
+
+
+@Html.Partial(part)

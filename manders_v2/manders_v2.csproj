@@ -361,6 +361,7 @@
     <Content Include="Content\images\WH\baner\homemasts_primed.png" />
     <Content Include="Content\images\WH\baner\homemasts_veneered.jpg" />
     <Content Include="Content\images\WH\baner\homemasts_veneered.png" />
+    <Content Include="Content\images\WH\footer-m-green.png" />
     <Content Include="Content\images\WH\home\easi.png" />
     <Content Include="Content\images\WH\home\LS_core.png" />
     <Content Include="Content\images\WH\home\LS_main.png" />
@@ -1245,11 +1246,6 @@
     <Content Include="Views\Shared\Products\part_CS\news\_PartialPageCS1.cshtml" />
     <Content Include="Views\Shared\Products\part_CS\_Сole_and_Son_slide.cshtml" />
     <Content Include="Views\Shared\Products\part_CS\Сole_and_Son_slide.cshtml" />
-    <Content Include="Views\Shared\Products\part_FB\FARROW_and_BALL_baner.cshtml" />
-    <Content Include="Views\Shared\Products\part_FB\FARROW_and_BALL_example.cshtml" />
-    <Content Include="Views\Shared\Products\part_FB\FARROW_and_BALL_part.cshtml" />
-    <Content Include="Views\Shared\Products\part_FB\FARROW_and_BALL_partw.cshtml" />
-    <Content Include="Views\Shared\Products\part_FB\FARROW_and_BALL_slide.cshtml" />
     <Content Include="Views\Shared\Products\part_LG\Little_Greene_a.cshtml" />
     <Content Include="Views\Shared\Products\part_LG\Little_Greene_baner.cshtml" />
     <Content Include="Views\Shared\Products\part_LG\Little_Greene_example.cshtml" />
@@ -1283,10 +1279,7 @@
     <Content Include="Views\Shared\Products\part_LG\wallpaper\London_Wallpapers_III_part\wilton-c-1760.cshtml" />
     <Content Include="Views\Shared\Products\part_LG\wallpaper\Oriental_Wallpaper.cshtml" />
     <Content Include="Views\Shared\Products\part_LG\wallpaper\Retrospective_Papers.cshtml" />
-    <Content Include="Views\Shared\Products\part_WH\William_Howard_baner.cshtml" />
     <Content Include="Views\Shared\Products\part_WH\William_Howard_part.cshtml" />
-    <Content Include="Views\Shared\Products\part_WH\William_Howard_prod.cshtml" />
-    <Content Include="Views\Shared\Products\part_WH\William_Howard_slide.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\Shared\Products\Morris_and_Co_baner.cshtml" />
@@ -1308,11 +1301,6 @@
     <Content Include="Views\Shared\Products\Swaffer_part.cshtml" />
     <Content Include="Views\Shared\Products\Swaffer_slide.cshtml" />
     <Content Include="Views\Shared\Products\textile_exl.cshtml" />
-    <Content Include="Views\Shared\Products\THE_LITTLE_GREENE_baner.cshtml" />
-    <Content Include="Views\Shared\Products\THE_LITTLE_GREENE_example.cshtml" />
-    <Content Include="Views\Shared\Products\THE_LITTLE_GREENE_part.cshtml" />
-    <Content Include="Views\Shared\Products\THE_LITTLE_GREENE_partw.cshtml" />
-    <Content Include="Views\Shared\Products\THE_LITTLE_GREENE_slide.cshtml" />
     <Content Include="Views\Shared\Products\wallpaper_exl.cshtml" />
     <Content Include="Views\Shared\Products\Zoffany_baner.cshtml" />
     <Content Include="Views\Shared\Products\Zoffany_part.cshtml" />
@@ -1355,6 +1343,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Properties\PublishProfiles\new.manders.pubxml" />
+    <Content Include="Views\Products\Farrow_and_Ball.cshtml" />
+    <Content Include="Views\Shared\Products\part_LG\Lettle_Greene.cshtml" />
+    <Content Include="Views\Shared\Products\part_FB\Farrow_and_Ball.cshtml" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

@@ -56,7 +56,14 @@
             width: auto; /*указываем ширину*/
         }
 
-            .floating a, p {
+       a.fl  {
+                color: #333333;
+                text-transform: uppercase;
+                font-weight: bold;
+                margin: 0 !important;
+               
+            }
+        p.fl  {
                 color: #333333;
                 text-transform: uppercase;
                 font-weight: bold;
@@ -575,9 +582,9 @@
         <footer style=" -webkit-text-shadow: 2px 2px 2px #333333;
                 text-shadow: 2px 2px 2px #333333;">
             <div class="floating">
-                <a href="#" title="Back to top"><span class="ui-icon ui-icon-arrowthick-1-n"></span>Вернуть обратно</a>
+                <a class="fl" href="#" title="Back to top"><span class="ui-icon ui-icon-arrowthick-1-n"></span>Вернуть обратно</a>
             </div>
-            <p style="">&copy; 2012 - @DateTime.Now.Year -  создано студией дизайна сайтов &middot; <a href="http://artmakarenko.net.ua">ArtMakarenko</a> &middot; <a href="http://asp.net">на ASP.Net MVC4.</a></p>
+            <p class="fl">&copy; 2012 - @DateTime.Now.Year -  создано студией дизайна сайтов &middot; <a href="http://artmakarenko.net.ua">ArtMakarenko</a> &middot; <a href="http://asp.net">на ASP.Net MVC4.</a></p>
         </footer>
 
     </div>
@@ -639,6 +646,7 @@
             $("#openepdf").click(function () {
                 $("#catalogpdf").dialog("open");
             });
+            $(".menuProduct").menu().removeClass("ui-widget-content");
 
 
 

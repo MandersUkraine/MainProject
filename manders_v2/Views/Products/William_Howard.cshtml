@@ -1,6 +1,8 @@
-﻿@{
+﻿@model string
+@{
+    
     ViewBag.Title = "William Howard - является ведущей компанией по производству профилей в Великобритании. Теперь представлена на Украине.";
-    var part = Request.Params["partWH"] != null ? Request.Params["partWH"] : "Products/part_WH/William_Howard_part";
+    var part = Model != null ? Model.Replace ("__", "/") : "Products/part_WH/William_Howard_part";
 }
 @section script_section{
   
@@ -8,6 +10,3 @@
 
 <h2 class="featurette-heading">@ViewBag.Title</h2>
 @Html.Partial(part)
-<div>
-<img src="~/Content/images/WH/lang_footer.png" />
-    </div>
