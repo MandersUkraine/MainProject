@@ -1,4 +1,5 @@
-﻿<div>
+﻿
+<div>
     <h3 class="featurette-heading">ПРОИЗВОДИТЕЛИ ПРЕДСТАВЛЕННЫЕ В УКРАИНЕ </h3>
     <hr class="featurette-divider">
 
@@ -21,12 +22,12 @@
             <a href="@Url.Action("Farrow_and_Ball", "Products")" title="Brand Farrow & Ball"></a>
         </div>
         <h2 class="featurette-heading">Farrow & Ball. <span class="muted">Краски, обои.</span></h2>
-        <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
-        <ul>
-            <li>@Html.ActionLink("Краски компании Farrow & Ball", "Farrow_and_Ball_paints", "Products")</li>
-            <li>@Html.ActionLink("Обои компании Farrow & Ball", "Farrow_and_Ball_wallpaper", "Products")</li>
-            <li>@Html.ActionLink("Каталог компании Farrow & Ball", "Farrow_and_Ball_catalog", "Products")</li>
-        </ul>
+        <p class="lead">В компании Farrow & Ball мы чрезвычайно гордимся тем, что прилагаем максимум усилий к тому, что у нас получается лучше всего: производить не имеющие аналогов краски и обои, украшающие стены домов во всем мире. Наша специализация - внимание к деталям и исключительное качество. Мы строго контролируем каждую партию краски и обоев - как крупную, так и небольшую, - которая выходит из цеха нашего производства.</p>
+        <div>
+            @Html.ActionLink("Краски компании Farrow & Ball", "Farrow_and_Ball_paints", "Products", null, new {@class="btn btn-large btn-warning", title="Краски компании Farrow & Ball" })
+            @Html.ActionLink("Обои компании Farrow & Ball", "Farrow_and_Ball_wallpaper", "Products", null, new {@class="btn btn-large btn-info", title="Обои компании Farrow & Ball" })
+            @Html.ActionLink("Каталог компании Farrow & Ball", "Farrow_and_Ball_catalog", "Products", null, new {@class="btn btn-large btn-primary", title="Каталог компании Farrow & Ball" })
+        </div>
     </div>
 
     <hr class="featurette-divider">
