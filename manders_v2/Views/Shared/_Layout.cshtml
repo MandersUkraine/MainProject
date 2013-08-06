@@ -415,11 +415,11 @@
                                     <li>@Html.ActionLink("William Howard", "William_Howard", "Products", null, new { title = "William Howard - Революционные технологии ..." })</li>
                                     <li class="divider"></li>
                                     <li class="nav-header">Краски</li>
-                                    <li>@Html.ActionLink("Краски компании Farrow & Ball", "Farrow_and_Ball_paints", "Products")</li>
+                                    <li><a href="@Url.Action("Farrow_and_Ball", "Products", new { id = "Products__part_FB__paints_Farrow_and_ball" })" title="Краски компании Farrow & Ball">Краски компании Farrow & Ball</a></li>
                                     <li>@Html.ActionLink("Краски компании Little Greene", "Little_Greene_Paints", "Products")</li>
                                     <li class="divider"></li>
                                     <li class="nav-header">Обои</li>
-                                    <li>@Html.ActionLink("Обои компании Farrow & Ball", "Farrow_and_Ball_wallpaper", "Products")</li>
+                                     <li><a href="@Url.Action("Farrow_and_Ball", "Products", new { id = "Products__part_FB__wallpapers_Farrow_and_ball" })" title= "Обои компании Farrow & Ball">Обои компании Farrow & Ball</a></li>
                                     <li>@Html.ActionLink("Обои комапнии Little Greene", "Little_Greene_Wallpaper", "Products")</li>
                                     <li>@Html.ActionLink("Обои компании Sanderson", "Sanderson_wallpaper", "Products")</li>
                                     <li>@Html.ActionLink("Обои компании Zoffany", "Zoffany_wallpaper", "Products")</li>

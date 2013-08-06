@@ -415,11 +415,13 @@
                                     <li>@Html.ActionLink("William Howard", "William_Howard", "Products", null, new { title = "William Howard - Революционные технологии ..." })</li>
                                     <li class="divider"></li>
                                     <li class="nav-header">Краски</li>
-                                    <li>@Html.ActionLink("Краски компании Farrow & Ball", "Farrow_and_Ball_paints", "Products")</li>
+                                    <li><a href="@Url.Action("Farrow_and_Ball", "Products", new { id = "Products__part_FB__paints_Farrow_and_ball" })" title="Краски компании Farrow & Ball">Краски компании Farrow & Ball</a></li>
                                     <li>@Html.ActionLink("Краски компании Little Greene", "Little_Greene_Paints", "Products")</li>
+                                    
                                     <li class="divider"></li>
                                     <li class="nav-header">Обои</li>
-                                    <li>@Html.ActionLink("Обои компании Farrow & Ball", "Farrow_and_Ball_wallpaper", "Products")</li>
+                                    
+                                    <li><a href="@Url.Action("Farrow_and_Ball", "Products", new { id = "Products__part_FB__wallpapers_Farrow_and_ball" })" title= "Обои компании Farrow & Ball">Обои компании Farrow & Ball</a></li>
                                     <li>@Html.ActionLink("Обои комапнии Little Greene", "Little_Greene_Wallpaper", "Products")</li>
                                     <li>@Html.ActionLink("Обои компании Sanderson", "Sanderson_wallpaper", "Products")</li>
                                     <li>@Html.ActionLink("Обои компании Zoffany", "Zoffany_wallpaper", "Products")</li>
@@ -489,8 +491,8 @@
         <div class="carousel-inner">
             <div class="item active">
                 <img src="@Url.Content("~/Content/images/FB/slide_fb/homepage_sep12_10_ways_1.jpg")" alt="">
-                <div class="container">
-                    <div class="carousel-caption">
+                <div class="container" style="display: none;">
+                    <div class="carousel-caption" >
                         <h1 class="featurette-heading">Master-page Farrow & Ball.</h1>
                         <p class="lead">W. Howard Limited является ведущей компанией по производству профилей из МДФ в Великобритании. Наша продукция включает плинтусы, архитравы, внутренние подоконники, дверные коробки и дверные наличники.</p>
                         <a class="btn btn-large btn-primary" href="@Url.Action("William_Howard", "Products")" title="Ассортимент состоит из более чем 200 наименований профилей различных размеров с прогрунтованным, фанерным или ламинированным покрытием.">200 наименований различных размеров и покрытием.</a>
@@ -499,7 +501,7 @@
             </div>
             <div class="item">
                 <img src="@Url.Content("~/Content/images/FB/slide_fb/carousel_FB_1.jpg")" alt="">
-                <div class="container">
+                <div class="container" style="display: none;">
                     <div class="carousel-caption">
                         <h1 class="featurette-heading">Master-page Farrow & Ball.</h1>
                         <p class="lead">Особенные достоинства английских красок – это  их удивительные цвета, которые так необходимы жителям крупных городов, чтобы добавить яркости и уюта в свою жизнь. У каких других производителей вы найдете такую потрясающею цветовую палитру?</p>
@@ -509,7 +511,7 @@
             </div>
             <div class="item">
                 <img src="@Url.Content("~/Content/images/FB/slide_fb/homepage_sep12_10_ways_2.jpg")" alt="">
-                <div class="container">
+                <div class="container" style="display: none;">
                     <div class="carousel-caption">
                         <h1 class="featurette-heading">Master-page Farrow & Ball.</h1>
                         <p class="lead">В создании интерьера всегда особая роль отводится стенам. Самый распространенный способ отделки стен – покрытие нашими обоями. Их назвают предметом искусства. Их создают по эскизам знаменитых дизайнеров, художников, иногда – на заказ.</p>
@@ -519,7 +521,7 @@
             </div>
             <div class="item">
                 <img src="@Url.Content("~/Content/images/FB/slide_fb/carousel_FB_2.jpg")" alt="">
-                <div class="container">
+                <div class="container" style="display: none;">
                     <div class="carousel-caption">
                         <h1 class="featurette-heading">Master-page Farrow & Ball.</h1>
                         <p class="lead">Только от лучших производителей Англии. Украсить свои окна лучшим от лучших Sanderson, Morris & Co, Swaffer, Zoffany   　</p>
@@ -529,7 +531,7 @@
             </div>
             <div class="item">
                 <img src="@Url.Content("~/Content/images/FB/slide_fb/carousel_FB_3.jpg")" alt="">
-                <div class="container">
+                <div class="container" style="display: none;">
                     <div class="carousel-caption">
                         <h1 class="featurette-heading">Master-page Farrow & Ball.</h1>
                         <p class="lead">Только от лучших производителей Англии. Украсить свои окна лучшим от лучших Sanderson, Morris & Co, Swaffer, Zoffany   　</p>
@@ -539,7 +541,7 @@
             </div>
             <div class="item">
                 <img src="@Url.Content("~/Content/images/FB/slide_fb/carousel_FB_4.jpg")" alt="">
-                <div class="container">
+                <div class="container" style="display: none;">
                     <div class="carousel-caption">
                         <h1 class="featurette-heading">Master-page Farrow & Ball.</h1>
                         <p class="lead">Только от лучших производителей Англии. Украсить свои окна лучшим от лучших Sanderson, Morris & Co, Swaffer, Zoffany   　</p>
@@ -549,7 +551,7 @@
             </div>
             <div class="item">
                 <img src="@Url.Content("~/Content/images/FB/slide_fb/new-showroom-colour-wall.jpg")" alt="">
-                <div class="container">
+                <div class="container" style="display: none;">
                     <div class="carousel-caption">
                         <h1 class="featurette-heading">Master-page Farrow & Ball.</h1>
                         <p class="lead">Только от лучших производителей Англии. Украсить свои окна лучшим от лучших Sanderson, Morris & Co, Swaffer, Zoffany   　</p>
@@ -559,8 +561,8 @@
             </div>
 
         </div>
-        <a class="left carousel-control" href="#myCarousel" data-slide="prev">&lsaquo;</a>
-        <a class="right carousel-control" href="#myCarousel" data-slide="next">&rsaquo;</a>
+        <a style="display: none;" class="left carousel-control" href="#myCarousel" data-slide="prev">&lsaquo;</a>
+        <a style="display: none;" class="right carousel-control" href="#myCarousel" data-slide="next">&rsaquo;</a>
     </div>
     <!-- /.carousel -->
 
@@ -703,7 +705,7 @@
                 onExtClose: function () { }
             });
             $("#extruderLeft2").buildMbExtruder({
-                position: "left",
+                position: "right",
                 width: 300,
                 extruderOpacity: .8,
 
@@ -714,7 +716,7 @@
                 onExtClose: function () { }
             });
             $("#extruderLeft3").buildMbExtruder({
-                position: "left",
+                position: "right",
                 width: 300,
                 extruderOpacity: .8,
 

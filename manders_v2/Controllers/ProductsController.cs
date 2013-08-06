@@ -40,9 +40,9 @@ namespace manders_v2.Controllers
 
             return View((object) id);
         }
-        public ActionResult Farrow_and_Ball()
+        public ActionResult Farrow_and_Ball(string id)
         {
-            return View();
+            return View((object) id);
         }
 
     }

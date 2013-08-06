@@ -1382,6 +1382,8 @@
     <Content Include="Views\Shared\Products\part_FB\Farrow_and_Ball.cshtml" />
     <Content Include="Views\Shared\Products\part_WH\William_Howard_prod.cshtml" />
     <Content Include="Views\Shared\_LayoutFB.cshtml" />
+    <Content Include="Views\Shared\Products\part_FB\paints_Farrow_and_ball.cshtml" />
+    <Content Include="Views\Shared\Products\part_FB\wallpapers_Farrow_and_ball.cshtml" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

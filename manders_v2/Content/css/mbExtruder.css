@@ -30,7 +30,7 @@
 
     .extruder .content {
         display: none;
-        background: #000;
+        background: #fff;
     }
 
     .extruder.open .content {
