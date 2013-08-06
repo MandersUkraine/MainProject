@@ -231,17 +231,30 @@
     <Content Include="Content\images\CS\stripes.jpg" />
     <Content Include="Content\images\CS\venice-82-8015-2.jpg" />
     <Content Include="Content\images\CS\VivienneWestwood.jpg" />
+    <Content Include="Content\images\FB\brush_header.jpg" />
     <Content Include="Content\images\FB\colour-consultancy2.jpg" />
+    <Content Include="Content\images\FB\examples_for_inspiration\examples_for_inspiration_1.jpg" />
+    <Content Include="Content\images\FB\examples_for_inspiration\examples_for_inspiration_2.jpg" />
+    <Content Include="Content\images\FB\examples_for_inspiration\examples_for_inspiration_3.jpg" />
+    <Content Include="Content\images\FB\examples_for_inspiration\examples_for_inspiration_4.jpg" />
+    <Content Include="Content\images\FB\examples_for_inspiration\examples_for_inspiration_5.jpg" />
+    <Content Include="Content\images\FB\examples_for_inspiration\examples_for_inspiration_6.jpg" />
+    <Content Include="Content\images\FB\examples_for_inspiration\examples_for_inspiration_7.jpg" />
     <Content Include="Content\images\FB\exemple\100008.jpg" />
     <Content Include="Content\images\FB\exemple\100040.jpg" />
     <Content Include="Content\images\FB\exemple\100240.jpg" />
     <Content Include="Content\images\FB\exemple\102013.jpg" />
     <Content Include="Content\images\FB\exemple\inspiration-colour-colour-tips.jpg" />
+    <Content Include="Content\images\FB\farrow-and-ball1-e1353714773692.jpg" />
+    <Content Include="Content\images\FB\farrow_ball_logo.png" />
+    <Content Include="Content\images\FB\fb_round_logo.gif" />
     <Content Include="Content\images\FB\ImageHandler.jpg" />
     <Content Include="Content\images\FB\ImageHandler0.jpg" />
     <Content Include="Content\images\FB\ImageHandler1.jpg" />
     <Content Include="Content\images\FB\ImageHandler10.jpg" />
     <Content Include="Content\images\FB\ImageHandler11.jpg" />
+    <Content Include="Content\images\FB\ImageHandler12.jpg" />
+    <Content Include="Content\images\FB\ImageHandler13.jpg" />
     <Content Include="Content\images\FB\ImageHandler2.jpg" />
     <Content Include="Content\images\FB\ImageHandler3.jpg" />
     <Content Include="Content\images\FB\ImageHandler4.jpg" />
@@ -254,8 +267,14 @@
     <Content Include="Content\images\FB\PoizvMaster.png" />
     <Content Include="Content\images\FB\px_background.jpg" />
     <Content Include="Content\images\FB\Site.css" />
+    <Content Include="Content\images\FB\slide_fb\carousel_FB_1.jpg" />
+    <Content Include="Content\images\FB\slide_fb\carousel_FB_2.jpg" />
+    <Content Include="Content\images\FB\slide_fb\carousel_FB_3.jpg" />
+    <Content Include="Content\images\FB\slide_fb\carousel_FB_4.jpg" />
     <Content Include="Content\images\FB\slide_fb\homepage_sep12_10_ways_1.jpg" />
     <Content Include="Content\images\FB\slide_fb\homepage_sep12_10_ways_2.jpg" />
+    <Content Include="Content\images\FB\maker.jpg" />
+    <Content Include="Content\images\FB\make_wallpaper.jpg" />
     <Content Include="Content\images\FB\slide_fb\new-showroom-colour-wall.jpg" />
     <Content Include="Content\images\FB\slide_main\home_FB_1.jpg" />
     <Content Include="Content\images\FB\slide_main\home_FB_2.jpg" />
@@ -1356,11 +1375,13 @@
     <Content Include="Content\css\mbExtruder.less" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Properties\PublishProfiles\localhost.pubxml" />
     <None Include="Properties\PublishProfiles\new.manders.pubxml" />
     <Content Include="Views\Products\Farrow_and_Ball.cshtml" />
     <Content Include="Views\Shared\Products\part_LG\Lettle_Greene.cshtml" />
     <Content Include="Views\Shared\Products\part_FB\Farrow_and_Ball.cshtml" />
     <Content Include="Views\Shared\Products\part_WH\William_Howard_prod.cshtml" />
+    <Content Include="Views\Shared\_LayoutFB.cshtml" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
