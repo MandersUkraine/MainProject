@@ -281,6 +281,21 @@
     <Content Include="Content\images\FB\slide_main\home_FB_3.jpg" />
     <Content Include="Content\images\FB\slide_main\home_FB_4.jpg" />
     <Content Include="Content\images\FB\sprite-main.png" />
+    <Content Include="Content\images\FB\wallpaper\farrow_stand.jpg" />
+    <Content Include="Content\images\FB\wallpaper\farrow_wallpaper.jpg" />
+    <Content Include="Content\images\FB\wallpaper\wallpaper1.jpg" />
+    <Content Include="Content\images\FB\wallpaper\wallpaper10.jpg" />
+    <Content Include="Content\images\FB\wallpaper\wallpaper11.jpg" />
+    <Content Include="Content\images\FB\wallpaper\wallpaper12.jpg" />
+    <Content Include="Content\images\FB\wallpaper\wallpaper13.jpg" />
+    <Content Include="Content\images\FB\wallpaper\wallpaper14.jpg" />
+    <Content Include="Content\images\FB\wallpaper\wallpaper2.jpg" />
+    <Content Include="Content\images\FB\wallpaper\wallpaper3.jpg" />
+    <Content Include="Content\images\FB\wallpaper\wallpaper4.gif" />
+    <Content Include="Content\images\FB\wallpaper\wallpaper6.jpg" />
+    <Content Include="Content\images\FB\wallpaper\wallpaper7.jpg" />
+    <Content Include="Content\images\FB\wallpaper\wallpaper8.jpg" />
+    <Content Include="Content\images\FB\wallpaper\wallpaper9.jpg" />
     <Content Include="Content\images\FB\wc_wallpaper_brocade.jpg" />
     <Content Include="Content\images\FB\WP_BP1431_on_Mantle_M.jpg" />
     <Content Include="Content\images\FB\Фото 1815.jpg" />
@@ -322,9 +337,13 @@
     <Content Include="Content\images\LG\home_LG_3.jpg" />
     <Content Include="Content\images\LG\home_LG_4.jpg" />
     <Content Include="Content\images\LG\images\sample-pots.jpg" />
+    <Content Include="Content\images\LG\lg3.jpg" />
+    <Content Include="Content\images\LG\Little-Greene-secret-lid.jpg" />
+    <Content Include="Content\images\LG\little-greene.jpg" />
     <Content Include="Content\images\LG\logo_from_site.png" />
     <Content Include="Content\images\LG\logo_little_greene.png.jpg" />
     <Content Include="Content\images\LG\Order_a_colour_card.jpg" />
+    <Content Include="Content\images\LG\origcollrg.jpg" />
     <Content Include="Content\images\Manders_logo.png" />
     <Content Include="Content\images\Manders_logo_rus.bw.png" />
     <Content Include="Content\images\Manders_logo_rus.jpg" />
@@ -1282,7 +1301,7 @@
     <Content Include="Views\Shared\Products\part_LG\Little_Greene_a.cshtml" />
     <Content Include="Views\Shared\Products\part_LG\Little_Greene_baner.cshtml" />
     <Content Include="Views\Shared\Products\part_LG\Little_Greene_example.cshtml" />
-    <Content Include="Views\Shared\Products\part_LG\Little_Greene_p.cshtml" />
+    <Content Include="Views\Shared\Products\part_LG\paints_Little_Greene.cshtml" />
     <Content Include="Views\Shared\Products\part_LG\Little_Greene_part.cshtml" />
     <Content Include="Views\Shared\Products\part_LG\Little_Greene_part_p.cshtml" />
     <Content Include="Views\Shared\Products\part_LG\Little_Greene_part_w.cshtml" />
@@ -1378,12 +1397,13 @@
     <None Include="Properties\PublishProfiles\localhost.pubxml" />
     <None Include="Properties\PublishProfiles\new.manders.pubxml" />
     <Content Include="Views\Products\Farrow_and_Ball.cshtml" />
-    <Content Include="Views\Shared\Products\part_LG\Lettle_Greene.cshtml" />
+    <Content Include="Views\Shared\Products\part_LG\Little_Greene.cshtml" />
     <Content Include="Views\Shared\Products\part_FB\Farrow_and_Ball.cshtml" />
     <Content Include="Views\Shared\Products\part_WH\William_Howard_prod.cshtml" />
     <Content Include="Views\Shared\_LayoutFB.cshtml" />
     <Content Include="Views\Shared\Products\part_FB\paints_Farrow_and_ball.cshtml" />
     <Content Include="Views\Shared\Products\part_FB\wallpapers_Farrow_and_ball.cshtml" />
+    <Content Include="Views\Products\Little_Greene.cshtml" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

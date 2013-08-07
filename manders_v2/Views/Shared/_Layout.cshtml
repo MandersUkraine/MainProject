@@ -38,20 +38,19 @@
             width: auto; /*указываем ширину*/
         }
 
-       a.fl  {
-                color: #333333;
-                text-transform: uppercase;
-                font-weight: bold;
-                margin: 0 !important;
-               
-            }
-        p.fl  {
-                color: #333333;
-                text-transform: uppercase;
-                font-weight: bold;
-                margin: 0 !important;
-               
-            }
+        a.fl {
+            color: #333333;
+            text-transform: uppercase;
+            font-weight: bold;
+            margin: 0 !important;
+        }
+
+        p.fl {
+            color: #333333;
+            text-transform: uppercase;
+            font-weight: bold;
+            margin: 0 !important;
+        }
 
         .fixed {
             position: fixed;
@@ -263,56 +262,56 @@
         }
 
 
-    @@media (max-width: 767px) {
+        @@media (max-width: 767px) {
 
-        .navbar-inner {
-            margin: -20px;
-        }
-
-        .carousel {
-            margin-left: -20px;
-            margin-right: -20px;
-        }
-
-            .carousel .container {
+            .navbar-inner {
+                margin: -20px;
             }
 
-            .carousel .item {
-                height: 300px;
+            .carousel {
+                margin-left: -20px;
+                margin-right: -20px;
             }
 
-            .carousel img {
-                height: 300px;
+                .carousel .container {
+                }
+
+                .carousel .item {
+                    height: 300px;
+                }
+
+                .carousel img {
+                    height: 300px;
+                }
+
+            .carousel-caption {
+                width: 65%;
+                padding: 0 70px;
+                margin-top: 100px;
             }
 
-        .carousel-caption {
-            width: 65%;
-            padding: 0 70px;
-            margin-top: 100px;
-        }
+                .carousel-caption h1 {
+                    font-size: 30px;
+                }
 
-            .carousel-caption h1 {
+                .carousel-caption .lead,
+                .carousel-caption .btn {
+                    font-size: 18px;
+                }
+
+            .marketing .span4 + .span4 {
+                margin-top: 40px;
+            }
+
+            .featurette-heading {
                 font-size: 30px;
             }
 
-            .carousel-caption .lead,
-            .carousel-caption .btn {
+            .featurette .lead {
                 font-size: 18px;
+                line-height: 1.5;
             }
-
-        .marketing .span4 + .span4 {
-            margin-top: 40px;
         }
-
-        .featurette-heading {
-            font-size: 30px;
-        }
-
-        .featurette .lead {
-            font-size: 18px;
-            line-height: 1.5;
-        }
-    }
 
         /*tooltips jQuery UI*/
         .ui-tooltip, .arrow:after {
@@ -416,7 +415,7 @@
                                     <li class="divider"></li>
                                     <li class="nav-header">Краски</li>
                                     <li><a href="@Url.Action("Farrow_and_Ball", "Products", new { id = "Products__part_FB__paints_Farrow_and_ball" })" title="Краски компании Farrow & Ball">Краски компании Farrow & Ball</a></li>
-                                    <li>@Html.ActionLink("Краски компании Little Greene", "Little_Greene_Paints", "Products")</li>
+                                    <li><a href="@Url.Action("Little_Greene", "Products", new { id = "Products__part_LG__paints_Little_Greene" })" title="Краски компании Little Greene">Краски компании Little Greene</a></li>
                                     <li class="divider"></li>
                                     <li class="nav-header">Обои</li>
                                      <li><a href="@Url.Action("Farrow_and_Ball", "Products", new { id = "Products__part_FB__wallpapers_Farrow_and_ball" })" title= "Обои компании Farrow & Ball">Обои компании Farrow & Ball</a></li>

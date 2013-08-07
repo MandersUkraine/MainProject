@@ -45,5 +45,10 @@ namespace manders_v2.Controllers
             return View((object) id);
         }
 
+        public ActionResult Little_Greene(string id)
+        {
+            return View((object) id);
+        }
+
     }
 }
