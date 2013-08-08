@@ -245,9 +245,11 @@
     <Content Include="Content\images\FB\exemple\100240.jpg" />
     <Content Include="Content\images\FB\exemple\102013.jpg" />
     <Content Include="Content\images\FB\exemple\inspiration-colour-colour-tips.jpg" />
+    <Content Include="Content\images\FB\FB_Heritage.jpg" />
     <Content Include="Content\images\FB\farrow-and-ball1-e1353714773692.jpg" />
     <Content Include="Content\images\FB\farrow_ball_logo.png" />
     <Content Include="Content\images\FB\fb_round_logo.gif" />
+    <Content Include="Content\images\FB\Gruntovki_i_pervichnyye_pokrytiya.jpg" />
     <Content Include="Content\images\FB\ImageHandler.jpg" />
     <Content Include="Content\images\FB\ImageHandler0.jpg" />
     <Content Include="Content\images\FB\ImageHandler1.jpg" />
@@ -263,6 +265,19 @@
     <Content Include="Content\images\FB\ImageHandler7.jpg" />
     <Content Include="Content\images\FB\ImageHandler8.jpg" />
     <Content Include="Content\images\FB\ImageHandler9.jpg" />
+    <Content Include="Content\images\FB\Interyernyye_kraski\Interyernyye_kraski_1.jpg" />
+    <Content Include="Content\images\FB\Interyernyye_kraski\Interyernyye_kraski_2.jpg" />
+    <Content Include="Content\images\FB\Interyernyye_kraski\Interyernyye_kraski_3.jpg" />
+    <Content Include="Content\images\FB\Interyernyye_kraski\Interyernyye_kraski_4.jpg" />
+    <Content Include="Content\images\FB\Kraski_dlya_vneshnikh_rabot\Kraski_dlya_vneshnikh_rabot_1.jpg" />
+    <Content Include="Content\images\FB\Kraski_dlya_vneshnikh_rabot\Kraski_dlya_vneshnikh_rabot_2.jpg" />
+    <Content Include="Content\images\FB\Kraski_dlya_vneshnikh_rabot\Kraski_dlya_vneshnikh_rabot_3.jpg" />
+    <Content Include="Content\images\FB\Kraski_dlya_vneshnikh_rabot\Kraski_dlya_vneshnikh_rabot_4.jpg" />
+    <Content Include="Content\images\FB\Kraski_dlya_vneshnikh_rabot\Kraski_dlya_vneshnikh_rabot_5.jpg" />
+    <Content Include="Content\images\FB\Kraski_dlya_vneshnikh_rabot\Kraski_dlya_vneshnikh_rabot_6.jpg" />
+    <Content Include="Content\images\FB\Kraski_dlya_vneshnikh_rabot\Kraski_dlya_vneshnikh_rabot_7.jpg" />
+    <Content Include="Content\images\FB\primenenie.JPG" />
+    <Content Include="Content\images\FB\primenenie2.JPG" />
     <Content Include="Content\images\FB\print_logo.gif" />
     <Content Include="Content\images\FB\PoizvMaster.png" />
     <Content Include="Content\images\FB\px_background.jpg" />
@@ -280,7 +295,12 @@
     <Content Include="Content\images\FB\slide_main\home_FB_2.jpg" />
     <Content Include="Content\images\FB\slide_main\home_FB_3.jpg" />
     <Content Include="Content\images\FB\slide_main\home_FB_4.jpg" />
+    <Content Include="Content\images\FB\Spetsialniye_otdelochnie_pokrytyya.jpg" />
     <Content Include="Content\images\FB\sprite-main.png" />
+    <Content Include="Content\images\FB\vi_delaete_vibor.jpg" />
+    <Content Include="Content\images\FB\Vnutrenniye_D_M\vnutrenniye_DM_1.jpg" />
+    <Content Include="Content\images\FB\Vnutrenniye_D_M\vnutrenniye_DM_2.jpg" />
+    <Content Include="Content\images\FB\Vnutrenniye_D_M\vnutrenniye_DM_3.jpg" />
     <Content Include="Content\images\FB\wallpaper\farrow_stand.jpg" />
     <Content Include="Content\images\FB\wallpaper\farrow_wallpaper.jpg" />
     <Content Include="Content\images\FB\wallpaper\wallpaper1.jpg" />
@@ -1263,9 +1283,6 @@
     <Content Include="Tools\FortAwesome\_config.yml" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Views\Shared\Копия _Layout.cshtml" />
-  </ItemGroup>
-  <ItemGroup>
     <Content Include="Views\Home\Advice.cshtml" />
   </ItemGroup>
   <ItemGroup>
@@ -1306,7 +1323,7 @@
     <Content Include="Views\Shared\Products\part_LG\Little_Greene_part_p.cshtml" />
     <Content Include="Views\Shared\Products\part_LG\Little_Greene_part_w.cshtml" />
     <Content Include="Views\Shared\Products\part_LG\Little_Greene_slide.cshtml" />
-    <Content Include="Views\Shared\Products\part_LG\Little_Greene_w.cshtml" />
+    <Content Include="Views\Shared\Products\part_LG\wallpapers_Little_Greene.cshtml" />
     <Content Include="Views\Shared\Products\part_LG\paint\Absolute_Matt_Emulsion_Paint.cshtml" />
     <Content Include="Views\Shared\Products\part_LG\paint\Acrylic_Gloss_Paint.cshtml" />
     <Content Include="Views\Shared\Products\part_LG\paint\Distemper.cshtml" />
@@ -1404,6 +1421,8 @@
     <Content Include="Views\Shared\Products\part_FB\paints_Farrow_and_ball.cshtml" />
     <Content Include="Views\Shared\Products\part_FB\wallpapers_Farrow_and_ball.cshtml" />
     <Content Include="Views\Products\Little_Greene.cshtml" />
+    <Content Include="Views\Shared\Products\part_FB\_table_of_FB_paints.cshtml" />
+    <Content Include="Views\Shared\_LayoutLG.cshtml" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

@@ -5,7 +5,7 @@
 
     <div class="featurette">
         <a href="@Url.Action("William_Howard", "Products")" title="William Howard	Плинтус, молдинги из МДФ">
-            <img class="featurette-image pull-left ui-corner-all" src="@Url.Content("~/Content/images/WH/WHowardrgb.jpg")" alt="William Howard" width=320px;/></a>
+            <img class="featurette-image pull-left ui-corner-all" src="@Url.Content("~/Content/images/WH/WHowardrgb.jpg")" alt="William Howard" width=320 /></a>
         <h2 class="featurette-heading">William Howard.<span class="muted">Плинтус, молдинги из МДФ.</span></h2>
         <p class="lead">W. Howard Limited является ведущей компанией по производству профилей из МДФ в Великобритании. Наша продукция включает плинтусы, архитравы, внутренние подоконники, дверные коробки и дверные наличники. Ассортимент состоит из более чем 200 наименований профилей различных размеров с прогрунтованным, фанерным или ламинированным покрытием. Хотя у нас есть широкий спектр готовой продукции, мы также можем изготовить изделие на заказ.</p>
         
@@ -19,12 +19,12 @@
             <img class="featurette-image pull-right" src="@Url.Content("~/Content/images/FB/print_logo.gif")">
         </a>*@
         <div class="FB featurette-image pull-right ui-corner-all">
-            <a href="@Url.Action("Farrow_and_Ball", "Products")" title="Brand Farrow & Ball"></a>
+            <a href="@Url.Action("Farrow_and_Ball", "Products")" title="Brand Farrow & Ball - кликните для перехода на страницу с описанием."></a>
         </div>
         <h2 class="featurette-heading">Farrow & Ball. <span class="muted">Краски, обои.</span></h2>
         <p class="lead">В компании Farrow & Ball мы чрезвычайно гордимся тем, что прилагаем максимум усилий к тому, что у нас получается лучше всего: производить не имеющие аналогов краски и обои, украшающие стены домов во всем мире. Наша специализация - внимание к деталям и исключительное качество. Мы строго контролируем каждую партию краски и обоев - как крупную, так и небольшую, - которая выходит из цеха нашего производства.</p>
         <div>
-            @Html.ActionLink("Компании Farrow & Ball на нашем сайте", "Farrow_and_Ball", "Products", null, new {@class="btn btn-large btn-primary", title="Описание компании Farrow & Ball" })
+            @Html.ActionLink("О Farrow & Ball на нашем сайте", "Farrow_and_Ball", "Products", null, new {@class="btn btn-large btn-primary", title="Описание компании Farrow & Ball" })
             <a href="@Url.Action("Farrow_and_Ball", "Products", new { id = "Products__part_FB__paints_Farrow_and_ball"})" class="btn btn-large btn-warning", title="Краски компании Farrow & Ball"">Краски компании Farrow & Ball</a>
             <a href="@Url.Action("Farrow_and_Ball", "Products", new { id = "Products__part_FB__wallpapers_Farrow_and_ball"})" class="btn btn-large btn-info", title="Обои компании Farrow & Ball"">Обои компании Farrow & Ball</a>
            
@@ -33,17 +33,21 @@
     </div>
 
     <hr class="featurette-divider">
-
     <div class="featurette">
-        <a href="@Url.Action("Little_Greene", "Products")" title="Brand Little Green">
-            <img class="featurette-image pull-left" src="@Url.Content("~/Content/images/LG/logo_from_site.png")"></a>
+    <a href="@Url.Action("Little_Greene", "Products")" title="Brand Little Green"><img class="featurette-image pull-left" src="@Url.Content("~/Content/images/LG/little-greene.jpg")" alt="Little Greene" width=320></a>
+    </div>
+    <div class="featurette">
+        
+        
         <h2 class="featurette-heading">Little Greene.<span class="muted">Краски и обои.</span></h2>
-        <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
-        <ul>
-            <li>@Html.ActionLink("Краски компании Little Greene", "Little_Greene_Paints", "Products")</li>
-            <li>@Html.ActionLink("Обои комапнии Little Greene", "Little_Greene_Wallpaper", "Products")</li>
-            <li>@Html.ActionLink("Каталог компании Little Greene", "Little_Greene_Catalog", "Products")</li>
-        </ul>
+        <p class="lead">Little Greene дарит Вам две палитры – Цвета Англии ‘The Colours of England’ и Цветные шкалы ‘Colour Scales’ – 164 красивых оттенков из наших архивов и архивов English Heritage.
+    Вместе обе палитры объединяют более 300 лет английского интерьерного декора и каждый цвет может рассказать свою историю – от шоколадного ‘Chocolate Colour’,
+    в который была выкрашена входная дверь Георга Фридриха Генделя до цвета ‘Invisible Green’ ландшафтного дизайнера Хамфри Рептона.</p>
+        <div>
+            @Html.ActionLink("Страница компании Little Greene на нашем сайте", "Little_Greene", "Products", null, new {@class="btn btn-large btn-primary", title="Описание компании Little Greene" })
+            <a href="@Url.Action("Little_Greene", "Products", new { id = "Products__part_LG__paints_Little_Greene"})" class="btn btn-large btn-warning", title="Краски компании Little Greene"">Краски компании Little Greene</a>
+            <a href="@Url.Action("Little_Greene", "Products", new { id = "Products__part_LG__wallpapers_Little_Greene"})" class="btn btn-large btn-info", title="Обои компании Little Greene"">Обои компании Little Greene</a>
+        </div>
     </div>
 
     <hr class="featurette-divider">

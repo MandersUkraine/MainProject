@@ -1,13 +1,13 @@
 ﻿@model string
 @{
-    Layout = "~/Views/Shared/_Layout.cshtml";
+    Layout = "~/Views/Shared/_LayoutLG.cshtml";
     ViewBag.Title = "Краска & Люкс обои Little Greene на manders.com.ua";
     var part = Model != null ? Model.Replace("__", "/") : "Products/part_LG/Little_Greene";
     
     
 }
 <div class="featurette">
-            <img class="featurette-image pull-right ui-corner-all" src="@Url.Content("~/Content/images/FB/fb_round_logo.gif")" />
+            <img class="featurette-image pull-right ui-corner-all" src="@Url.Content("~/Content/images/FB/little-greene.jpg")" />
 </div>
 <h2 class="featurette-heading">@ViewBag.Title</h2>
 
