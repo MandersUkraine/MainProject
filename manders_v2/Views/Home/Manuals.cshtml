@@ -1,5 +1,37 @@
 ﻿@{
-    ViewBag.Title = "Manuals";
+    ViewBag.Title = "Документация к продукции компании Manders";
+    Layout = Request.Params["part"] != null && Request.Params["part"] == "true" ? null : "~/Views/Shared/_Layout.cshtml";
 }
 
-<h2>Manuals</h2>
+<div class="ui-widget">
+    
+    <div id="hgroup" class="title ui-widget fbgnd ui-corner-all" style="text-decoration:double; font-size:large; color:whitesmoke; width:auto; height: 30px; padding:15px; text-align:center; ">
+    <h2>@ViewBag.Title</h2>
+  
+</div>
+
+    <div class="ui-widget-content dv_pict ui-corner-all">@Html.Partial("Morris_and_Co_slide")</div>
+    <div class="ui-widget-content ui-corner-all">
+        <iframe class="scribd_iframe_embed" src="http://www.scribd.com/embeds/114001909/content?start_page=1&view_mode=slideshow&access_key=key-2im8a2p6s1ivxkae6i9f" data-auto-height="true" data-aspect-ratio="0.778625954198473" scrolling="no" id="doc_59384" width="100%" height="600" frameborder="0"></iframe><script type="text/javascript">(function () { var scribd = document.createElement("script"); scribd.type = "text/javascript"; scribd.async = true; scribd.src = "http://www.scribd.com/javascripts/embed_code/inject.js"; var s = document.getElementsByTagName("script")[0]; s.parentNode.insertBefore(scribd, s); })();</script>
+        <iframe class="scribd_iframe_embed" src="http://www.scribd.com/embeds/114001070/content?start_page=1&view_mode=slideshow&access_key=key-nm0fxhlwiuuazjqz1b" data-auto-height="true" data-aspect-ratio="0.778625954198473" scrolling="no" id="doc_71373" width="100%" height="600" frameborder="0"></iframe>
+        <iframe class="scribd_iframe_embed" src="http://www.scribd.com/embeds/114018875/content?start_page=1&view_mode=scroll&access_key=key-fpah5yh2w1u10okce82" data-auto-height="true" data-aspect-ratio="1.41666666666667" scrolling="no" id="doc_71501" width="100%" height="600" frameborder="0"></iframe>
+        <ul style="float: none; display:none;">
+            <li><a href=@Url.Content("~/Content/images/MC/pdf/Morris_Archive_Collections.pdf") >
+                <img src=@Url.Content("~/Content/images/MC/pdf/Morris_Archive_Collections.jpg") />Morris Archive Collections</a></li>
+            <li><a href=@Url.Content("~/Content/images/MC/pdf/Morris_V.pdf") >
+                <img src=@Url.Content("~/Content/images/MC/pdf/Morris_V.jpg") />Morris V</a></li>
+        </ul>
+        <ul style="float: right; display:none;">
+            <li><a href=@Url.Content("~/Content/images/MC/pdf/MorrisIV.pdf") >
+                <img src=@Url.Content("~/Content/images/MC/pdf/MorrisIV.jpg") />Morris IV</a></li>
+            <li><a href=@Url.Content("~/Content/images/MC/pdf/Pimpernel.pdf") >
+                <img src=@Url.Content("~/Content/images/MC/pdf/Pimpernel.jpg") />Pimpernel</a></li>
+
+        </ul>
+
+    </div>
+
+
+
+
+</div>

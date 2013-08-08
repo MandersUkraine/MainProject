@@ -1,5 +1,52 @@
 ﻿@{
     ViewBag.Title = "Gallery";
 }
+ <script>
+$(function() {
+$( "#gallery" ).tabs();
+});
+</script>
+<style type="text/css">
+    .imgThumb {
+    width:200px;
+    height:150px;
+    }
+    .imgDesc {
+    
+    }
 
-<h2>Gallery</h2>
+</style>
+<div class="ui-widget">
+    <div id="hgroup" class=" title fbgnd ui-corner-bottom" style="text-decoration: double; font-size: large; color: whitesmoke; width: auto; height: 30px; padding: 15px; text-align: center;">
+        <h2>@ViewBag.Title - @ViewBag.Message</h2>
+    </div>
+
+
+
+
+    <div id="gallery">
+         <ul>
+<li><a href="#tabs-1">Галерея фотографий посвящена выставке KyivBuild 2013</a></li>
+<li><a href="#tabs-2">Галерея фоторгафий о нашем магазине</a></li>
+
+</ul>
+         <div id="tabs-1">
+             <a href="https://plus.google.com/photos/107319582490778560735/albums/5851877458247026993" title="Выставки 2013 на Google+">Альбом Выставка KyivBuild 2013.</a>
+            <img class="imgThumb" src="@Url.Content("~/Images/photo/gallery_exhibition/ge_hr/P1000583-hr.jpg")" />
+                       
+            <div class="imgDesc">Присмотритесь к качеству товара.</div>
+
+            <img class="imgThumb" src="@Url.Content("~/Images/photo/gallery_exhibition/ge_hr/P1000586-hr.jpg")"/>
+           
+            <div class="imgDesc">Ознакомтесь с нашими предложениями.</div>
+
+            <a class="imgThumb" href="@Url.Content("~/Images/photo/gallery_exhibition/ge_lr/P1000587-lr.jpg")"></a>
+            <a class="imgFull" href="@Url.Content("~/Images/photo/gallery_exhibition/ge_hr/P1000587-hr.jpg")"></a>
+            <div class="imgDesc">Manders</div>
+</div>
+<div id="tabs-2">
+<a href="https://plus.google.com/photos/107319582490778560735/albums/5851888698281655713" title="О нашем магазине в фотографиях. На Google+">Альбом фотографий нашего магазина.</a>
+</div>
+
+           </div>
+    </div>

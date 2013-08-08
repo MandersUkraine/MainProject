@@ -1,5 +1,75 @@
 ﻿@{
-    ViewBag.Title = "News";
+    ViewBag.Title = "Новости, Обзоры, Видео, Документация";
+    
+Layout = Request.Params["part"] != null && Request.Params["part"] == "true" ? null : @Url.Content("~/Views/Shared/_Layout.cshtml");
+ //Request.Params["part"] = "true";  
 }
+<style type="text/css"> 
 
-<h2>News</h2>
+.nov&m h1
+{
+    color: Silver;
+    font-weight:normal;
+}
+.nov&m a h2 
+{
+    text-decoration:none;
+    font-weight:bold;
+    color:Blue;
+    margin: 5px;
+    }
+
+</style>
+<div id="hgroup" class=" title fbgnd" style="text-decoration: double;
+        font-size: large; color: whitesmoke; width: auto; height: 30px; padding: 15px;
+        text-align: center;">
+    <h2>@ViewBag.Title</h2>
+  
+</div>
+
+<div class="ui-widget" style="width: 960px; height: auto;">
+    
+    <div class="ui-widget-content">
+         
+        <div id="NOV&M" style="padding:5px">
+           
+        </div>
+        <div id="NOV&M_baner_news" style="margin:auto 30px auto 30px "></div>
+          <div class="ui-widget-content" style="padding: 7px; border-style: none;">
+          <div><h2>Новости</h2>
+              <div>
+              </div>
+          <div>
+          <p>Legends of La Cienega Celebrate Hollywood with Farrow & Ball</p>
+          <iframe width="640" height="360" src="http://www.youtube.com/embed/F9bVRXOznco?rel=0" frameborder="0" allowfullscreen></iframe>
+          </div>
+          <p>Сделаны координальные изменения в работе сайта. Скоро обновится база и Вы увидите новые товары и новый контет.</p>
+          <p>Изменен раздел @Html.ActionLink("Ассортимент компании Мандерс", "Index", "Home", null, new { title = "Новое в меню Ассортимент" }) и новые описания в подразделах меню.</p>
+          <p>Добавлены новые видеоклипы. Смотрите в разделе @Html.ActionLink("Видео материалы", "Video", "Home", null, new { title = "Видео материалы о наших товарах."}) </p>
+          <p>Добавлены новые описания в разделе @Html.ActionLink("W. Howard Limited", "William_Howard", "Products", null , new {title="W. Howard Limited"})</p>
+          
+          </div>
+          <div><h2 style="margin: 3px;">Обзоры</h2></div>
+          <div><h2 style="margin: 3px;">@Html.ActionLink("Видео материалы", "Video", "Home", null, new { title = "Видео материалы о наших товарах."})</h2>
+          <iframe width="640" height="360" src="http://www.youtube.com/embed/klQr0oaJZIg?rel=0" frameborder="0" allowfullscreen></iframe>
+
+          </div>
+          
+          </div>
+
+        <div class="ui-helper-clearfix"><h2 style="margin: 3px;">@Html.ActionLink("Документация, каталоги и многое другое.", "Manuals", "Home", null, new { title = "Документация, каталоги и многое другое." })</h2>
+            <div id="WH" class="dv_pict"> @Html.Partial("part_WH/William_Howard")</div>
+        <div id="LG" class="dv_pict "> @Html.Partial("part_LG/Little_Greene")</div>
+        <div id="FB" class=" dv_pict "> @Html.Partial("part_FB/FARROW_and_BALL")</div>
+        <div id="SN" class=" dv_pict"> @Html.Partial("Sanderson")</div>
+        <div id="MC" class=" dv_pict"> @Html.Partial("Morris_and_Co")</div>
+        <div id="ZF" class=" dv_pict">@Html.Partial("Zoffany")</div>
+        <div id="CS" class=" dv_pict ">@Html.Partial("part_CS/Сole_and_Son")</div>
+        <div id="SF" class=" dv_pict ">@Html.Partial("Swaffer")</div>
+
+          </div>
+
+    </div>
+    
+  
+</div>

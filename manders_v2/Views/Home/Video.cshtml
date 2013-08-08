@@ -1,5 +1,82 @@
 ﻿@{
-    ViewBag.Title = "Video";
+    ViewBag.Title = "Видео Manders-Мандерс";
+    Layout = Request.Params["part"] != null && Request.Params["part"] == "true" ? null : "~/Views/Shared/_Layout.cshtml";
 }
-
-<h2>Video</h2>
+<div class="ui-widget">
+    <div id="hgroup" class=" title fbgnd ui-corner-bottom" style="text-decoration: double;
+        font-size: large; color: whitesmoke; width: auto; height: 30px; padding: 15px;
+        text-align: center;">
+        <h2>@ViewBag.Message</h2>
+    </div>
+    <div class="ui-widget-content">
+        <div class="video_cont">
+            <div>
+                <iframe width="640" height="360" src="http://www.youtube.com/embed/F9bVRXOznco?rel=0"
+                    frameborder="0" allowfullscreen></iframe>
+            </div>
+            <div>
+                <p>
+                   Legends of La Cienega Celebrate Hollywood with Farrow & Ball 
+                </p>
+            </div>
+        </div>
+        <div class="video_cont"> 
+      <div>
+        <iframe width="640" height="360" src="http://www.youtube.com/embed/klQr0oaJZIg?rel=0" frameborder="0" allowfullscreen></iframe>
+      </div>
+      <div>
+      <p>Farrow & Ball - Wallpaper Factory </p>
+      </div>
+            
+     </div>
+        <div id="vid1">
+            <iframe src="http://player.vimeo.com/video/38436958?badge=0" width="500" height="281"
+                frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+            <p>
+                <a href="http://vimeo.com/38436958">Seasons project</a> from <a href="http://vimeo.com/valbond">
+                    Valeriy Bondarenko</a> on <a href="http://vimeo.com">Vimeo</a>.</p>
+        </div>
+        <div>
+            <div>
+                <p>
+                    Behind the Scenes at Little Greene - A Special Mix
+                </p>
+                <iframe width="640" height="360" src="http://www.youtube.com/embed/q4bYXBMhAko?rel=0"
+                    frameborder="0" allowfullscreen></iframe>
+            </div>
+        </div>
+        <div>
+            <div>
+                <p>
+                    Farrow & Ball - The Fable of the Front Door - Басня о входной двери
+                </p>
+            </div>
+            <iframe width="640" height="360" src="http://www.youtube.com/embed/GKqIxfFKFJk" frameborder="0"
+                allowfullscreen></iframe>
+        </div>
+        <div>
+            <div>
+                <p>
+                    Как клеить обои - How to hang wallpaper from - Farrow & Ball.</p>
+            </div>
+            <iframe width="640" height="360" src="http://www.youtube.com/embed/N_04PXJjwtE" frameborder="0"
+                allowfullscreen></iframe>
+        </div>
+        <div>
+            <div>
+                <p>
+                    Beautify A Drawer - Украсить ящики =)</p>
+            </div>
+            <iframe width="640" height="360" src="http://www.youtube.com/embed/6zsLg9hftgQ" frameborder="0"
+                allowfullscreen></iframe>
+        </div>
+        <div>
+            <div>
+                <p>
+                    Плинтус</p>
+            </div>
+            <iframe width="640" height="360" src="http://www.youtube.com/embed/ZIyD5BmcwF4" frameborder="0"
+                allowfullscreen></iframe>
+        </div>
+    </div>
+</div>
