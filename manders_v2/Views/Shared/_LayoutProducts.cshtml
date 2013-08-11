@@ -1,5 +1,4 @@
-﻿
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="ru">
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -467,7 +466,7 @@
                             <li>@Html.ActionLink("Контакт", "Contact", "Home")</li>
                             <!-- Read about Bootstrap dropdowns at http://twitter.github.com/bootstrap/javascript.html#dropdowns -->
 
-                            <li class="hidden-phone hidden-tablet" ><a href="@Url.Action("Contact", "Home")">+38 (044) 289-53-89</a></li>
+                            <li class="hidden-phone hidden-tablet" ><a href="@Url.Action("Contact", "Home")">+38 (044) 289-53-89 & 289-78-88, (067) 645-06-99 </a></li>
                         </ul>
                     </div>
                     <!--/.nav-collapse -->
@@ -485,53 +484,8 @@
 
     <!-- Carousel
     ================================================== -->
-    <div id="myCarousel" class="carousel slide">
-        <div class="carousel-inner">
-            <div class="item active">
-                <img src="@Url.Content("~/Tools/bootstrap-master/docs/assets/img/examples/slide-01.jpg")" alt="">
-                <div class="container">
-                    <div class="carousel-caption">
-                        <h1 class="featurette-heading">Профиль от лучшего производителя Англии.</h1>
-                        <p class="lead">W. Howard Limited является ведущей компанией по производству профилей из МДФ в Великобритании. Наша продукция включает плинтусы, архитравы, внутренние подоконники, дверные коробки и дверные наличники.</p>
-                        <a class="btn btn-large btn-primary" href="@Url.Action("William_Howard", "Products")" title="Ассортимент состоит из более чем 200 наименований профилей различных размеров с прогрунтованным, фанерным или ламинированным покрытием.">200 наименований различных размеров и покрытием.</a>
-                    </div>
-                </div>
-            </div>
-            <div class="item">
-                <img src="@Url.Content("~/Tools/bootstrap-master/docs/assets/img/examples/slide-01.jpg")" alt="">
-                <div class="container">
-                    <div class="carousel-caption">
-                        <h1 class="featurette-heading">Краски от ведущих производителей Англии.</h1>
-                        <p class="lead">Особенные достоинства английских красок – это  их удивительные цвета, которые так необходимы жителям крупных городов, чтобы добавить яркости и уюта в свою жизнь. У каких других производителей вы найдете такую потрясающею цветовую палитру?</p>
-                        <a class="btn btn-large btn-warning" href="@Url.Action("Paints", "Products")">Узнайте больше как украсить свой дом.</a>
-                    </div>
-                </div>
-            </div>
-            <div class="item">
-                <img src="@Url.Content("~/Tools/bootstrap-master/docs/assets/img/examples/slide-02.jpg")" alt="">
-                <div class="container">
-                    <div class="carousel-caption">
-                        <h1 class="featurette-heading">Обои от лучших произаодителей Англии.</h1>
-                        <p class="lead">В создании интерьера всегда особая роль отводится стенам. Самый распространенный способ отделки стен – покрытие нашими обоями. Их назвают предметом искусства. Их создают по эскизам знаменитых дизайнеров, художников, иногда – на заказ.</p>
-                        <a class="btn btn-large btn-info" href="@Url.Action("Wallpapers", "Products")">Хотите узнать больше?</a>
-                    </div>
-                </div>
-            </div>
-            <div class="item">
-                <img src="@Url.Content("~/Tools/bootstrap-master/docs/assets/img/examples/slide-03.jpg")" alt="">
-                <div class="container">
-                    <div class="carousel-caption">
-                        <h1 class="featurette-heading">Текстиль для Вашего дома.</h1>
-                        <p class="lead">Только от лучших производителей Англии. Украсить свои окна лучшим от лучших Sanderson, Morris & Co, Swaffer, Zoffany   　</p>
-                        <a class="btn btn-large btn-success" href="@Url.Action("Textile", "Products")">для Вас.</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <a class="left carousel-control" href="#myCarousel" data-slide="prev">&lsaquo;</a>
-        <a class="right carousel-control" href="#myCarousel" data-slide="next">&rsaquo;</a>
-    </div>
     
+    @RenderSection("carousel", false )
     <!-- /.carousel -->
 
 
@@ -541,8 +495,9 @@
     <!-- Wrap the rest of the page in another container to center all the content. -->
 
     <div class="container marketing">
-        
-        <div id="extruderBottom" class="{title:'Краски, обои, текстиль, плинтуса.'}"> @Html.Partial("Products/bootom_exl")</div>
+        <div id="extruderBottom" class="a {title:'Краски, обои, текстиль, плинтуса.'}">
+            @Html.Partial("Products/bootom_exl")
+        </div>
         
 
         @RenderBody()
@@ -617,92 +572,82 @@
             });
             $(".menuProduct").menu().removeClass("ui-widget-content");
 
-            $('#myTab a').click(function (e) {
-                e.preventDefault();
-                $(this).tab('show');
-            })
-
-
-            //$("#extruderTest").buildMbExtruder({
-            //    positionFixed: true,
-            //    width: 350,
-            //    sensibility: 800,
-            //    position: "bottom", // left, right, bottom
-            //    extruderOpacity: 1,
-            //    flapDim: 100,
-            //    textOrientation: "bt", // or "tb" (top-bottom or bottom-top)
-            //    onExtOpen: function () { },
-            //    onExtContentLoad: function () { },
-            //    onExtClose: function () { },
-            //    hidePanelsOnClose: true,
-            //    autoCloseTime: 0, // 0=never
-            //    slideTimer: 300
-            //});
 
 
 
-            $("#extruderBottom").buildMbExtruder({
+            $("#extruderTest").buildMbExtruder({
+                positionFixed: true,
+                width: 350,
+                sensibility: 800,
+                position: "left", // left, right, bottom
+                extruderOpacity: 1,
+                flapDim: 100,
+                textOrientation: "bt", // or "tb" (top-bottom or bottom-top)
+                onExtOpen: function () { },
+                onExtContentLoad: function () { },
+                onExtClose: function () { },
+                hidePanelsOnClose: true,
+                autoCloseTime: 0, // 0=never
+                slideTimer: 300
+            });
+
+
+
+            $("#extruderLeft").buildMbExtruder({
                 position: "bottom",
-                width: 500,
+                width: 300,
                 extruderOpacity: .8,
 
                 hidePanelsOnClose: false,
                 accordionPanels: false,
                 onExtOpen: function () { },
-                onExtContentLoad: function () { $("#extruderBottom").openPanel(); },
+                onExtContentLoad: function () { $("#extruderLeft").openPanel(); },
                 onExtClose: function () { }
             });
-            //$("#extruderLeft1").buildMbExtruder({
-            //    position: "left",
-            //    width: 300,
-            //    positionFixed: false,
-            //    top: 0,
-            //    extruderOpacity: .8,
-            //    onExtOpen: function () { },
-            //    onExtContentLoad: function () { },
-            //    onExtClose: function () { }
-            //});
-            //$("#extruderLeft2").buildMbExtruder({
-            //    position: "left",
-            //    width: 300,
-            //    positionFixed: false,
-            //    top: 0,
-            //    extruderOpacity: .8,
-            //    onExtOpen: function () { },
-            //    onExtContentLoad: function () { },
-            //    onExtClose: function () { }
-            //});
-            //$("#extruderLeft3").buildMbExtruder({
-            //    position: "left",
-            //    width: 300,
-            //    positionFixed: false,
-            //    top: 0,
-            //    extruderOpacity: .8,
-            //    onExtOpen: function () { },
-            //    onExtContentLoad: function () { },
-            //    onExtClose: function () { }
-            //});
-            //$("#extruderLeft4").buildMbExtruder({
-            //    position: "left",
-            //    width: 300,
-            //    positionFixed: false,
-            //    top: 0,
-            //    extruderOpacity: .8,
-            //    onExtOpen: function () { },
-            //    onExtContentLoad: function () { },
-            //    onExtClose: function () { }
-            //});
-            //$("#extruderBottom4").buildMbExtruder({
-            //    position: "bottom",
-            //    width: 300,
-            //    extruderOpacity: .8,
+            $("#extruderLeft1").buildMbExtruder({
+                position: "bottom",
+                width: 300,
+                extruderOpacity: .8,
 
-            //    hidePanelsOnClose: false,
-            //    accordionPanels: false,
-            //    onExtOpen: function () { },
-            //    onExtContentLoad: function () { $("#extruderLeft3").openPanel(); },
-            //    onExtClose: function () { }
-            //});
+                hidePanelsOnClose: false,
+                accordionPanels: false,
+                onExtOpen: function () { },
+                onExtContentLoad: function () { $("#extruderLeft1").openPanel(); },
+                onExtClose: function () { }
+            });
+            $("#extruderLeft2").buildMbExtruder({
+                position: "bottom",
+                width: 300,
+                extruderOpacity: .8,
+
+                hidePanelsOnClose: false,
+                accordionPanels: false,
+                onExtOpen: function () { },
+                onExtContentLoad: function () { $("#extruderLeft2").openPanel(); },
+                onExtClose: function () { }
+            });
+            $("#extruderLeft3").buildMbExtruder({
+                position: "bottom",
+                width: 300,
+                extruderOpacity: .8,
+
+                hidePanelsOnClose: false,
+                accordionPanels: false,
+                onExtOpen: function () { },
+                onExtContentLoad: function () { $("#extruderLeft3").openPanel(); },
+                onExtClose: function () { }
+            });
+            $("#extruderLeft4").buildMbExtruder({
+                position: "bottom",
+                width: 300,
+                extruderOpacity: .8,
+
+                hidePanelsOnClose: false,
+                accordionPanels: false,
+                onExtOpen: function () { },
+                onExtContentLoad: function () { $("#extruderLeft3").openPanel(); },
+                onExtClose: function () { }
+            });
 
 
 

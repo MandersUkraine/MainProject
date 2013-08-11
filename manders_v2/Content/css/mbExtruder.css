@@ -105,7 +105,7 @@
         margin-top: 1px;
         padding: 0 5px 5px 5px;
         height: 30px;
-        width: 180px;
+        width: 300px;
         background: #000;
         cursor: pointer;
         -moz-border-radius: 8px 8px 0 0;
@@ -274,12 +274,11 @@
         }
 
     .extruder .text {
-    background: #FFFFFF;
+    background: gold;
     font: 14px/16px Arial,Helvetica,sans-serif;
-    color: gray;
+    color: #333;
     padding: 10px;
-    border-bottom: 1px solid #333;
-    text-shadow: 2px 2px 2px #333;
+    
 }
 
     .extruder .voice.hover {

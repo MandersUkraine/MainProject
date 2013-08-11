@@ -154,7 +154,7 @@
             }
           })
         }else{
-          var container=$("<div>").addClass("text").css({width:extruder.get(0).options.width-20, height:extruder.height()-20, overflowY:"auto"});
+          var container=$("<div>").addClass("text").css({width:extruder.get(0).options.width-5, height:"auto", overflowY:"auto"});
           c.wrapInner(container);
           extruder.setExtruderVoicesAction();
         }
@@ -198,7 +198,7 @@
         if (isVertical){
           c.css({ height:"100%"});
           if(this.options.top=="auto") {
-            flap.css({top:250+(this.options.position=="left"?document.extruder.left:document.extruder.right)});
+            flap.css({top:100+(this.options.position=="left"?document.extruder.left:document.extruder.right)});
             this.options.position=="left"?document.extruder.left+=labelH+this.options.flapMargin:document.extruder.right+= labelH+this.options.flapMargin;
           }else{
             flap.css({top:this.options.top});

@@ -1,11 +1,60 @@
 ﻿@model string
 @{
+    Layout = "~/Views/Shared/_LayoutProducts.cshtml";
     
     ViewBag.Title = "William Howard - является ведущей компанией по производству профилей в Великобритании. Теперь представлена на Украине.";
     var part = Model != null ? Model.Replace ("__", "/") : "Products/part_WH/William_Howard_part";
 }
 @section script_section{
   
+    }
+@section carousel {
+    <div id="myCarousel" class="carousel slide">
+        <div class="carousel-inner">
+            <div class="item active">
+                <img src="@Url.Content("~/Content/images/WH/baner/homemasts_maindeck.jpg")" alt="">
+                <div class="container" style="display: none;">
+                    <div class="carousel-caption">
+                        <h1 class="featurette-heading">Профиль от лучшего производителя Англии.</h1>
+                        <p class="lead">W. Howard Limited является ведущей компанией по производству профилей из МДФ в Великобритании. Наша продукция включает плинтусы, архитравы, внутренние подоконники, дверные коробки и дверные наличники.</p>
+                        <a class="btn btn-large btn-primary" href="@Url.Action("William_Howard", "Products")" title="Ассортимент состоит из более чем 200 наименований профилей различных размеров с прогрунтованным, фанерным или ламинированным покрытием.">200 наименований различных размеров и покрытием.</a>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <img src="@Url.Content("~/Content/images/WH/baner/homemasts_polyco.jpg")" alt="">
+                <div class="container" style="display: none;">
+                    <div class="carousel-caption">
+                        <h1 class="featurette-heading">Краски от ведущих производителей Англии.</h1>
+                        <p class="lead">Особенные достоинства английских красок – это  их удивительные цвета, которые так необходимы жителям крупных городов, чтобы добавить яркости и уюта в свою жизнь. У каких других производителей вы найдете такую потрясающею цветовую палитру?</p>
+                        <a class="btn btn-large btn-warning" href="@Url.Action("Paints", "Products")">Узнайте больше как украсить свой дом.</a>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <img src="@Url.Content("~/Content/images/WH/baner/homemasts_primed.jpg")" alt="">
+                <div class="container" style="display: none;">
+                    <div class="carousel-caption">
+                        <h1 class="featurette-heading">Обои от лучших произаодителей Англии.</h1>
+                        <p class="lead">В создании интерьера всегда особая роль отводится стенам. Самый распространенный способ отделки стен – покрытие нашими обоями. Их назвают предметом искусства. Их создают по эскизам знаменитых дизайнеров, художников, иногда – на заказ.</p>
+                        <a class="btn btn-large btn-info" href="@Url.Action("Wallpapers", "Products")">Хотите узнать больше?</a>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <img src="@Url.Content("~/Content/images/WH/baner/homemasts_veneered.jpg")" alt="">
+                <div class="container" style="display: none;">
+                    <div class="carousel-caption">
+                        <h1 class="featurette-heading">Текстиль для Вашего дома.</h1>
+                        <p class="lead">Только от лучших производителей Англии. Украсить свои окна лучшим от лучших Sanderson, Morris & Co, Swaffer, Zoffany   　</p>
+                        <a class="btn btn-large btn-success" href="@Url.Action("Textile", "Products")">для Вас.</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a class="left carousel-control" href="#myCarousel" data-slide="prev">&lsaquo;</a>
+        <a class="right carousel-control" href="#myCarousel" data-slide="next">&rsaquo;</a>
+    </div>
     }
 
 <h2 class="featurette-heading">@ViewBag.Title</h2>

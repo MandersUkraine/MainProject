@@ -197,6 +197,22 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\css\mbExtruder.css" />
+    <Content Include="Content\elements\black_op_30.png" />
+    <Content Include="Content\elements\blue_op_75.png" />
+    <Content Include="Content\elements\extruder_bgnd.png" />
+    <Content Include="Content\elements\extruder_blank.png" />
+    <Content Include="Content\elements\extruder_bottom.png" />
+    <Content Include="Content\elements\extruder_flap.png" />
+    <Content Include="Content\elements\extruder_header_bgnd.png" />
+    <Content Include="Content\elements\extruder_left.png" />
+    <Content Include="Content\elements\extruder_left_flap.png" />
+    <Content Include="Content\elements\extruder_voice.png" />
+    <Content Include="Content\elements\extruder_voiceHover.png" />
+    <Content Include="Content\elements\fuzz.gif" />
+    <Content Include="Content\elements\optionsPanel.png" />
+    <Content Include="Content\elements\orange_op_75.png" />
+    <Content Include="Content\elements\red_op_50.png" />
+    <Content Include="Content\elements\settingsBtn.png" />
     <Content Include="Content\images\CS\96-2010.jpg" />
     <Content Include="Content\images\CS\96-6035.jpg" />
     <Content Include="Content\images\CS\Albemarle_www.png" />
@@ -1423,6 +1439,8 @@
     <Content Include="Views\Products\Little_Greene.cshtml" />
     <Content Include="Views\Shared\Products\part_FB\_table_of_FB_paints.cshtml" />
     <Content Include="Views\Shared\_LayoutLG.cshtml" />
+    <Content Include="Views\Shared\_LayoutProducts.cshtml" />
+    <None Include="Views\Shared\Products\bootom_exl.cshtml" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
