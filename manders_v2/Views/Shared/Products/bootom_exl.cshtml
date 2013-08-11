@@ -1,17 +1,28 @@
 ﻿<style>
     div.text {
-    text-shadow: 2px 2px 2px #808080;
+        text-shadow: 2px 2px 2px #808080;
     }
 </style>
 
 <div class="text">Краски, обои, текстиль и плинтуса для Вашего дома на нашем сайте</div>
-<div>@Html.ActionLink("Manders.com.ua", "Index", "Home", null, new {@class="label"})</div>
-<ul class="nav nav-tabs">
-<li>@Html.Partial("Products/paints_exl")</li>
-<li>@Html.Partial("Products/wallpaper_exl")</li>
-<li>@Html.Partial("Products/textile_exl")</li>
-<li>@Html.Partial("Products/plinth_exl")</li>
+<div>
+    <a class="" href="@Url.Action("Index", "Home")" title="@ViewBag.Title - Элитные обои, английские краски, английский плинтус: sanderson, william howard, farrow ball, little green | Manders">
+        <img class="brand_img ui-corner-all" src="~/Content/images/Manders_logo.png" />
+    </a>
+</div>
+    <hr><br/>
+<ul class="nav nav-tabs" id="myTabExt">
+    <li class="active"><a href="#paints_exl" data-toggle="tab" title="Краски Англии">Краски.</a></li>
+    <li><a href="#wallpaper_exl" data-toggle="tab" title="Английские Обои">Обои</a></li>
+    <li><a href="#textile_exl" data-toggle="tab" title="Текстиль из Англии">Текстиль</a></li>
+    <li><a href="#plinth_exl" data-toggle="tab" title="Профиля, плинтуса английчкой компании William Howard">Плинтуса</a></li>
 </ul>
 
+<div class="tab-content" style="width: 500px; height: 355px;">
+    <div class="tab-pane active" id="paints_exl">@Html.Partial("Products/paints_exl")</div>
+    <div class="tab-pane" id="wallpaper_exl">@Html.Partial("Products/wallpaper_exl")</div>
+    <div class="tab-pane" id="textile_exl">@Html.Partial("Products/textile_exl")</div>
+    <div class="tab-pane" id="plinth_exl">@Html.Partial("Products/plinth_exl")</div>
+</div>
 
 

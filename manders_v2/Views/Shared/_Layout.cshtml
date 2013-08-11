@@ -542,7 +542,7 @@
 
     <div class="container marketing">
         
-        <div id="extruderBottom" class="{title:'Краски, обои, текстиль, плинтуса.'}"> @Html.Partial("Products/bootom_exl")</div>
+        <div id="extruderBottom" class="{title:'Краски, обои, текстиль, плинтуса'}">@Html.Partial("Products/bootom_exl")</div>
         
 
         @RenderBody()
@@ -576,7 +576,7 @@
     <script src="@Url.Content("~/Tools/bootstrap-master/docs/assets/js/bootstrap-alert.js")"></script>
     <script src="@Url.Content("~/Tools/bootstrap-master/docs/assets/js/bootstrap-modal.js")"></script>
     <script src="@Url.Content("~/Tools/bootstrap-master/docs/assets/js/bootstrap-scrollspy.js")"></script>
-    <script src="@Url.Content("~/Tools/bootstrap-master/docs/assets/js/bootstrap-tab.js")"></script>
+    
     <script src="@Url.Content("~/Tools/bootstrap-master/docs/assets/js/bootstrap-tooltip.js")"></script>
     <script src="@Url.Content("~/Tools/bootstrap-master/docs/assets/js/bootstrap-popover.js")"></script>
     <script src="@Url.Content("~/Tools/bootstrap-master/docs/assets/js/bootstrap-button.js")"></script>
@@ -585,10 +585,10 @@
 
     <script src="@Url.Content("~/Tools/bootstrap-master/docs/assets/js/bootstrap-dropdown.js")"></script>
     <script src="@Url.Content("~/Tools/bootstrap-master/docs/assets/js/bootstrap-carousel.js")"></script>
+    <script src="@Url.Content("~/Tools/bootstrap-master/docs/assets/js/bootstrap-tab.js")"></script>
 
 
-
-    @RenderSection("script_section", required: false)
+    
     <script>
 
         $(function () {
@@ -617,10 +617,7 @@
             });
             $(".menuProduct").menu().removeClass("ui-widget-content");
 
-            $('#myTab a').click(function (e) {
-                e.preventDefault();
-                $(this).tab('show');
-            })
+           
 
 
             //$("#extruderTest").buildMbExtruder({
@@ -721,6 +718,7 @@
 
 
     </script>
+    @RenderSection("script_section", required: false)
     <script src="@Url.Content("~/Tools/bootstrap-master/docs/assets/js/holder/holder.js")"></script>
     @RenderSection("ScriptSection", required: false)
 </body>
