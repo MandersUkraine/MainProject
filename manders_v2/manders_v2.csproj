@@ -1427,6 +1427,7 @@
     <Content Include="Content\css\mbExtruder.less" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Properties\PublishProfiles\iis.pubxml" />
     <None Include="Properties\PublishProfiles\localhost.pubxml" />
     <None Include="Properties\PublishProfiles\new.manders.pubxml" />
     <Content Include="Views\Products\Farrow_and_Ball.cshtml" />
