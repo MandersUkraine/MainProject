@@ -378,6 +378,7 @@
     <Content Include="Content\images\LG\little-greene.jpg" />
     <Content Include="Content\images\LG\logo_from_site.png" />
     <Content Include="Content\images\LG\logo_little_greene.png.jpg" />
+    <Content Include="Content\images\LG\new_logo_little_greene.jpg" />
     <Content Include="Content\images\LG\Order_a_colour_card.jpg" />
     <Content Include="Content\images\LG\origcollrg.jpg" />
     <Content Include="Content\images\Manders_logo.png" />
@@ -414,6 +415,21 @@
     <Content Include="Content\images\Sanderson\baner\sabine-main-with-bed[0].jpg" />
     <Content Include="Content\images\Sanderson\baner\tournier-dps_lr-v2.jpg" />
     <Content Include="Content\images\Sanderson\baner\walcott-wallpaper-detail-dps_lr[0].jpg" />
+    <Content Include="Content\images\Sanderson\fabric\2[1].jpg" />
+    <Content Include="Content\images\Sanderson\fabric\3[1].jpg" />
+    <Content Include="Content\images\Sanderson\fabric\banner2-porcelaigardenspatternbookcover.jpg" />
+    <Content Include="Content\images\Sanderson\fabric\collectionbanners870x320px50slv.jpg" />
+    <Content Include="Content\images\Sanderson\fabric\collectionbanners870x320px50sprints2.jpg" />
+    <Content Include="Content\images\Sanderson\fabric\dancing-tulips-dps-v2_lr[0].jpg" />
+    <Content Include="Content\images\Sanderson\fabric\jubilee-square-bedroom[1].jpg" />
+    <Content Include="Content\images\Sanderson\fabric\kewmain_lr.jpg" />
+    <Content Include="Content\images\Sanderson\fabric\nc-vintage-1.jpg" />
+    <Content Include="Content\images\Sanderson\fabric\poppies-turquoise-lilac-dps-v2[0].jpg" />
+    <Content Include="Content\images\Sanderson\fabric\ranee-embroidery-bedroom-dps_lr[0].jpg" />
+    <Content Include="Content\images\Sanderson\fabric\sanderson-lymington-damask-landing-banners-1.jpg" />
+    <Content Include="Content\images\Sanderson\fabric\sanderson_bloomsbury-canvas-print_05[1].jpg" />
+    <Content Include="Content\images\Sanderson\fabric\tournier-dps_lr-v2[0].jpg" />
+    <Content Include="Content\images\Sanderson\fabric\varese-living-room-main[0].jpg" />
     <Content Include="Content\images\Sanderson\home\50s-wallpaper-thumb.jpg" />
     <Content Include="Content\images\Sanderson\home\Amari-WP_thumbnail.jpg" />
     <Content Include="Content\images\Sanderson\home\borocay-WP_thumbnail.jpg" />
@@ -440,6 +456,42 @@
     <Content Include="Content\images\Sanderson\ParchmentFlowers\Magnolia Embroidery DPFWMA102.jpg" />
     <Content Include="Content\images\Sanderson\ParchmentFlowers\Parchment Etchings &amp; Roses DPFWER106.jpg" />
     <Content Include="Content\images\Sanderson\ParchmentFlowers\Parchment%2520Flowers%2520WPaper%25201B.jpg" />
+    <Content Include="Content\images\Sanderson\wallpaper\1[2].jpg" />
+    <Content Include="Content\images\Sanderson\wallpaper\3[2].jpg" />
+    <Content Include="Content\images\Sanderson\wallpaper\angel-ferns-wallpaper-dps_lr-v2.jpg" />
+    <Content Include="Content\images\Sanderson\wallpaper\aspen-emerald-wallpaper-dps-v1[0].jpg" />
+    <Content Include="Content\images\Sanderson\wallpaper\banner1-porcelaigardenswallpapercover[0].jpg" />
+    <Content Include="Content\images\Sanderson\wallpaper\collectionbanners870x320px50smirowp1.jpg" />
+    <Content Include="Content\images\Sanderson\wallpaper\collections\50s-wallpaper-thumb.jpg" />
+    <Content Include="Content\images\Sanderson\wallpaper\collections\Amari-WP_thumbnail.jpg" />
+    <Content Include="Content\images\Sanderson\wallpaper\collections\borocay-WP_thumbnail.jpg" />
+    <Content Include="Content\images\Sanderson\wallpaper\collections\CFL_wallpapers_thumb.jpg" />
+    <Content Include="Content\images\Sanderson\wallpaper\collections\honfleur-WP_thumbnail.jpg" />
+    <Content Include="Content\images\Sanderson\wallpaper\collections\ione-WP_thumbnail.jpg" />
+    <Content Include="Content\images\Sanderson\wallpaper\collections\madison-wallpaper.jpg" />
+    <Content Include="Content\images\Sanderson\wallpaper\collections\maycott_wallpaper_thumb.jpg" />
+    <Content Include="Content\images\Sanderson\wallpaper\collections\options-10-WP_thumbnail.jpg" />
+    <Content Include="Content\images\Sanderson\wallpaper\collections\options9-WP_thumbnail.jpg" />
+    <Content Include="Content\images\Sanderson\wallpaper\collections\options_11_wp_thumb.jpg" />
+    <Content Include="Content\images\Sanderson\wallpaper\collections\painters-garden-WP_thumbnai.jpg" />
+    <Content Include="Content\images\Sanderson\wallpaper\collections\parchmentflowers-WP_thumbnail.jpg" />
+    <Content Include="Content\images\Sanderson\wallpaper\collections\pemberley-WP_thumbnail.jpg" />
+    <Content Include="Content\images\Sanderson\wallpaper\collections\pom-pom-WP_thumbnail.jpg" />
+    <Content Include="Content\images\Sanderson\wallpaper\collections\richmond_wallpaper_thumb.jpg" />
+    <Content Include="Content\images\Sanderson\wallpaper\collections\Sanderson_Bloomsbury-Wallpaper_02.jpg" />
+    <Content Include="Content\images\Sanderson\wallpaper\collections\toile wp_thumbnail.jpg" />
+    <Content Include="Content\images\Sanderson\wallpaper\collections\wp-vintage-thumb.jpg" />
+    <Content Include="Content\images\Sanderson\wallpaper\collections\wp_caverleyPaper_thumb2.jpg" />
+    <Content Include="Content\images\Sanderson\wallpaper\hadham-dps_lr[7].jpg" />
+    <Content Include="Content\images\Sanderson\wallpaper\lilacs-dps-3-v1.jpg" />
+    <Content Include="Content\images\Sanderson\wallpaper\maple-living-room-dps[2].jpg" />
+    <Content Include="Content\images\Sanderson\wallpaper\nc-vintage-2.jpg" />
+    <Content Include="Content\images\Sanderson\wallpaper\oleander-main_lr[3].jpg" />
+    <Content Include="Content\images\Sanderson\wallpaper\sanderson_bloomsbury_wallpaper_2[0].jpg" />
+    <Content Include="Content\images\Sanderson\wallpaper\sussex-downs-wallpaper-main[0].jpg" />
+    <Content Include="Content\images\Sanderson\wallpaper\varese-kantu-wp[0].jpg" />
+    <Content Include="Content\images\Sanderson\wallpaper\wallpaper-pg-4.jpg" />
+    <Content Include="Content\images\Sanderson\wallpaper\website_top-hanfleur.jpg" />
     <Content Include="Content\images\Swaffer\logo.gif" />
     <Content Include="Content\images\WH\baner\homemasts_maindeck.jpg" />
     <Content Include="Content\images\WH\baner\homemasts_maindeck.png" />
@@ -1111,6 +1163,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Content\images\Sanderson\fabric\collections\" />
     <Folder Include="Images\" />
     <Folder Include="Views\Shared\Products\part_CS\other\" />
     <Folder Include="Views\Shared\Products\part_CS\wallpaper\" />
@@ -1367,34 +1420,10 @@
     <Content Include="Views\Shared\Products\part_WH\William_Howard_part.cshtml" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Views\Shared\Products\Morris_and_Co_baner.cshtml" />
-    <Content Include="Views\Shared\Products\Morris_and_Co_part.cshtml" />
-    <Content Include="Views\Shared\Products\Morris_and_Co_partc.cshtml" />
-    <Content Include="Views\Shared\Products\Morris_and_Co_partt.cshtml" />
-    <Content Include="Views\Shared\Products\Morris_and_Co_partw.cshtml" />
-    <Content Include="Views\Shared\Products\Morris_and_Co_slide.cshtml" />
     <Content Include="Views\Shared\Products\paints_exl.cshtml" />
     <Content Include="Views\Shared\Products\plinth_exl.cshtml" />
-    <Content Include="Views\Shared\Products\SANDERSON_baner.cshtml" />
-    <Content Include="Views\Shared\Products\SANDERSON_example.cshtml" />
-    <Content Include="Views\Shared\Products\SANDERSON_part.cshtml" />
-    <Content Include="Views\Shared\Products\SANDERSON_partc.cshtml" />
-    <Content Include="Views\Shared\Products\SANDERSON_partt.cshtml" />
-    <Content Include="Views\Shared\Products\SANDERSON_partw.cshtml" />
-    <Content Include="Views\Shared\Products\SANDERSON_slide.cshtml" />
-    <Content Include="Views\Shared\Products\Swaffer_baner.cshtml" />
-    <Content Include="Views\Shared\Products\Swaffer_part.cshtml" />
-    <Content Include="Views\Shared\Products\Swaffer_slide.cshtml" />
     <Content Include="Views\Shared\Products\textile_exl.cshtml" />
     <Content Include="Views\Shared\Products\wallpaper_exl.cshtml" />
-    <Content Include="Views\Shared\Products\Zoffany_baner.cshtml" />
-    <Content Include="Views\Shared\Products\Zoffany_part.cshtml" />
-    <Content Include="Views\Shared\Products\Zoffany_partc.cshtml" />
-    <Content Include="Views\Shared\Products\Zoffany_partt.cshtml" />
-    <Content Include="Views\Shared\Products\Zoffany_partw.cshtml" />
-    <Content Include="Views\Shared\Products\Zoffany_slide.cshtml" />
-    <Content Include="Views\Shared\Products\_PartialIndex.cshtml" />
-    <Content Include="Views\Shared\Products\_Partialinfo.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\Shared\Products\_AllProducts.cshtml" />
@@ -1444,6 +1473,8 @@
     <Content Include="Views\Shared\Products\_bottom_etr.cshtml" />
     <Content Include="Views\Products\Sanderson.cshtml" />
     <Content Include="Views\Shared\Products\part_Sn\_Sanderson.cshtml" />
+    <Content Include="Views\Shared\Products\part_Sn\wallpaper_Sanderson.cshtml" />
+    <Content Include="Views\Shared\Products\part_Sn\fabric_Sanderson.cshtml" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

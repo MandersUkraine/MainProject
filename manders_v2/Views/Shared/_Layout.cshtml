@@ -34,7 +34,7 @@
 
     <link href="@Url.Content("~/Content/themes/smoothness/jquery-ui-1.10.3.custom.css")" rel="stylesheet" />
     <link href="@Url.Content("~/Content/css/mbExtruder.css")" rel="stylesheet" />
-    <link href="~/Content/Site.css" rel="stylesheet" />
+    <link href="@Url.Content("~/Content/Site.css")" rel="stylesheet" />
     <style>
         /* GLOBAL STYLES
     -------------------------------------------------- */
@@ -638,7 +638,7 @@
 
     @* <script src="@Url.Content("~/Tools/bootstrap-master/docs/assets/js/bootstrap-transition.js")"></script>
     <script src="@Url.Content("~/Tools/bootstrap-master/docs/assets/js/bootstrap-alert.js")"></script>
-    <script src="@Url.Content("~/Tools/bootstrap-master/docs/assets/js/bootstrap-modal.js")"></script>
+    
     <script src="@Url.Content("~/Tools/bootstrap-master/docs/assets/js/bootstrap-scrollspy.js")"></script>
     
     <script src="@Url.Content("~/Tools/bootstrap-master/docs/assets/js/bootstrap-tooltip.js")"></script>
@@ -650,7 +650,7 @@
     <script src="@Url.Content("~/Tools/bootstrap-master/docs/assets/js/bootstrap-dropdown.js")"></script>
     <script src="@Url.Content("~/Tools/bootstrap-master/docs/assets/js/bootstrap-carousel.js")"></script>
     <script src="@Url.Content("~/Tools/bootstrap-master/docs/assets/js/bootstrap-tab.js")"></script>
-
+    <script src="@Url.Content("~/Tools/bootstrap-master/docs/assets/js/bootstrap-modal.js")"></script>
 
     
     <script>
@@ -681,9 +681,7 @@
             });
             $(".menuProduct").menu().removeClass("ui-widget-content");
 
-           
-
-
+            
             //$("#extruderTest").buildMbExtruder({
             //    positionFixed: true,
             //    width: 350,

@@ -1,4 +1,7 @@
-﻿footer {
-
+﻿div.productbox {
+    padding: 5px 15px 10px 20px;
+    margin: 5px 10px 0 30px;
+    float: left;
+    width: 205px;
 }
 
