@@ -49,6 +49,10 @@ namespace manders_v2.Controllers
         {
             return View((object) id);
         }
+        public ActionResult Sanderson(string id)
+        {
+            return View((object)id);
+        }
 
     }
 }

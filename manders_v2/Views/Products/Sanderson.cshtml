@@ -1,0 +1,15 @@
+﻿@model string
+@{
+    @*Layout = "~/Views/Shared/_LayoutProducts.cshtml";*@
+    ViewBag.Title = "Обои и текстиль Люкс обои Little Greene на manders.com.ua";
+    var part = Model != null ? Model.Replace("__", "/") : "Products/part_Sn/_Sanderson";
+    
+    
+}
+<div class="featurette">
+            <img class="featurette-image pull-right ui-corner-all" src="@Url.Content("~/Content/images/Sanderson/logo_sanderson.gif")" style="background-color: #fffef2; padding: 10px;" />
+</div>
+<h2 class="featurette-heading">@ViewBag.Title</h2>
+
+
+@Html.Partial(part)

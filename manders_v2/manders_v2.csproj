@@ -1431,8 +1431,8 @@
     <None Include="Properties\PublishProfiles\localhost.pubxml" />
     <None Include="Properties\PublishProfiles\new.manders.pubxml" />
     <Content Include="Views\Products\Farrow_and_Ball.cshtml" />
-    <Content Include="Views\Shared\Products\part_LG\Little_Greene.cshtml" />
-    <Content Include="Views\Shared\Products\part_FB\Farrow_and_Ball.cshtml" />
+    <Content Include="Views\Shared\Products\part_LG\_Little_Greene.cshtml" />
+    <Content Include="Views\Shared\Products\part_FB\_Farrow_and_Ball.cshtml" />
     <Content Include="Views\Shared\Products\part_WH\William_Howard_prod.cshtml" />
     <Content Include="Views\Shared\_LayoutFB.cshtml" />
     <Content Include="Views\Shared\Products\part_FB\paints_Farrow_and_ball.cshtml" />
@@ -1441,7 +1441,9 @@
     <Content Include="Views\Shared\Products\part_FB\_table_of_FB_paints.cshtml" />
     <Content Include="Views\Shared\_LayoutLG.cshtml" />
     <Content Include="Views\Shared\_LayoutProducts.cshtml" />
-    <None Include="Views\Shared\Products\bootom_exl.cshtml" />
+    <Content Include="Views\Shared\Products\_bottom_etr.cshtml" />
+    <Content Include="Views\Products\Sanderson.cshtml" />
+    <Content Include="Views\Shared\Products\part_Sn\_Sanderson.cshtml" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

@@ -503,6 +503,17 @@
                 <img src="@Url.Content("~/Tools/bootstrap-master/docs/assets/img/examples/slide-01.jpg")" alt="">
                 <div class="container">
                     <div class="carousel-caption">
+                        <h1 class="featurette-heading">Краски, обои, лучший текстиль и профиля для декорирования Вашего уюта от лучших производителей Англии.</h1>
+                        <p class="lead">Компания Manders является едиственной которая предлагает лучший ассортимент декора из Великобритании.
+                             Наша продукция включает обои, краски, текстиль и конечно плинтуса и молдинги.</p>
+                        <a class="btn btn-large" href="@Url.Action("Index", "Home")" title="Ассортимент на столько обширен, что не поместился на нашем сайте. Цвета настолько необычны, что их невозможно повторить на мониторе.">Ассортимент который вместил наш сайт</a>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <img src="@Url.Content("~/Tools/bootstrap-master/docs/assets/img/examples/slide-01.jpg")" alt="">
+                <div class="container">
+                    <div class="carousel-caption">
                         <h1 class="featurette-heading">Профиль от лучшего производителя Англии.</h1>
                         <p class="lead">W. Howard Limited является ведущей компанией по производству профилей из МДФ в Великобритании. Наша продукция включает плинтусы, архитравы, внутренние подоконники, дверные коробки и дверные наличники.</p>
                         <a class="btn btn-large btn-primary" href="@Url.Action("William_Howard", "Products")" title="Ассортимент состоит из более чем 200 наименований профилей различных размеров с прогрунтованным, фанерным или ламинированным покрытием.">200 наименований различных размеров и покрытием.</a>
@@ -554,7 +565,7 @@
 
     <div class="container marketing">
         
-        <div id="extruderBottom" class="{title:'Краски, обои, текстиль, плинтуса'}">@Html.Partial("Products/bootom_exl")</div>
+        <div id="extruderBottom" class="{title:'Краски, обои, текстиль, плинтуса'}">@Html.Partial("Products/_bottom_etr")</div>
         
 
         @RenderBody()
