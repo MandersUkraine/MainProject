@@ -433,13 +433,13 @@
                                     <li class="nav-header">Обои</li>
                                      <li><a href="@Url.Action("Farrow_and_Ball", "Products", new { id = "Products__part_FB__wallpapers_Farrow_and_ball" })" title= "Обои компании Farrow & Ball">Обои компании Farrow & Ball</a></li>
                                     <li><a href="@Url.Action("Little_Greene", "Products", new { id = "Products__part_FB__wallpapers_Farrow_and_ball" })" title= "Обои комапнии Little Greene">Обои комапнии Little Greene</a></li>
-                                    <li>@Html.ActionLink("Обои компании Sanderson", "Sanderson_wallpaper", "Products")</li>
+                                    <li><a href="@Url.Action("Sanderson", "Products", new { id = "Products__part_Sn__wallpapers_Sanderson" })" title="Обои компании Sanderson">Обои компании Sanderson</a></li>
                                     <li>@Html.ActionLink("Обои компании Zoffany", "Zoffany_wallpaper", "Products")</li>
                                     <li>@Html.ActionLink("Обои компании Morris & Co", "Morris_and_Co_wallpaper", "Products")</li>
                                     <li>@Html.ActionLink("Обои компании Anne and Robert Swaffer", "Swaffer_wallpaper", "Products")</li>
                                     <li class="divider"></li>
                                     <li class="nav-header">Текстиль</li>
-                                    <li>@Html.ActionLink("Текстиль компании Sanderson", "Sanderson_textile", "Products")</li>
+                                    <li><a href="@Url.Action("Sanderson", "Products", new { id= "Products__part_Sn__fabric_Sanderson"})" title="Текстиль компании Sanderson">Текстиль компании Sanderson</a></li>
                                     <li>@Html.ActionLink("Текстиль компании Zoffany", "Zoffany_textile", "Products")</li>
                                     <li>@Html.ActionLink("Текстиль компании Morris & Co", "Morris_and_Co_textile", "Products")</li>
                                     <li>@Html.ActionLink("Текстиль компании Anne and Robert Swaffer", "Swaffer_textile", "Products")</li>
@@ -762,6 +762,15 @@
             //    onExtContentLoad: function () { $("#extruderLeft3").openPanel(); },
             //    onExtClose: function () { }
             //});
+
+            
+            $('#myCarousel_Sn_W').carousel({
+                interval:3000
+            })
+
+            $('#myCarousel_Sn_F').carousel({
+                interval:3000
+            })
 
 
 

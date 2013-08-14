@@ -2,6 +2,20 @@
     ViewBag.Title = "Видео Manders-Мандерс";
     Layout = Request.Params["part"] != null && Request.Params["part"] == "true" ? null : "~/Views/Shared/_Layout.cshtml";
 }
+
+
+ <hr class="featurette-divider">
+
+    <div class="featurette">
+                
+        <h2 class="featurette-heading">Sanderson <span class="muted">видео</span></h2>
+        
+        @Html.Partial("Products/part_Sn/video_Sanderson")
+    </div>
+
+
+
+
 <div class="ui-widget">
     <div id="hgroup" class=" title fbgnd ui-corner-bottom" style="text-decoration: double;
         font-size: large; color: whitesmoke; width: auto; height: 30px; padding: 15px;

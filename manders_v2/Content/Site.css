@@ -1,7 +1,19 @@
 ﻿div.productbox {
-    padding: 5px 15px 10px 20px;
-    margin: 5px 10px 0 30px;
+    padding: 15px;
+    margin: 20px;
     float: left;
     width: 205px;
+    height: 255px;
 }
 
+    div.productbox a {
+        text-align: center;
+        -webkit-text-shadow: 2px 2px 2px #808080;
+        text-shadow: 2px 2px 2px #808080;
+    }
+
+div.productvideo {
+    float: left;
+    padding: 15px;
+    margin: 5px;
+}

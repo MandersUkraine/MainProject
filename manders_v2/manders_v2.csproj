@@ -420,6 +420,49 @@
     <Content Include="Content\images\Sanderson\fabric\banner2-porcelaigardenspatternbookcover.jpg" />
     <Content Include="Content\images\Sanderson\fabric\collectionbanners870x320px50slv.jpg" />
     <Content Include="Content\images\Sanderson\fabric\collectionbanners870x320px50sprints2.jpg" />
+    <Content Include="Content\images\Sanderson\fabric\collections\50s-fabric-thumb.jpg" />
+    <Content Include="Content\images\Sanderson\fabric\collections\amari_thumbnail.jpg" />
+    <Content Include="Content\images\Sanderson\fabric\collections\borocay_thumbnail.jpg" />
+    <Content Include="Content\images\Sanderson\fabric\collections\brianza.jpg" />
+    <Content Include="Content\images\Sanderson\fabric\collections\ceres_thumbnail.jpg" />
+    <Content Include="Content\images\Sanderson\fabric\collections\CFL_fabric_thumb.jpg" />
+    <Content Include="Content\images\Sanderson\fabric\collections\Colours_thumbnail.jpg" />
+    <Content Include="Content\images\Sanderson\fabric\collections\country-stripes.jpg" />
+    <Content Include="Content\images\Sanderson\fabric\collections\fb-vintage-thumb.jpg" />
+    <Content Include="Content\images\Sanderson\fabric\collections\fb_caverleyweaves_thumb2.jpg" />
+    <Content Include="Content\images\Sanderson\fabric\collections\fb_coralie_thumb2.jpg" />
+    <Content Include="Content\images\Sanderson\fabric\collections\fb_countrylinen-thumb.jpg" />
+    <Content Include="Content\images\Sanderson\fabric\collections\fb_elyan_thumb.jpg" />
+    <Content Include="Content\images\Sanderson\fabric\collections\fb_highlands_thumb2.jpg" />
+    <Content Include="Content\images\Sanderson\fabric\collections\fb_maia_thumb.jpg" />
+    <Content Include="Content\images\Sanderson\fabric\collections\fb_mereville thumb.jpg" />
+    <Content Include="Content\images\Sanderson\fabric\collections\fb_musette_thumb2.jpg" />
+    <Content Include="Content\images\Sanderson\fabric\collections\fb_netherfield-thumb.jpg" />
+    <Content Include="Content\images\Sanderson\fabric\collections\fb_options 10 thumb.jpg" />
+    <Content Include="Content\images\Sanderson\fabric\collections\fb_orientalpoppy_thumb.jpg" />
+    <Content Include="Content\images\Sanderson\fabric\collections\fb_parchmentflowers_thumb.jpg" />
+    <Content Include="Content\images\Sanderson\fabric\collections\fb_pemberley-thumb.jpg" />
+    <Content Include="Content\images\Sanderson\fabric\collections\fb_pemberley-weaves-thumb.jpg" />
+    <Content Include="Content\images\Sanderson\fabric\collections\henley_thumbnail.jpg" />
+    <Content Include="Content\images\Sanderson\fabric\collections\ione_thumbnail.jpg" />
+    <Content Include="Content\images\Sanderson\fabric\collections\laszlo-velvets-thumb.jpg" />
+    <Content Include="Content\images\Sanderson\fabric\collections\lymington-damask-icon.jpg" />
+    <Content Include="Content\images\Sanderson\fabric\collections\madison-prints.jpg" />
+    <Content Include="Content\images\Sanderson\fabric\collections\marlborough_thumbnail.jpg" />
+    <Content Include="Content\images\Sanderson\fabric\collections\maycott_prints_thumb.jpg" />
+    <Content Include="Content\images\Sanderson\fabric\collections\Neutrals_thumbnail.jpg" />
+    <Content Include="Content\images\Sanderson\fabric\collections\options-10-embroideries_thu.jpg" />
+    <Content Include="Content\images\Sanderson\fabric\collections\options_11_embroideries_thumb.jpg" />
+    <Content Include="Content\images\Sanderson\fabric\collections\options_11_fabrics_thumb.jpg" />
+    <Content Include="Content\images\Sanderson\fabric\collections\painters garden_thumbnail.jpg" />
+    <Content Include="Content\images\Sanderson\fabric\collections\richmond_print_thumb.jpg" />
+    <Content Include="Content\images\Sanderson\fabric\collections\richmond_weave_thumb.jpg" />
+    <Content Include="Content\images\Sanderson\fabric\collections\samarkand_thumbnail.jpg" />
+    <Content Include="Content\images\Sanderson\fabric\collections\Sanderson_Bloomsbury-Embroideries_05.jpg" />
+    <Content Include="Content\images\Sanderson\fabric\collections\Sanderson_Bloomsbury-Prints_01.jpg" />
+    <Content Include="Content\images\Sanderson\fabric\collections\Sanderson_Bloomsbury-Velvets_03.jpg" />
+    <Content Include="Content\images\Sanderson\fabric\collections\Sanderson_Bloomsbury-Weaves_04.jpg" />
+    <Content Include="Content\images\Sanderson\fabric\collections\tamara_thumbnail.jpg" />
     <Content Include="Content\images\Sanderson\fabric\dancing-tulips-dps-v2_lr[0].jpg" />
     <Content Include="Content\images\Sanderson\fabric\jubilee-square-bedroom[1].jpg" />
     <Content Include="Content\images\Sanderson\fabric\kewmain_lr.jpg" />
@@ -1163,7 +1206,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Content\images\Sanderson\fabric\collections\" />
     <Folder Include="Images\" />
     <Folder Include="Views\Shared\Products\part_CS\other\" />
     <Folder Include="Views\Shared\Products\part_CS\wallpaper\" />
@@ -1473,8 +1515,9 @@
     <Content Include="Views\Shared\Products\_bottom_etr.cshtml" />
     <Content Include="Views\Products\Sanderson.cshtml" />
     <Content Include="Views\Shared\Products\part_Sn\_Sanderson.cshtml" />
-    <Content Include="Views\Shared\Products\part_Sn\wallpaper_Sanderson.cshtml" />
+    <Content Include="Views\Shared\Products\part_Sn\wallpapers_Sanderson.cshtml" />
     <Content Include="Views\Shared\Products\part_Sn\fabric_Sanderson.cshtml" />
+    <Content Include="Views\Shared\Products\part_Sn\video_Sanderson.cshtml" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
