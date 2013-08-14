@@ -5,10 +5,10 @@
 	<br>
 В наших шоу-румах вы можете приобрести краски для пола, стен и наружных работ английских фабрик: 
     <ul>
-        <li>@Html.ActionLink("Little Green", "Little_Greene_paints", "Products")</li>
-        <li>@Html.ActionLink("FARROW & BALL", "FARROW_AND_BALL_paints", "Products")</li>
+        <li><a href="@Url.Action("Farrow_and_Ball", "Products", new { id = "Products__part_FB__paints_Farrow_and_ball" })" title="Краски компании Farrow & Ball">Краски компании Farrow & Ball</a></li>
+        <li><a href="@Url.Action("Little_Greene", "Products", new { id = "Products__part_LG__paints_Little_Greene" })" title="Краски компании Little Greene">Краски компании Little Greene</a></li>
     </ul>
-@Html.ActionLink("Английские краски", "paints", "Products") это особая эстетика, отменное качество и широкое разнообразие по ассортименту. <br>
+@Html.ActionLink("Английские краски", "Paints", "Products") это особая эстетика, отменное качество и широкое разнообразие по ассортименту. <br>
 
 
 </div>

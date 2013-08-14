@@ -5,8 +5,11 @@
 	<br />
 <span lang="RU">В <span lang="EN">Manders <span lang="RU">Вы сможете найти огромный выбор высококачественного английского текстиля. 
     В наших магазинах Вы встретите такие бренды как
-        <span lang="EN">: @Html.ActionLink("Sanderson", "Sanderso_textile", "Products"), @Html.ActionLink("Morris & Co", "Morris_and_Co_textile","Products"), @Html.ActionLink("Swaffer", "Swafer_textile", "Products"), 
-            @Html.ActionLink("Zoffany", "Zoffany_textile", "Products").
+        <span lang="EN">: 
+            <a href="@Url.Action("Sanderson", "Products", new { id = "Products__part_Sn__fabric_Sanderson"})" class="btn btn-large btn-info", title="Текстиль от компании Sanderson">Текстиль от компании Sanderson</a>
+            <a href="@Url.Action("Morris_and_Co", "Products", new { id = "Products__part_MC__fabric_Morris_and_Co"})" class="btn btn-large btn-info", title="Текстиль от компании Morris & Co">Текстиль от компании Morris & Co</a>
+            <a href="@Url.Action("Swaffer", "Products", new { id = "Products__part_Sf__fabric_Swaffer"})" class="btn btn-large btn-info", title="Текстиль от компании Swaffer">Текстиль от компании Swaffer</a>
+            <a href="@Url.Action("Zoffany", "Products", new { id = "Products__part_Zf__fabric_Zoffany"})" class="btn btn-large btn-info", title="Текстиль от компании Zoffany">Текстиль от компании Zoffany</a>
 
         <span lang="RU">Поставка текстиля производится под заказ. Срок поставки составляет&nbsp;примерно 30&nbsp;календарных дней.
 

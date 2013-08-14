@@ -1,19 +1,14 @@
 ﻿<div class="text">
-    
-<h3>@Html.ActionLink("ОБОИ", "wallpaper", "Products")</h3>
-<br />
+
+    <h3>@Html.ActionLink("ОБОИ", "Wallpaper", "Products")</h3>
     <br />
-<span lang="RU">В магазине <span lang="en"> Manders представлены обои известных брендов
-<span lang="EN">: 
+    <br />
+    <span lang="RU">В магазине <span lang="en">Manders представлены обои известных брендов
+        <span lang="EN">: 
    
         <ul>
-            <li>@Html.ActionLink("Farrow & Ball", "FARROW_AND_BALL_wallpaper", "Products")</li>
-            <li>@Html.ActionLink("Little Greene", "Little_Greene_wallpaper", "Products")</li>
-            <li>@Html.ActionLink("Sanderson", "Sanderson_wallpaper", "Products")</li>
-            <li>@Html.ActionLink("Morris & Co", "Morris_and_Co_wallpaper", "Products")</li>
-            <li>@Html.ActionLink("Zoffany", "Zoffany_wallpaper", "Products")</li>
-            <li>@Html.ActionLink("Сole&Son", "Cole_and_Son_wallpaper", "Products")</li>
+            <li><a href="@Url.Action("Farrow_and_Ball", "Products", new { id = "Products__part_FB__wallpapers_Farrow_and_ball" })" title= "Обои компании Farrow & Ball">Обои компании Farrow & Ball</a></li>
+            <li><a href="@Url.Action("Little_Greene", "Products", new { id = "Products__part_FB__wallpapers_Farrow_and_ball" })" title= "Обои комапнии Little Greene">Обои комапнии Little Greene</a></li>
+            <li><a href="@Url.Action("Sanderson", "Products", new { id = "Products__part_Sn__wallpapers_Sanderson" })" title="Обои компании Sanderson">Обои компании Sanderson</a></li>
         </ul>
-    
-
-</div>			
+</div>

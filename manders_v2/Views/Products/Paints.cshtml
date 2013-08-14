@@ -2,4 +2,22 @@
     ViewBag.Title = "Paints";
 }
 
-<h2>Paints</h2>
+<h2 class="featurette-heading">Английские краски это особая эстетика, отменное качество и широкое разнообразие по ассортименту.</h2>
+
+<div>
+    <hr class="featurette-divider">
+    <a href="#Farrow_and_Ball_paints" class="btn btn-large btn-warning">Краски компании Farrow & Ball</a>
+    <a href="#Little_Greene_paints" class="btn btn-large btn-warning">Little Greene представляет на нашем сайте перечень красок.</a>
+    <hr class="featurette-divider">
+</div>
+<a name="Farrow_and_Ball_paints"></a>
+<div>
+    <h1 class="featurette-heading">Вас приветствует компания Farrow & Ball</h1>
+    <h2 class="featurette-heading, muted">Вдохновение...</h2>
+    @Html.Partial("Products/part_FB/paints_Farrow_and_Ball")
+</div>
+
+<a name="Little_Greene_paints"></a>
+<div>
+    @Html.Partial("Products/part_LG/paints_Little_Greene")
+</div>
