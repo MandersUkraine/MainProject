@@ -68,13 +68,10 @@
         <a href="@Url.Action("Zoffany", "Products")">
             <img class="featurette-image pull-left ui-corner-all" src="@Url.Content("~/Content/images/Zoffany/main-logo.gif")"></a>
         <h2 class="featurette-heading">Zoffany<span class="muted"> Обои в Вашем стиле и текстиль к ним.</span></h2>
-        <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
-        <ul>
-            <li>@Html.ActionLink("Текстиль компании Zoffany", "Zoffany_textile", "Products")</li>
-            <li>@Html.ActionLink("Обои компании Zoffany", "Zoffany_wallpaper", "Products")</li>
-            <li>@Html.ActionLink("Каталог компании Zoffany", "Zoffany_catalog", "Products")</li>
-
-        </ul>
+        <p class="lead">Английская компания ZOFFANY — королева классического и неоклассического стилей в обоях и текстиле. Источник вдохновения ее дизайнеров — огромная (свыше 3000 образцов) коллекция старинных тканей и обоев. И архив, и собственно бренд ZOFFANY обязаны своим созданием дизайнеру Хемфри Бойлу (Humphrey Boyle), который 20 лет назад взялся выполнить заказ по воссозданию обоев ручной печати, найденных в одном из старинных зданий в городе Лидс.</p>
+        <p class="lead">Поклонники ZOFFANY эпатажу предпочитают трогательную радость узнавания. Вот, например, характерный рисунок французского шелкового переплетения. Его, хоть и в адаптированном виде, несложно узнать на орнаменте Lys новой коллекции Town & Country.</p>
+        @Html.ActionLink("Текстиль компании Zoffany", "Zoffany", "Products", null, new {@class="btn btn-large btn-warning" })
+        @Html.ActionLink("Обои компании Zoffany", "Zoffany", "Products", null, new {@class="btn btn-large btn-info" })
     </div>
 
     <hr class="featurette-divider">

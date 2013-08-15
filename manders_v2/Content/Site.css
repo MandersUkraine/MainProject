@@ -6,11 +6,16 @@
     height: 255px;
 }
 
-    div.productbox a {
+div.productbox a {
         text-align: center;
         -webkit-text-shadow: 2px 2px 2px #808080;
         text-shadow: 2px 2px 2px #808080;
     }
+.productbox_Zf {
+width: 188px !important;
+margin: auto !important;
+height: auto !important;
+}
 
 div.productvideo {
     float: left;

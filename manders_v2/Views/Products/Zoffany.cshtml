@@ -1,0 +1,32 @@
+﻿@model string
+@{
+    @*Layout = "~/Views/Shared/_LayoutProducts.cshtml";*@
+    ViewBag.Title = "Zoffany обои и текстиль";
+    var part = Model != null ? Model.Replace("__", "/") : "Products/part_Zf/_Zoffany";
+    
+    
+}
+<div class="featurette">
+            <img class="featurette-image pull-right ui-corner-all" src="@Url.Content("~/Content/images/Zoffany/main-logo.gif")" />
+</div>
+<h2 class="featurette-heading">@ViewBag.Title</h2>
+
+<div id="myCarousel_Zf" class="carousel slide">
+    <div class="carousel-inner ui-corner-all">
+
+        <div class="active item">
+            <img src="~/Content/images/Zoffany/baner/homeb_Z_1.jpg" /></div>
+        <div class="item">
+            <img src="~/Content/images/Zoffany/baner/homeb_Z_2.jpg" /></div>
+        <div class="item">
+            <img src="~/Content/images/Zoffany/baner/homeb_Z_3.jpg" /></div>
+        
+
+    </div>
+
+    <a class="carousel-control left" href="#myCarousel_Zf" data-slide="prev">&lsaquo;</a>
+    <a class="carousel-control right" href="#myCarousel_Zf" data-slide="next">&rsaquo;</a>
+</div>
+
+
+@Html.Partial(part)

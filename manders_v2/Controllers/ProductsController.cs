@@ -53,6 +53,10 @@ namespace manders_v2.Controllers
         {
             return View((object)id);
         }
+        public ActionResult Zoffany(string id)
+        {
+            return View((object)id);
+        }
 
     }
 }
