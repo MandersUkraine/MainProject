@@ -50,10 +50,10 @@
     <hr class="featurette-divider">
 
     <div class="featurette">
-        <a href="@Url.Action("Sanderson", "Products")" title="Arthur Sanderson с 1860 по сегодня модные обои и изысканый текстиль">
+        <a href="@Url.Action("Sanderson", "Products")" title="Arthur Sanderson с 1860 по сегодня модные обои и изысканный текстиль">
             <img class="featurette-image pull-right ui-corner-all" src="@Url.Content("~/Content/images/Sanderson/logo_sanderson.gif")" style="background-color: #fffef2; padding: 10px;" /></a>
         <h2 class="featurette-heading">Обои компании Sanderson<span class="muted"> представлены в 20 разных коллекциях</span></h2>
-        <h2> Arthur Sanderson с 1860 по сегодня модные обои и изысканый текстиль</h2>
+        <h2> Arthur Sanderson с 1860 по сегодня модные обои и изысканный текстиль</h2>
         <p class="lead">Артур Сандерсон начал свой бизнес в 1860 году с импорта и продажи обоев. На протяжении всей своей долгой истории, Сандерсон продолжал выпускать обои, чтобы удовлетворить моду того времени. Сегодня ассортимент включает в себя смелые стилизованные цветочные мотивы, классический английский ситец, простые текстуры, которые напечатаны в Великобритании на современном оборудовании.</p>
         
             @Html.ActionLink("Описание продукции Sanderson", "Sanderson", "Products", null, new {@class="btn btn-large btn-primary", title="О компании Sanderson и ее продукции" })
@@ -70,22 +70,22 @@
         <h2 class="featurette-heading">Zoffany<span class="muted"> Обои в Вашем стиле и текстиль к ним.</span></h2>
         <p class="lead">Английская компания ZOFFANY — королева классического и неоклассического стилей в обоях и текстиле. Источник вдохновения ее дизайнеров — огромная (свыше 3000 образцов) коллекция старинных тканей и обоев. И архив, и собственно бренд ZOFFANY обязаны своим созданием дизайнеру Хемфри Бойлу (Humphrey Boyle), который 20 лет назад взялся выполнить заказ по воссозданию обоев ручной печати, найденных в одном из старинных зданий в городе Лидс.</p>
         <p class="lead">Поклонники ZOFFANY эпатажу предпочитают трогательную радость узнавания. Вот, например, характерный рисунок французского шелкового переплетения. Его, хоть и в адаптированном виде, несложно узнать на орнаменте Lys новой коллекции Town & Country.</p>
-        @Html.ActionLink("Текстиль компании Zoffany", "Zoffany", "Products", null, new {@class="btn btn-large btn-warning" })
-        @Html.ActionLink("Обои компании Zoffany", "Zoffany", "Products", null, new {@class="btn btn-large btn-info" })
+        @Html.ActionLink("Текстиль компании Zoffany", "Zoffany", "Products", null, new {@class="btn btn-large btn-warning", title="Текстиль компании Zoffany"  })
+        @Html.ActionLink("Обои компании Zoffany", "Zoffany", "Products", null, new {@class="btn btn-large btn-info", title="Обои компании Zoffany"  })
     </div>
 
     <hr class="featurette-divider">
 
     <div class="featurette">
         <a href="@Url.Action("Morris_and_Co", "Products")">
-            <img class="featurette-image pull-right ui-corner-all" src="@Url.Content("~/Content/images/MC/logo.jpg")"></a>
+            <img class="featurette-image pull-right ui-corner-all" src="@Url.Content("~/Content/images/MC/logo_MC_white.jpg")"></a>
         <h2 class="featurette-heading">Morris & Co<span class="muted"> Прекрасный текстиль и необычные обои.</span></h2>
-        <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
-        <ul>
-            <li>@Html.ActionLink("Текстиль компании Morris & Co", "Morris_and_Co_textile", "Products")</li>
-            <li>@Html.ActionLink("Обои компании Morris & Co", "Morris_and_Co_wallpaper", "Products")</li>
-            <li>@Html.ActionLink("Каталог компании Morris & Co", "Morris_and_Co_catalog", "Products")</li>
-        </ul>
+              @Html.Partial("Products/part_MC/_about_Morris_and_Co")    
+            
+            @Html.ActionLink("Текстиль компании Morris & Co", "Morris_and_Co", "Products", null, new {@class="btn btn-large btn-primary", title="Текстиль компании Morris & Co"  })
+            @Html.ActionLink("Обои компании Morris & Co", "Morris_and_Co", "Products", null, new {@class="btn btn-large btn-info", title="Обои компании Morris & Co"  })
+            @Html.ActionLink("Каталог компании Morris & Co", "Morris_and_Co", "Products", null, new {@class="btn btn-large btn-warning", title="Каталог компании Morris & Co"  })
+        
     </div>
 
     <hr class="featurette-divider">

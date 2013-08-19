@@ -381,6 +381,30 @@
     <Content Include="Content\images\LG\new_logo_little_greene.jpg" />
     <Content Include="Content\images\LG\Order_a_colour_card.jpg" />
     <Content Include="Content\images\LG\origcollrg.jpg" />
+    <Content Include="Content\images\LG\paints\LG_paints_1.jpg" />
+    <Content Include="Content\images\LG\paints\LG_paints_2.jpg" />
+    <Content Include="Content\images\LG\paints\LG_paints_3.jpg" />
+    <Content Include="Content\images\LG\paints\LG_paints_eco.jpg" />
+    <Content Include="Content\images\LG\paints\LG_paints_gruntovka.jpg" />
+    <Content Include="Content\images\LG\paints\LG_paints_gruntovka_2.jpg" />
+    <Content Include="Content\images\LG\paints\LG_paints_gruntovka_3.jpg" />
+    <Content Include="Content\images\LG\paints\LG_paints_kraski_izdeley_dereva.jpg" />
+    <Content Include="Content\images\LG\paints\LG_paints_kraski_izdeley_dereva_2.jpg" />
+    <Content Include="Content\images\LG\paints\LG_paints_kraski_izdeley_dereva_3.jpg" />
+    <Content Include="Content\images\LG\paints\LG_paints_kraski_kuhni_vannoj.jpg" />
+    <Content Include="Content\images\LG\paints\LG_paints_kraski_kuhni_vannoj_2.jpg" />
+    <Content Include="Content\images\LG\paints\LG_paints_kraski_kuhni_vannoj_3.jpg" />
+    <Content Include="Content\images\LG\paints\LG_paints_kraski_naruznih_robot.jpg" />
+    <Content Include="Content\images\LG\paints\LG_paints_kraski_naruznih_robot_2.jpg" />
+    <Content Include="Content\images\LG\paints\LG_paints_kraski_naruznih_robot_3.jpg" />
+    <Content Include="Content\images\LG\paints\LG_paints_kraski_sten_potolkov.jpg" />
+    <Content Include="Content\images\LG\paints\LG_paints_kraski_sten_potolkov_2.jpg" />
+    <Content Include="Content\images\LG\paints\LG_paints_kraski_sten_potolkov_3.jpg" />
+    <Content Include="Content\images\LG\paints\LG_paints_traditsionnie.jpg" />
+    <Content Include="Content\images\LG\paints\LG_paints_traditsionnie_2.jpg" />
+    <Content Include="Content\images\LG\paints\Main_about.jpg" />
+    <Content Include="Content\images\LG\paints\origcollrg.jpg" />
+    <Content Include="Content\images\LG\paints\Peinture1.jpg" />
     <Content Include="Content\images\Manders_logo.png" />
     <Content Include="Content\images\Manders_logo_rus.bw.png" />
     <Content Include="Content\images\Manders_logo_rus.jpg" />
@@ -395,6 +419,7 @@
     <Content Include="Content\images\MC\home_06.jpg" />
     <Content Include="Content\images\MC\home_07.jpg" />
     <Content Include="Content\images\MC\logo.jpg" />
+    <Content Include="Content\images\MC\logo_MC_white.jpg" />
     <Content Include="Content\images\MC\pdf\MorrisIV.jpg" />
     <Content Include="Content\images\MC\pdf\Morris_Archive_Collections.jpg" />
     <Content Include="Content\images\MC\pdf\Morris_V.jpg" />
@@ -1601,6 +1626,11 @@
     <Content Include="Views\Shared\Products\part_Zf\fabric_Zoffany.cshtml" />
     <Content Include="Views\Shared\Products\part_Zf\wallpapers_Zoffany.cshtml" />
     <Content Include="Views\Shared\Products\part_Zf\_about_Zoffany.cshtml" />
+    <Content Include="Views\Shared\Products\part_MC\_about_Morris_and_Co.cshtml" />
+    <Content Include="Views\Shared\Products\part_MC\_Morris_and_Co.cshtml" />
+    <Content Include="Views\Shared\Products\part_MC\wallpapers_Morris_and_Co.cshtml" />
+    <Content Include="Views\Shared\Products\part_MC\fabric_Morris_and_Co.cshtml" />
+    <Content Include="Views\Products\Morris_and_Co.cshtml" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

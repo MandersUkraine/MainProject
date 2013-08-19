@@ -10,7 +10,7 @@ namespace manders_v2.Controllers
     {
         public ActionResult Index()
         {
-            ViewBag.Message = "Элитные обои, изысканый текстиль, английские краски, качество в Украине";
+            ViewBag.Message = "Элитные обои, изысканный текстиль, английские краски, качество в Украине";
 
             return View();
         }

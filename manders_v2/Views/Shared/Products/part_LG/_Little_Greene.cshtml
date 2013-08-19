@@ -2,17 +2,23 @@
 
 
 
-<div style="margin: 5px;">
-    <iframe class="ui-corner-all" width="640" height="360" src="http://www.youtube.com/embed/1IsIZQlWS14?rel=0" frameborder="0" allowfullscreen></iframe>
+<div >
+    <iframe style="padding: 5px; background-color: #c7bdbd" class="ui-corner-all" width="640" height="360" src="http://www.youtube.com/embed/1IsIZQlWS14?rel=0" frameborder="0" allowfullscreen></iframe>
 </div>
+<hr class="featurette-divider">
 
-
+<div class="featurette">
+    <img class="featurette-image pull-left ui-corner-all" src="~/Content/images/LG/paints/LG_paints_1.jpg" />
+    <img class="featurette-image pull-left ui-corner-all" src="~/Content/images/LG/paints/LG_paints_2.jpg" />
+    <img class="featurette-image pull-left ui-corner-all" src="~/Content/images/LG/paints/LG_paints_3.jpg" />
+</div>
 <div >
     <ul class="menuProduct" style="width: 480px;">
-        <li><a class="btn ui-corner-all" href="#welcomeLG">Добро пожаловать в Little Greene</a></li>
-        <li><a class="btn ui-corner-all" href="#assistedLG">При содействии</a></li>
-        <li><a class="btn ui-corner-all" href="#environment">Есо – Окружающая среда</a></li>
+        <li><a class="btn ui-corner-all" href="#welcomeLG" title="Добро пожаловать в Little Greene">Добро пожаловать в Little Greene</a></li>
+        <li><a class="btn ui-corner-all" href="#assistedLG" title="При содействии">При содействии</a></li>
+        <li><a class="btn ui-corner-all" href="#environment" title="Есо – Окружающая среда">Есо – Окружающая среда</a></li>
     </ul>
+
     <a name="welcomeLG"></a>
     <hr class="featurette-divider">
     <h2 class="featurette-heading">Добро пожаловать в Little Greene</h2>   
@@ -42,8 +48,8 @@
 
      <a name="assistedLG"></a>
     <hr class="featurette-divider"> 
-    <div id="assistedLG">
-        <h2 class="font12">Little Greene при содействии</h2>
+    <div id="assistedLG" class="featurette lead">
+        <h2 class="featurette-heading">Little Greene при содействии</h2>
         <img class="div_img ui-corner-all" style="float:right; width: 400px;" src="@Url.Content("~/Content/images/LG/banner2.jpg")" alt="Little Greene при содействии" title="Little Greene при содействии" />
         <p>Ассоциация English Heritage существует, чтобы защитить и популяризировать захватывающую историческую среду Англии. Работая вместе с English Heritage, мы разработали палитру исторических цветов, охватывающих все ключевые периоды истории Англии от раннего георгианского периода до конца XX столетия.</p>
         <p>Некоторые цвета являются знаковыми, пришедшие через столетнее забвение, а некоторые являются вечными классическими. По сути, все эти полностью достоверные цвета наряду с современными цветами Little Greene создают палитру цветов Англии Colours of England, которые удобно выбрать и среди которых приятно жить. Исторические цвета в нашей палитре отмечены красными кружочками с буквой внутри.</p>
@@ -53,12 +59,13 @@
     </div>
      <a name="environment"></a>
     <hr class="featurette-divider"> 
-    <div id="environment" title="Окружающая среда">
-        <h3 class="font12">Окружающая среда </h3>
-        <img src="@Url.Content("~/Images/ECO-300x300.jpg")" class="div_img ui-corler-all" style="float: left; width: 150px;" />
+    <h3 class="featurette-heading">Окружающая среда </h3>
+    <div id="environment" title="Окружающая среда" class="featurette lead">
+        <img class="featurette-image pull-left ui-corner-all" src="~/Content/images/LG/paints/LG_paints_eco.jpg" />
+        
         <p>Экологически чистые краски и обои Little Greene являются также одними из самых качественных продуктов. Мы используем только лучшие натуральные, органические и безопасные синтетические красители, которые придают краске превосходную глубину цвета, высокую кроющую способность и длительный срок службы, особо ожидаемый от современных красок.</p>
         <br />
-        <ul>
+        <ul class="unstyled">
             <li>Водные краски, которые значительно превосходят все существующие требования по содержанию летучих органических соединений (ЛОС).</li>
             <li>Масляные краски, разработанные с использованием природных растительных масел.</li>
             <li>Лучшая кроющая способность способствует использованию меньшего количества ресурсов.</li>
@@ -71,9 +78,13 @@
         </p>
 
         <p>Все цвета Little Greene доступны в широком ассортименте экологически чистых водных и масляных красок в соответствии с таблицей.</p>
-        <p>= Экологически чистая водная краска</p>
-        <p>= Экологически чистая масляная краска (с пониженным содержанием ЛОС)</p>
+        <p>Экологически чистая водная краска</p>
+        <p>Экологически чистая масляная краска (с пониженным содержанием ЛОС)</p>
     </div>
 </div>
+<div >
 @Html.Partial("Products/part_LG/paints_Little_Greene")
+    </div>
+<div >
 @Html.Partial("Products/part_LG/wallpapers_Little_Greene")
+    </div>

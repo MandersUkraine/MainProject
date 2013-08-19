@@ -2,4 +2,33 @@
     ViewBag.Title = "Wallpapers";
 }
 
-<h2>Wallpapers</h2>
+<h2 class="featurette-heading">Английские обои это особая эстетика, отменное качество и широкое разнообразие по ассортименту.</h2>
+
+<div>
+    <hr class="featurette-divider">
+    <ul class="menuProduct">
+    <li><a href="#Farrow_and_Ball_wallpapers" class="btn btn-large">Обои компании Farrow & Ball</a></li><br />
+    <li><a href="#Little_Greene_wallpapers" class="btn btn-large">Little Greene представляет на нашем сайте коллекцию обоев.</a></li><br />
+    <li><a href="#Sanderson_wallpapers" class="btn btn-large">Обои компании Sanderson представлены в 20 разных коллекциях.</a></li><br />
+    @*<a href="#wallpapers" class="btn btn-large ">Little Greene представляет на нашем сайте коллекцию обоев.</a>
+    <a href="#wallpapers" class="btn btn-large ">Little Greene представляет на нашем сайте коллекцию обоев.</a>
+    <a href="#wallpapers" class="btn btn-large ">Little Greene представляет на нашем сайте коллекцию обоев.</a>*@
+    </ul>
+    <hr class="featurette-divider">
+</li>
+<a name="Farrow_and_Ball_wallpepers"></a>
+<div>
+    <h1 class="featurette-heading">Вас приветствует компания Farrow & Ball</h1>
+    <h2 class="featurette-heading, muted">Вдохновение...</h2>
+    @Html.Partial("Products/part_FB/wallpapers_Farrow_and_Ball")
+</div>
+
+<a name="Little_Greene_wallpapers"></a>
+<div>
+    @Html.Partial("Products/part_LG/wallpapers_Little_Greene")
+</div>
+
+<a name="Sanderson_wallpapers"></a>
+<div>
+    @Html.Partial("Products/part_Sn/wallpapers_Sanderson")
+</div>
