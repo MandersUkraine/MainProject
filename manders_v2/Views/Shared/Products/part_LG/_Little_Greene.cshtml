@@ -3,20 +3,41 @@
 
 
 <div >
-    <iframe style="padding: 5px; background-color: #c7bdbd" class="ui-corner-all" width="640" height="360" src="http://www.youtube.com/embed/1IsIZQlWS14?rel=0" frameborder="0" allowfullscreen></iframe>
+    <iframe style="padding: 5px; background-color: #c7bdbd" class="ui-corner-all" width="640" height="360" src="http://www.youtube.com/embed/1IsIZQlWS14?rel=0"></iframe>
 </div>
 <hr class="featurette-divider">
 
 <div class="featurette">
-    <img class="featurette-image pull-left ui-corner-all" src="~/Content/images/LG/paints/LG_paints_1.jpg" />
-    <img class="featurette-image pull-left ui-corner-all" src="~/Content/images/LG/paints/LG_paints_2.jpg" />
-    <img class="featurette-image pull-left ui-corner-all" src="~/Content/images/LG/paints/LG_paints_3.jpg" />
+    <img class="featurette-image pull-left ui-corner-all" src="~/Content/images/LG/paints/LG_paints_1.jpg" alt="Little Greene"/>
+    <img class="featurette-image pull-left ui-corner-all" src="~/Content/images/LG/paints/LG_paints_2.jpg" alt="Little Greene"/>
+    <img class="featurette-image pull-left ui-corner-all" src="~/Content/images/LG/paints/LG_paints_3.jpg" alt="Little Greene"/>
 </div>
+<a id="BackToMenu"></a>
 <div >
     <ul class="menuProduct" style="width: 480px;">
         <li><a class="btn ui-corner-all" href="#welcomeLG" title="Добро пожаловать в Little Greene">Добро пожаловать в Little Greene</a></li>
         <li><a class="btn ui-corner-all" href="#assistedLG" title="При содействии">При содействии</a></li>
         <li><a class="btn ui-corner-all" href="#environment" title="Есо – Окружающая среда">Есо – Окружающая среда</a></li>
+        <li><a class="btn ui-corner-all" href="#colors_check" title="Выбираем цвета">Выбираем цвета
+        </a></li>
+        <li><a class="btn ui-corner-all" href="#paint_for_ceiling_wall" title="Краски для стен и потолков ">Краски для стен и потолков 
+        </a></li>
+        <li><a class="btn ui-corner-all" href="#paint_for_kitchen_bathroom" title="Краски для кухни и ванной комнаты">Краски для кухни и ванной комнаты 
+        </a></li>
+        <li><a class="btn ui-corner-all" href="#paints_for_wood_products" title="Краски для изделий из дерева">Краски для изделий из дерева 
+        </a></li>
+        <li><a class="btn ui-corner-all" href="#paint_for_outdoor_use" title="Краски для наружных работ">Краски для наружных работ 
+        </a></li>
+        <li><a class="btn ui-corner-all" href="#traditional_paint" title="Традиционные краски  ">Традиционные краски  
+        </a></li>
+        <li><a class="btn ui-corner-all" href="#primers" title="Грунтовки">Грунтовки  
+        </a></li>
+        <li><a class="btn ui-corner-all" href="#smart_paint" title="и руководство по использованию ">«Умные краски» 
+        </a></li>
+         <li class="btn ui-corner-all"><a class="btn ui-corner-all" href="#wallpaper">Выбираем обои</a></li>
+           <li class="btn ui-corner-all"><a class="btn ui-corner-all" href="#wallpaperXVIII">Обои XVIII века</a></li>
+           <li class="btn ui-corner-all"><a class="btn ui-corner-all" href="#wallpaperXIX">Обои XIX века</a></li>
+           <li class="btn ui-corner-all"><a class="btn ui-corner-all" href="#wallpaperXX">Обои XX века</a></li>
     </ul>
 
     <a name="welcomeLG"></a>
@@ -26,7 +47,7 @@
         
         <img class="featurette-image  pull-left ui-corner-all" width="250" src="@Url.Content("~/Content/images/LG/images/sample-pots.jpg")"  alt="Добро пожаловать в Little Greene" title="Добро пожаловать в Little Greene" />
         <p>
-            Little Greene дарит Вам две палитры – Цвета Англии ‘The Colours of England’ и Цветные шкалы ‘Colour Scales’ – 164 красивых оттенков из наших архивов и архивов English Heritage.
+            Little Greene дарит Вам две палитры – Цвета Англии ‘The Colours of England’ и Шкала цвета ‘Colour Scales’ – 164 красивых оттенка из наших архивов и архивов English Heritage.
     Вместе обе палитры объединяют более 300 лет английского интерьерного декора и каждый цвет может рассказать свою историю – от шоколадного ‘Chocolate Colour’,
     в который была выкрашена входная дверь Георга Фридриха Генделя до цвета ‘Invisible Green’ ландшафтного дизайнера Хамфри Рептона.
         </p>
@@ -88,3 +109,6 @@
 <div >
 @Html.Partial("Products/part_LG/wallpapers_Little_Greene")
     </div>
+<div>
+    @Html.Partial("Products/part_LG/advice_Little_Greene")
+</div>

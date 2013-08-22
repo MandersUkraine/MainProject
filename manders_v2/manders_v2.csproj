@@ -402,9 +402,30 @@
     <Content Include="Content\images\LG\paints\LG_paints_kraski_sten_potolkov_3.jpg" />
     <Content Include="Content\images\LG\paints\LG_paints_traditsionnie.jpg" />
     <Content Include="Content\images\LG\paints\LG_paints_traditsionnie_2.jpg" />
+    <Content Include="Content\images\LG\paints\LG_paints_traditsionnie_3.jpg" />
     <Content Include="Content\images\LG\paints\Main_about.jpg" />
     <Content Include="Content\images\LG\paints\origcollrg.jpg" />
     <Content Include="Content\images\LG\paints\Peinture1.jpg" />
+    <Content Include="Content\images\LG\wallpaper\little-greene-broadwick-st-garden-2.jpg" />
+    <Content Include="Content\images\LG\wallpaper\little-greene-broadwick-st-garden.jpg" />
+    <Content Include="Content\images\LG\wallpaper\little-greene-great-ormond-street-parchment.jpg" />
+    <Content Include="Content\images\LG\wallpaper\little-greene-hampstead-ink.jpg" />
+    <Content Include="Content\images\LG\wallpaper\Tin_Wallpaper.jpg" />
+    <Content Include="Content\images\LG\wallpaper\XIX-1.jpg" />
+    <Content Include="Content\images\LG\wallpaper\XIX-2.jpg" />
+    <Content Include="Content\images\LG\wallpaper\XIX-3.jpg" />
+    <Content Include="Content\images\LG\wallpaper\XIX-4.jpg" />
+    <Content Include="Content\images\LG\wallpaper\XIX-5.jpg" />
+    <Content Include="Content\images\LG\wallpaper\XIX.jpg" />
+    <Content Include="Content\images\LG\wallpaper\XVIII-1.jpg" />
+    <Content Include="Content\images\LG\wallpaper\XVIII-2.jpg" />
+    <Content Include="Content\images\LG\wallpaper\XVIII-3.jpg" />
+    <Content Include="Content\images\LG\wallpaper\XVIII-4.jpg" />
+    <Content Include="Content\images\LG\wallpaper\XX-1.jpg" />
+    <Content Include="Content\images\LG\wallpaper\XX-2.jpg" />
+    <Content Include="Content\images\LG\wallpaper\XX-3.jpg" />
+    <Content Include="Content\images\LG\wallpaper\XX-4.jpg" />
+    <Content Include="Content\images\LG\wallpaper\XX.jpg" />
     <Content Include="Content\images\Manders_logo.png" />
     <Content Include="Content\images\Manders_logo_rus.bw.png" />
     <Content Include="Content\images\Manders_logo_rus.jpg" />
@@ -1631,6 +1652,7 @@
     <Content Include="Views\Shared\Products\part_MC\wallpapers_Morris_and_Co.cshtml" />
     <Content Include="Views\Shared\Products\part_MC\fabric_Morris_and_Co.cshtml" />
     <Content Include="Views\Products\Morris_and_Co.cshtml" />
+    <Content Include="Views\Shared\Products\part_LG\advice_Little_Greene.cshtml" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

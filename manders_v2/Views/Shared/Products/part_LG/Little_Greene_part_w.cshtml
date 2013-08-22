@@ -1,36 +1,7 @@
-﻿@{
-    ViewBag.Title = "Little Greene Обои";
-    
-}
-<script type="text/javascript">
-    var opt = {
-        autoOpen: true,
-        maxHeight: 500,
-        maxWidth: 900,
-        minHeight: 400,
-        minWidth: 800,
-        show: {
-            effect: "blind",
-            duration: 1000
-        },
-        hide: {
-            effect: "scale",
-            duration: 1000
-        }
-    };
-    $(function () {
-        $(".btn_open").click(function () {
-            $("#" + this.id.substr(2)).dialog(opt);
-
-        });
-
-
-    });
-</script>
-<div class="ui-widget-content ui-corner-all" style="padding: 5px; text-align: justify; display: none;">
-    <h2 style="padding-bottom: 5px;">
+﻿<div class="featurette">
+    <h2 class="featurette-heading">
         Предлагаемые коллекции обоев</h2>
-    <div>
+    <div class="lead">
         <p>
             Выберайте из коллекции обоев Little Greene.</p>
         <p>
@@ -41,14 +12,14 @@
             стиля, вполне сопоставим с духом ХХІ века.
         </p>
         
-        <div class="tab_of_coll">
+        <div class="table">
             <table border="0" cellpadding="0" cellspacing="0" width="100%">
                 <tbody>
                     <tr>
                         <td style="width: 25%">
                             <h5 title="London Wallpapers">
                                 London Wallpapers</h5>
-                            <a  href="@Url.Action("Little_Greene_wallpaper", "Products", new { partV = "part_LG/wallpaper/London_Wallpapers" })" id="b_london-wallpapers" title="London Wallpapers">
+                            <a role="button" class="btn" data-toggle="modal" role="button" class="btn" data-toggle="modal"  href="#london-wallpapers" title="London Wallpapers">
                                 <img src="http://www.littlegreene.eu/media/catalog/category/file_5a_1.jpg" alt="London Wallpapers"
                                     width="100">
                             </a>
@@ -56,7 +27,7 @@
                         <td style="width: 25%">
                             <h5 title="London Wallpapers II">
                                 London Wallpapers II</h5>
-                            <a href="@Url.Action("Little_Greene_wallpaper", "Products", new { partV = "part_LG/wallpaper/London_Wallpapers_II" })" id="b_london-wallpapers-ii" title="London Wallpapers II">
+                            <a role="button" class="btn" data-toggle="modal" href="#london-wallpapers-ii" title="London Wallpapers II">
                                 <img src="http://www.littlegreene.eu/media/catalog/category/file_109a_1.jpg" alt="London Wallpapers II"
                                     width="100" title="London Wallpapers II">
                             </a>
@@ -64,7 +35,7 @@
                         <td style="width: 25%">
                             <h5 title="Обои London III">
                                 Обои London III</h5>
-                            <a  href="@Url.Action("Little_Greene_wallpaper", "Products", new { partV = "part_LG/wallpaper/London_Wallpapers_III" })" id="b_london-wallpapers-iii" title="London Wallpapers III">
+                            <a role="button" class="btn" data-toggle="modal"  href="#London_Wallpapers_III" })" id="b_london-wallpapers-iii" title="London Wallpapers III">
                                 <img src="http://www.littlegreene.eu/media/catalog/category/lwpiii_icon.jpg" title="Обои London III"
                                     alt="London Wallpapers III" width="100">
                             </a>
@@ -72,7 +43,7 @@
                         <td style="width: 25%">
                             <h5 title="Oriental Wallpaper">
                                 Oriental Wallpaper</h5>
-                            <a href="@Url.Action("Little_Greene_wallpaper", "Products", new { partV = "part_LG/wallpaper/Oriental_Wallpaper" })" id="b_oriental-papers" title="Oriental Wallpaper">
+                            <a role="button" class="btn" data-toggle="modal" href="@Url.Action("Little_Greene", "Products", new { parts = "Products/part_LG/wallpaper/Oriental_Wallpaper" })" id="b_oriental-papers" title="Oriental Wallpaper">
                                 <img src="http://www.littlegreene.eu/media/catalog/category/file_13a_1.jpg" title="Oriental Wallpaper"
                                     alt="Oriental Wallpaper" width="100">
                             </a>
@@ -82,7 +53,7 @@
                         <td style="width: 25%">
                             <h5 title="1950s Wallpaper">
                                 1950s Wallpaper</h5>
-                           <a href="@Url.Action("Little_Greene_wallpaper", "Products", new { partV = "part_LG/wallpaper/1950s_Wallpaper" })" id="b_1950s-wallpaper" title="1950s Wallpaper">
+                           <a role="button" class="btn" data-toggle="modal" href="@Url.Action("Little_Greene", "Products", new { parts = "Products/part_LG/wallpaper/1950s_Wallpaper" })" id="b_1950s-wallpaper" title="1950s Wallpaper">
                                 <img src="http://www.littlegreene.eu/media/catalog/category/file_121a_1.jpg" title="1950s Wallpaper"
                                     alt="1950s Wallpaper" width="100">
                             </a>
@@ -107,23 +78,23 @@
         </div>
     </div>
     <div>
-        <div id="london-wallpapers" title="London Wallpapers" style="display: none;">
-            @Html.Partial("part_LG/wallpaper/London_Wallpapers")
+        <div class="modal" tabindex="-1" role="dialog" aria-labelledby="London Wallpapers" aria-hidden="true" id="london-wallpapers" title="London Wallpapers" style="display: none;">
+            @Html.Partial("Products/part_LG/wallpaper/London_Wallpapers")
         </div>
-        <div id="london-wallpapers-ii" title="London Wallpapers II" style="display: none;">
-            @Html.Partial("part_LG/wallpaper/London_Wallpapers_II")
+        <div class="modal" tabindex="-1" role="dialog" aria-labelledby="London Wallpapers II" aria-hidden="true" id="london-wallpapers-ii" title="London Wallpapers II" style="display: none;">
+            @Html.Partial("Products/part_LG/wallpaper/London_Wallpapers_II")
         </div>
-        <div id="london-wallpapers-iii" title="Обои London III" style="display: none;">
-            @Html.Partial("part_LG/wallpaper/London_Wallpapers_III")
+        <div class="modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" id="london-wallpapers-iii" title="Обои London III" style="display: none;">
+            @Html.Partial("Products/part_LG/wallpaper/London_Wallpapers_III")
         </div>
-        <div id="oriental-papers" title="Oriental Wallpaper" style="display: none;">
-            @Html.Partial("part_LG/wallpaper/Oriental_Wallpaper")
+        <div class="modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" id="oriental-papers" title="Oriental Wallpaper" style="display: none;">
+            @Html.Partial("Products/part_LG/wallpaper/Oriental_Wallpaper")
         </div>
-        <div id="1950s-wallpaper" title="1950s Wallpaper" style="display: none;">
-            @Html.Partial("part_LG/wallpaper/1950s_Wallpaper")
+        <div class="modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" id="1950s-wallpaper" title="1950s Wallpaper" style="display: none;">
+            @Html.Partial("Products/part_LG/wallpaper/1950s_Wallpaper")
         </div>
-        <div id="retrospective-papers" title="Retrospective Papers" style="display: none;">
-            @Html.Partial("part_LG/wallpaper/Retrospective_Papers")
+        <div class="modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" id="retrospective-papers" title="Retrospective Papers" style="display: none;">
+            @Html.Partial("Products/part_LG/wallpaper/Retrospective_Papers")
         </div>
     </div>
 </div>
