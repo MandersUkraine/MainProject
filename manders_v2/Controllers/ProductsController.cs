@@ -61,6 +61,10 @@ namespace manders_v2.Controllers
         {
             return View((object)id);
         }
+        public ActionResult Swaffer(string id)
+        {
+            return View((object)id);
+        }
 
     }
 }

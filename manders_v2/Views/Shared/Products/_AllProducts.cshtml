@@ -80,11 +80,11 @@
         <a href="@Url.Action("Morris_and_Co", "Products")">
             <img class="featurette-image pull-right ui-corner-all" src="@Url.Content("~/Content/images/MC/logo_MC_white.jpg")"></a>
         <h2 class="featurette-heading">Morris & Co<span class="muted"> Прекрасный текстиль и необычные обои.</span></h2>
-              @Html.Partial("Products/part_MC/_about_Morris_and_Co")    
+            @Html.Partial("Products/part_MC/_about_Morris_and_Co")    
             
-            @Html.ActionLink("Текстиль компании Morris & Co", "Morris_and_Co", "Products", null, new {@class="btn btn-large btn-primary", title="Текстиль компании Morris & Co"  })
+            @Html.ActionLink("О компании Morris & Co", "Morris_and_Co", "Products", null, new {@class="btn btn-large btn-primary", title="О компании Morris & Co"  })
             @Html.ActionLink("Обои компании Morris & Co", "Morris_and_Co", "Products", null, new {@class="btn btn-large btn-info", title="Обои компании Morris & Co"  })
-            @Html.ActionLink("Каталог компании Morris & Co", "Morris_and_Co", "Products", null, new {@class="btn btn-large btn-warning", title="Каталог компании Morris & Co"  })
+            @Html.ActionLink("Текстиль компании Morris & Co", "Morris_and_Co", "Products", null, new {@class="btn btn-large btn-warning", title="Текстиль компании Morris & Co"  })
         
     </div>
 
@@ -92,15 +92,13 @@
 
     <div class="featurette">
         <a href="@Url.Action("Swaffer", "Products")" title="Anne and Robert Swaffer	Ткани">
-            <img class="featurette-image pull-left ui-corner-all" src="@Url.Content("~/Content/images/Swaffer/logo.gif")" alt="Logo Swaffer"></a>
+            <img class="featurette-image pull-left ui-corner-all" src="@Url.Content("~/Content/images/Swaffer/logo.gif")" alt="Logo Swaffer" style="background-color: #fefef4; padding: 5px;" ></a>
         <h2 class="featurette-heading">Swaffer<span class="muted"> Обои и текстиль для Вашей души.</span></h2>
-        <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
-        <ul>
-            <li>@Html.ActionLink("Anne and Robert Swaffer", "Swaffer", "Products")</li>
-            <li>@Html.ActionLink("Текстиль компании Anne and Robert Swaffer", "Swaffer_textile", "Products")</li>
-            <li>@Html.ActionLink("Обои компании Anne and Robert Swaffer", "Swaffer_wallpaper", "Products")</li>
-            <li>@Html.ActionLink("Каталог компании Anne and Robert Swaffer", "Swaffer_catalog", "Products")</li>
-        </ul>
+        <p class="lead">Коллекция натуральных английских тканей с крупным цветочным рисунком в стиле ручной росписи. Фуксии, ирисы, лилии представлены в разной палитре красок от нежных пастельных до ярких контрастных. Идеально подходит для штор и обивки мебели.</p>
+        
+        @Html.ActionLink("Anne and Robert Swaffer", "Swaffer", "Products", null, new {@class="btn btn-large btn-primary", title="О компании Anne and Robert Swaffer"  })
+        @Html.ActionLink("Текстиль компании Anne and Robert Swaffer", "Swaffer", "Products", null, new {@class="btn btn-large btn-warning", title="Текстиль компании Anne and Robert Swaffer"  })
+        
     </div>
 
     <hr class="featurette-divider">

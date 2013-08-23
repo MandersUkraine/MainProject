@@ -1,6 +1,20 @@
 ﻿@{
     ViewBag.Title = "Advice";
 }
+<div>
+    <ul class="menuProduct" style="width: 480px;">
+        <li><a class="btn ui-corner-all"  href="#PaintAdvice" title="Общие рекомендации по покраске">Общие рекомендации по покраске</a></li>
+        <li><a class="btn ui-corner-all"  href="#WallpaperAdvice" title="Общие рекомендации по наклеиванию обоев">Общие рекомендации по наклеиванию обоев</a></li>
+        <li><a class="btn ui-corner-all"  href="#LittleGreeneAdvice" title="Рекомендации от компании Little Greene">Рекомендации от компании Little Greene</a></li>
+        <li><a class="btn ui-corner-all"  href="#Cole&amp;SonAdvice" title="Рекомендации от компании Cole &amp; Son">Рекомендации от компании Cole &amp; Son</a></li>
+    </ul>
+</div>
 
-
+@Html.Partial("Other/advice_p")
+ <hr class="featurette-divider">
+@Html.Partial("Other/advice_w")
+ <hr class="featurette-divider">
 @Html.Partial("Products/part_LG/advice_Little_Greene")
+ <hr class="featurette-divider">
+@Html.Partial("Products/part_CS/Cole_and_Son_partw")
+ <hr class="featurette-divider">
