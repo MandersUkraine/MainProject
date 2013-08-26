@@ -19,6 +19,42 @@ height: auto !important;
 
 div.productvideo {
     float: left;
-    padding: 15px;
-    margin: 5px;
+    padding: 10px;
+    
+}
+.productvideo p{
+    font-size: 17px !important;
+}
+.collection_block {
+    background: none repeat scroll 0 0 #FFFFFF;
+    font-size: 15px;
+    line-height: 20px;
+    overflow: hidden;
+    padding: 15px 30px;
+}
+.collection_block ul {
+    padding: 20px;
+}
+.collection_block ul li{
+    display: inline-block;
+    margin: 0 30px 26px 0;
+    vertical-align: top;
+    width: 283px;
+}
+.collection_block ul li img {
+    height: 143px;
+    margin-bottom: 5px;
+    width: 283px;
+}
+.collection_block ul li a {
+    font-family: "museo-sans" , "Lucida Sans Unicode" , "Lucida Grande" ,Arial,sans-serif;
+    color: #4C4C4C;
+    display: block;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 600;
+    letter-spacing: -1px;
+}
+.collection_block ul li a:hover {
+    text-decoration: none;
 }

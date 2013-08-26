@@ -660,7 +660,43 @@
     <Content Include="Content\images\Sanderson\wallpaper\varese-kantu-wp[0].jpg" />
     <Content Include="Content\images\Sanderson\wallpaper\wallpaper-pg-4.jpg" />
     <Content Include="Content\images\Sanderson\wallpaper\website_top-hanfleur.jpg" />
+    <Content Include="Content\images\Swaffer\Cafe-cushions-bordered21.jpg" />
+    <Content Include="Content\images\Swaffer\collections\Acer1.jpg" />
+    <Content Include="Content\images\Swaffer\collections\aspects-ci.jpg" />
+    <Content Include="Content\images\Swaffer\collections\cafe-ci.jpg" />
+    <Content Include="Content\images\Swaffer\collections\cane-ci1.jpg" />
+    <Content Include="Content\images\Swaffer\collections\chartwell-ci.jpg" />
+    <Content Include="Content\images\Swaffer\collections\copppice-ci.jpg" />
+    <Content Include="Content\images\Swaffer\collections\delta-ci.jpg" />
+    <Content Include="Content\images\Swaffer\collections\discovery-ci.jpg" />
+    <Content Include="Content\images\Swaffer\collections\expressions-ci.jpg" />
+    <Content Include="Content\images\Swaffer\collections\gallery-ci.jpg" />
+    <Content Include="Content\images\Swaffer\collections\handpicked-armchairs1.jpg" />
+    <Content Include="Content\images\Swaffer\collections\haze.jpg" />
+    <Content Include="Content\images\Swaffer\collections\imperio-ci.jpg" />
+    <Content Include="Content\images\Swaffer\collections\inbloom-ci.jpg" />
+    <Content Include="Content\images\Swaffer\collections\legacy-ci1.jpg" />
+    <Content Include="Content\images\Swaffer\collections\logo.png" />
+    <Content Include="Content\images\Swaffer\collections\logo_alhambra.png" />
+    <Content Include="Content\images\Swaffer\collections\logo_casal.png" />
+    <Content Include="Content\images\Swaffer\collections\logo_trestintas.png" />
+    <Content Include="Content\images\Swaffer\collections\oceana-sofa-preflip.jpg" />
+    <Content Include="Content\images\Swaffer\collections\panache-ci.jpg" />
+    <Content Include="Content\images\Swaffer\collections\paradis-sofa-close-ip2.jpg" />
+    <Content Include="Content\images\Swaffer\collections\pavilion-ci1.jpg" />
+    <Content Include="Content\images\Swaffer\collections\selvas-ci1.jpg" />
+    <Content Include="Content\images\Swaffer\collections\serengeti-armchairs1.jpg" />
+    <Content Include="Content\images\Swaffer\collections\venice-ci1.jpg" />
+    <Content Include="Content\images\Swaffer\collections\visage-ci1.jpg" />
+    <Content Include="Content\images\Swaffer\collections\visageII-ci.jpg" />
+    <Content Include="Content\images\Swaffer\collections\zen-ci.jpg" />
+    <Content Include="Content\images\Swaffer\gallery-sofa-bordered7.jpg" />
+    <Content Include="Content\images\Swaffer\legacy-roomset-bordered1.jpg" />
     <Content Include="Content\images\Swaffer\logo.gif" />
+    <Content Include="Content\images\Swaffer\panache-fabrics-bordered4.jpg" />
+    <Content Include="Content\images\Swaffer\paradis-bed-bordered2.jpg" />
+    <Content Include="Content\images\Swaffer\pavilion-room-set-bordered5.jpg" />
+    <Content Include="Content\images\Swaffer\Selvas-room-set-bordered4.jpg" />
     <Content Include="Content\images\WH\baner\homemasts_maindeck.jpg" />
     <Content Include="Content\images\WH\baner\homemasts_maindeck.png" />
     <Content Include="Content\images\WH\baner\homemasts_polyco.jpg" />
@@ -1750,6 +1786,12 @@
     <Content Include="Views\Shared\Products\part_MC\wf_Morris_and_Co.cshtml" />
     <Content Include="Views\Products\Swaffer.cshtml" />
     <Content Include="Views\Shared\Products\part_MC\catalog_Morris_and_Co.cshtml" />
+    <Content Include="Views\Shared\Products\part_Sf\_Swaffer.cshtml" />
+    <Content Include="Views\Shared\Products\part_Sf\_about_Swaffer.cshtml" />
+    <Content Include="Views\Shared\Products\part_Sf\fabric_Swaffer.cshtml" />
+    <Content Include="Views\Shared\Products\part_FB\video_Farrow_and_Ball.cshtml" />
+    <Content Include="Views\Shared\Products\part_LG\video_Little_Greene.cshtml" />
+    <Content Include="Views\Shared\Products\part_WH\video_William_Howard.cshtml" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

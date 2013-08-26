@@ -2,30 +2,40 @@
 @{
     @*Layout = "~/Views/Shared/_LayoutProducts.cshtml";*@
     ViewBag.Title = "Текстиль от производителя Swaffer";
-    var part = Model != null ? Model.Replace("__", "/") : "Products/part_MC/_Morris_and_Co";
+    var part = Model != null ? Model.Replace("__", "/") : "Products/part_Sf/_Swaffer";
     
     
 }
+<style type="text/css">
+    .item img {
+        width:auto !important;
+        height: auto !important;
+    }
+</style>
 <div class="featurette">
-            <img class="featurette-image pull-right ui-corner-all" src="@Url.Content("~/Content/images/MC/logo_MC_white.jpg")" />
+            <img class="featurette-image pull-right ui-corner-all" src="@Url.Content("~/Content/images/Swaffer/logo.gif")" alt="Logo Swaffer" style="background-color: #fefef4; padding: 5px;" />
 </div>
 <h2 class="featurette-heading">@ViewBag.Title</h2>
 
-<div id="myCarousel_MC" class="carousel slide">
+<div id="myCarousel_Sf" class="carousel slide">
     <div class="carousel-inner ui-corner-all">
 
         <div class="active item">
-            <img src="~/Content/images/MC/baner/homeb_MC_1.jpg" /></div>
+            <img src="~/Content/images/Swaffer/legacy-roomset-bordered1.jpg" />
+            </div>
         <div class="item">
-            <img src="~/Content/images/MC/baner/homeb_MC_2.jpg" /></div>
+        <img src="~/Content/images/Swaffer/panache-fabrics-bordered4.jpg" />
+            </div>
         <div class="item">
-            <img src="~/Content/images/MC/baner/homeb_MC_3.jpg" /></div>
-        
-
+        <img src="~/Content/images/Swaffer/paradis-bed-bordered2.jpg" />
+            </div>
+        <div class="item">
+        <img src="~/Content/images/Swaffer/Selvas-room-set-bordered4.jpg" />
+            </div>
     </div>
 
-    <a class="carousel-control left" href="#myCarousel_MC" data-slide="prev">&lsaquo;</a>
-    <a class="carousel-control right" href="#myCarousel_MC" data-slide="next">&rsaquo;</a>
+    <a class="carousel-control left" href="#myCarousel_Sf" data-slide="prev">&lsaquo;</a>
+    <a class="carousel-control right" href="#myCarousel_Sf" data-slide="next">&rsaquo;</a>
 </div>
 
 
