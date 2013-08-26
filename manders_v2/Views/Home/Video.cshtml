@@ -1,128 +1,67 @@
 ﻿@{
     ViewBag.Title = "Видео контент некоторых брендов представленых на нашем сайте";
     Layout = Request.Params["part"] != null && Request.Params["part"] == "true" ? null : "~/Views/Shared/_Layout.cshtml";
-}
-@section script_section{
+    }
+
+@section script_section
+    {
     <script type="text/javascript">
 
         $(function () {
-            $(".btn").button("loading");
+
+            $('.btn')
+    .click(function () {
+        var btn = $(this)
+        btn.button('loading')
+        setTimeout(function () {
+            btn.button('complete')
+        }, 4000)
+
+    })
         });
     </script>
     }
-
- <h2 class="featurette-heading">@ViewBag.Title</h2>
-<div id="video_manders">
-    <hr class="featurette-divider">
-    <h2 class="featurette-heading">Little Greene <span class="muted">видео</span></h2>
-    <a class="btn" data-toggle="collapse" data-parent="#video_manders" href="#video_Little_Greene">
-        
-    </a>
-    <div id="video_Little_Greene" class="accordion-body collapse in">@Html.Partial("Products/part_LG/video_Little_Greene")</div>
-    
-    <hr class="featurette-divider">
-    <h2 class="featurette-heading">Farrow & Ball <span class="muted">видео</span></h2>
-
-    <a class="btn" data-toggle="collapse" data-parent="#video_manders" href="#video_Farrow_and_Ball">
-    </a>
-    <div id="video_Farrow_and_Ball" class="accordion-body collapse">@Html.Partial("Products/part_FB/video_Farrow_and_Ball")</div>
-    
-    <hr class="featurette-divider">
-    <h2 class="featurette-heading">Sanderson <span class="muted">видео</span></h2>
-    <button data-parent="#video_manders" type="button" class="btn btn-danger" data-toggle="collapse" data-target="#video_Sanderson" data-loading-text="Загрузка видео контента..."autocomplete="off">
-        Загрузить видео контент...
+<div class="featurette">
+    <h2 class="featurette-heading">@ViewBag.Title</h2>
+    <button type="button" class="btn btn-large" data-toggle="collapse" data-target="#video_manders" data-loading-text="Загрузка всего видео контента..." data-complete-text="Загрузка окончена!" autocomplete="off" title="Нажмите на кнопку что бы загрузить все видео!">
+        <i class="icon-film"></i>&nbsp;Загрузить все видео доступное на сервере
 
     </button>
-    <div id="video_Sanderson" class="collapse">@Html.Partial("Products/part_Sn/video_Sanderson")</div>
-    
     <hr class="featurette-divider">
-    <h2 class="featurette-heading">William Howard <span class="muted">видео</span></h2>
-    <button data-parent="#video_manders" type="button" class="btn btn-info" data-toggle="collapse" data-target="#video_William_Howard" data-loading-text="Загрузка видео контента..." autocomplete="off">
-        Загрузить видео контент...
-    </button>
-    <button type="button" class="btn btn-primary" data-loading-text="Loading..." autocomplete="off">Loading state</button>
-    <div id="video_William_Howard" class="collapse">@Html.Partial("Products/part_WH/video_William_Howard")</div>
-    <hr class="featurette-divider">
+    <div id="video_manders" class="collapse">
+        <hr class="featurette-divider">
+        <h2 class="featurette-heading">Little Greene <span class="muted">видео</span></h2>
+        <button data-parent="#video_manders" type="button" class="btn btn-primary" data-toggle="collapse" data-target="#video_Little_Greene" data-loading-text="Загрузка видео контента..." data-complete-text="Загрузка окончена!" autocomplete="off">
+            Загрузить видео контент...
+        </button>
+        <div id="video_Little_Greene" class="accordion-body collapse">@Html.Partial("Products/part_LG/video_Little_Greene")</div>
+
+        <hr class="featurette-divider">
+        <h2 class="featurette-heading">Farrow & Ball <span class="muted">видео</span></h2>
+
+        <button data-parent="#video_manders" type="button" class="btn btn-info" data-toggle="collapse" data-target="#video_Farrow_and_Ball" data-loading-text="Загрузка видео контента..." data-complete-text="Загрузка окончена!" autocomplete="off">
+            Загрузить видео контент...
+        </button>
+        <div id="video_Farrow_and_Ball" class="accordion-body collapse">@Html.Partial("Products/part_FB/video_Farrow_and_Ball")</div>
+
+        <hr class="featurette-divider">
+        <h2 class="featurette-heading">Sanderson <span class="muted">видео</span></h2>
+        <button data-parent="#video_manders" type="button" class="btn btn-warning" data-toggle="collapse" data-target="#video_Sanderson" data-loading-text="Загрузка видео контента..." data-complete-text="Загрузка окончена!" autocomplete="off">
+            Загрузить видео контент...
+
+        </button>
+        <div id="video_Sanderson" class="collapse">@Html.Partial("Products/part_Sn/video_Sanderson")</div>
+
+        <hr class="featurette-divider">
+        <h2 class="featurette-heading">William Howard <span class="muted">видео</span></h2>
+        <button data-parent="#video_manders" type="button" class="btn btn-success" data-toggle="collapse" data-target="#video_William_Howard" data-loading-text="Загрузка видео контента..." data-complete-text="Загрузка окончена!" autocomplete="off">
+            Загрузить видео контент...
+        </button>
+        <div id="video_William_Howard" class="collapse">@Html.Partial("Products/part_WH/video_William_Howard")</div>
+        <hr class="featurette-divider">
+    </div>
+
 </div>
-   
+<hr class="featurette-divider">
 
 
-
-@*<div class="ui-widget">
-    <div id="hgroup" class=" title fbgnd ui-corner-bottom" style="text-decoration: double;
-        font-size: large; color: whitesmoke; width: auto; height: 30px; padding: 15px;
-        text-align: center;">
-        <h2>@ViewBag.Message</h2>
-    </div>
-    <div class="ui-widget-content">
-        <div class="video_cont">
-            <div>
-                <iframe width="640" height="360" src="http://www.youtube.com/embed/F9bVRXOznco?rel=0"
-                    frameborder="0" allowfullscreen></iframe>
-            </div>
-            <div>
-                <p>
-                   Legends of La Cienega Celebrate Hollywood with Farrow & Ball 
-                </p>
-            </div>
-        </div>
-        <div class="video_cont"> 
-      <div>
-        <iframe width="640" height="360" src="http://www.youtube.com/embed/klQr0oaJZIg?rel=0" frameborder="0" allowfullscreen></iframe>
-      </div>
-      <div>
-      <p>Farrow & Ball - Wallpaper Factory </p>
-      </div>
-            
-     </div>
-        <div id="vid1">
-            <iframe src="http://player.vimeo.com/video/38436958?badge=0" width="500" height="281"
-                frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-            <p>
-                <a href="http://vimeo.com/38436958">Seasons project</a> from <a href="http://vimeo.com/valbond">
-                    Valeriy Bondarenko</a> on <a href="http://vimeo.com">Vimeo</a>.</p>
-        </div>
-        <div>
-            <div>
-                <p>
-                    Behind the Scenes at Little Greene - A Special Mix
-                </p>
-                <iframe width="640" height="360" src="http://www.youtube.com/embed/q4bYXBMhAko?rel=0"
-                    frameborder="0" allowfullscreen></iframe>
-            </div>
-        </div>
-        <div>
-            <div>
-                <p>
-                    Farrow & Ball - The Fable of the Front Door - Басня о входной двери
-                </p>
-            </div>
-            <iframe width="640" height="360" src="http://www.youtube.com/embed/GKqIxfFKFJk" frameborder="0"
-                allowfullscreen></iframe>
-        </div>
-        <div>
-            <div>
-                <p>
-                    Как клеить обои - How to hang wallpaper from - Farrow & Ball.</p>
-            </div>
-            <iframe width="640" height="360" src="http://www.youtube.com/embed/N_04PXJjwtE" frameborder="0"
-                allowfullscreen></iframe>
-        </div>
-        <div>
-            <div>
-                <p>
-                    Beautify A Drawer - Украсить ящики =)</p>
-            </div>
-            <iframe width="640" height="360" src="http://www.youtube.com/embed/6zsLg9hftgQ" frameborder="0"
-                allowfullscreen></iframe>
-        </div>
-        <div>
-            <div>
-                <p>
-                    Плинтус</p>
-            </div>
-            <iframe width="640" height="360" src="http://www.youtube.com/embed/ZIyD5BmcwF4" frameborder="0"
-                allowfullscreen></iframe>
-        </div>
-    </div>
-</div>*@
