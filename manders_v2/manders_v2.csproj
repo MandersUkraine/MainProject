@@ -292,6 +292,7 @@
     <Content Include="Content\images\FB\Kraski_dlya_vneshnikh_rabot\Kraski_dlya_vneshnikh_rabot_5.jpg" />
     <Content Include="Content\images\FB\Kraski_dlya_vneshnikh_rabot\Kraski_dlya_vneshnikh_rabot_6.jpg" />
     <Content Include="Content\images\FB\Kraski_dlya_vneshnikh_rabot\Kraski_dlya_vneshnikh_rabot_7.jpg" />
+    <Content Include="Content\images\FB\News\NewColours2013.jpg" />
     <Content Include="Content\images\FB\primenenie.JPG" />
     <Content Include="Content\images\FB\primenenie2.JPG" />
     <Content Include="Content\images\FB\print_logo.gif" />
@@ -1792,6 +1793,7 @@
     <Content Include="Views\Shared\Products\part_FB\video_Farrow_and_Ball.cshtml" />
     <Content Include="Views\Shared\Products\part_LG\video_Little_Greene.cshtml" />
     <Content Include="Views\Shared\Products\part_WH\video_William_Howard.cshtml" />
+    <Content Include="Views\Shared\Products\part_FB\_new_colours_2013.cshtml" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

@@ -1,5 +1,6 @@
 ﻿
 <!DOCTYPE html>
+<!-- Разметка с помощью микроданных, созданная Мастером разметки структурированных данных Google. -->
 <html lang="ru">
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -398,7 +399,7 @@
 
     <!-- NAVBAR
     ================================================== -->
-    <div class="navbar-wrapper">
+    <div itemscope itemtype="http://schema.org/LocalBusiness" class="navbar-wrapper">
         <!-- Wrap the .navbar in .container to center it within the absolutely positioned parent. -->
         <div class="container">
 
@@ -417,7 +418,7 @@
                         <ul class="nav">
                             <li class="hidden-phone hidden-tablet">
                                 <a class="" href="@Url.Action("Index", "Home")" title="@ViewBag.Title - Элитные обои, английские краски, английский плинтус: sanderson, william howard, farrow ball, little green | Manders">
-                                    <img class="brand_img ui-corner-all" src="~/Content/images/Manders_logo.png" /></a>
+                                    <img itemprop="image" class="brand_img ui-corner-all" src="~/Content/images/Manders_logo.png" /></a>
                             </li>
                             <li class="dropdown">
                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" title="ПРОИЗВОДИТЕЛИ ПРЕДСТАВЛЕННЫЕ В УКРАИНЕ">Ассортимент<b class="caret"></b></a>
@@ -477,7 +478,7 @@
                                 </ul>
                             </li>
                             <li>@Html.ActionLink("О нас", "About", "Home")</li>
-                            <li>@Html.ActionLink("Контакт", "Contact", "Home")</li>
+                            <li>@Html.ActionLink("Контакт", "Contact", "Home", null, new { itemprop="url"})</li>
                             <!-- Read about Bootstrap dropdowns at http://twitter.github.com/bootstrap/javascript.html#dropdowns -->
 
                             <li class="hidden-phone hidden-tablet" ><a href="@Url.Action("Contact", "Home")">+38 (044) 289-53-89</a></li>
@@ -491,6 +492,14 @@
 
         </div>
         <!-- /.container -->
+        <meta itemprop="name" content="Manders">
+        <meta itemprop="telephone" content="044 289-53-89">
+        <meta itemprop="email" content="shop@manders.com.ua">
+        <span itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+            <meta itemprop="streetAddress" content="Горького, 3">
+            <meta itemprop="addressLocality" content="Киев">
+            <meta itemprop="addressCountry" content="Украина">
+        </span>
     </div>
     <!-- /.navbar-wrapper -->
 

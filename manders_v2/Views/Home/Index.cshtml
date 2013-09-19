@@ -9,19 +9,26 @@
 }
 
 
-    
-        <div>
-            <div class="title">
-                <h1 class="featurette-heading">@ViewBag.Title</h1>
-                <h2 class="muted">@ViewBag.Message</h2>
-            </div>
-            <p class="lead">
-                
-            </p>
+
+<div>
+    <div class="title">
+        <h1 class="featurette-heading">@ViewBag.Title</h1>
+        <h2 class="muted">@ViewBag.Message</h2>
+    </div>
+    <div class="" style="text-align: center;">
+
+        <a class="btn btn-large btn-warning" href="@Url.Action("Farrow_and_Ball", "Products")#_new_colours_2013" title="Описание новых оттенков от Farrow&Ball">Новые соблазнительные оттенки от Farrow&Ball</a>
+        <br />
+        <br />
+
+        <a class="" href="http://new.manders.com.ua" title="Нажмите для перехода к презентации">
+            <img class="ui-corner-all" src="~/Content/images/FB/News/NewColours2013.jpg" /></a>
+
+    </div>
 
 
 
-        </div>
-    
+</div>
+
 
 @Html.Partial("Products/_AllProducts")
