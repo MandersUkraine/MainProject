@@ -1795,6 +1795,7 @@
     <Content Include="Views\Shared\Products\part_WH\video_William_Howard.cshtml" />
     <Content Include="Views\Shared\Products\part_FB\_new_colours_2013.cshtml" />
     <None Include="Properties\PublishProfiles\webdep.pubxml" />
+    <Content Include="Views\Shared\Other\NewsPartialPage1.cshtml" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
