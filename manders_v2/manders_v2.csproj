@@ -40,7 +40,6 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Microsoft.CSharp" />
-<<<<<<< HEAD
     <Reference Include="MySql.Data, Version=6.7.4.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>bin\MySql.Data.dll</HintPath>
@@ -53,11 +52,6 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>bin\MySql.Web.dll</HintPath>
     </Reference>
-=======
-    <Reference Include="MySql.Data, Version=6.7.4.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
-    <Reference Include="MySql.Data.Entity, Version=6.7.4.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
-    <Reference Include="MySql.Web, Version=6.7.4.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
->>>>>>> 99e9324d22753680f170a7d40398eab8521eba75
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Data.Entity" />
@@ -1812,11 +1806,7 @@
     <Content Include="Views\Shared\Products\part_LG\video_Little_Greene.cshtml" />
     <Content Include="Views\Shared\Products\part_WH\video_William_Howard.cshtml" />
     <Content Include="Views\Shared\Products\part_FB\_new_colours_2013.cshtml" />
-<<<<<<< HEAD
     <None Include="Properties\PublishProfiles\webdep.pubxml" />
-=======
-    <Content Include="Views\Shared\Other\NewsPartialPage1.cshtml" />
->>>>>>> 99e9324d22753680f170a7d40398eab8521eba75
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
