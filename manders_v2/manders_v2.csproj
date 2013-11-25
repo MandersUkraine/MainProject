@@ -40,6 +40,15 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="MySql.Data">
+      <HintPath>..\packages\MySql.Data.6.7.4\lib\net40\MySql.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="MySql.Data.Entity">
+      <HintPath>..\packages\MySQL.Data.Entities.6.7.4.1\lib\net40\MySql.Data.Entity.dll</HintPath>
+    </Reference>
+    <Reference Include="MySql.Web">
+      <HintPath>..\packages\MySql.Web.6.7.4\lib\net40\MySql.Web.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Data.Entity" />
@@ -447,54 +456,6 @@
     <Content Include="Content\images\MC\pdf\Morris_Archive_Collections.jpg" />
     <Content Include="Content\images\MC\pdf\Morris_V.jpg" />
     <Content Include="Content\images\MC\pdf\Pimpernel.jpg" />
-    <Content Include="Content\images\MC\textil_wallpaper\Archive Embroideries\Garden Tulip %281885%29.jpg" />
-    <Content Include="Content\images\MC\textil_wallpaper\Archive Embroideries\Janes Daisy %281860%29.jpg" />
-    <Content Include="Content\images\MC\textil_wallpaper\Archive Embroideries\Kelmscott Tree %282011%29.jpg" />
-    <Content Include="Content\images\MC\textil_wallpaper\Archive Embroideries\Kelmscott Trellis %281894-1895%29.jpg" />
-    <Content Include="Content\images\MC\textil_wallpaper\Archive Embroideries\Mary Isobel %28circa 1890%29.jpg" />
-    <Content Include="Content\images\MC\textil_wallpaper\Archive II Prints\Bamboo %281872%29.jpg" />
-    <Content Include="Content\images\MC\textil_wallpaper\Archive II Prints\Forest %282013%29.jpg" />
-    <Content Include="Content\images\MC\textil_wallpaper\Archive II Prints\Forest velvet %282013%29.jpg" />
-    <Content Include="Content\images\MC\textil_wallpaper\Archive II Prints\Lodden %281883%29.jpg" />
-    <Content Include="Content\images\MC\textil_wallpaper\Archive II Prints\Love is Enough %282013%29.jpg" />
-    <Content Include="Content\images\MC\textil_wallpaper\Archive II Prints\Pink and Rose %281890%29.jpg" />
-    <Content Include="Content\images\MC\textil_wallpaper\Archive II Wallpaper\Acanthus %281874%29.jpg" />
-    <Content Include="Content\images\MC\textil_wallpaper\Archive II Wallpaper\Bird and Pomegranate %281926%29.jpg" />
-    <Content Include="Content\images\MC\textil_wallpaper\Archive II Wallpaper\Chrysanthemum %281877%29.jpg" />
-    <Content Include="Content\images\MC\textil_wallpaper\Archive II Wallpaper\Daisy %281864%29.jpg" />
-    <Content Include="Content\images\MC\textil_wallpaper\Archive II Wallpaper\Larkspur %281875%29.jpg" />
-    <Content Include="Content\images\MC\textil_wallpaper\Archive II Wallpaper\Leicester %281912%29.jpg" />
-    <Content Include="Content\images\MC\textil_wallpaper\Archive II Wallpaper\Pink and Rose %281890%29.jpg" />
-    <Content Include="Content\images\MC\textil_wallpaper\Archive II Wallpaper\Strawberry Thief %281883%29.jpg" />
-    <Content Include="Content\images\MC\textil_wallpaper\Archive Prints\Bluebell %281876%29.jpg" />
-    <Content Include="Content\images\MC\textil_wallpaper\Archive Prints\Kelmscott Tree %282011%29.jpg" />
-    <Content Include="Content\images\MC\textil_wallpaper\Archive Prints\Kennet %281883%29.jpg" />
-    <Content Include="Content\images\MC\textil_wallpaper\Archive Prints\Marigold %281875%29.jpg" />
-    <Content Include="Content\images\MC\textil_wallpaper\Archive Prints\Orchard %282011%29.jpg" />
-    <Content Include="Content\images\MC\textil_wallpaper\Archive Prints\Scroll %281871%29.jpg" />
-    <Content Include="Content\images\MC\textil_wallpaper\Archive Prints\Strawberry Thief %281883%29.jpg" />
-    <Content Include="Content\images\MC\textil_wallpaper\Archive Wallpaper\Artichoke %281898%29.jpg" />
-    <Content Include="Content\images\MC\textil_wallpaper\Archive Wallpaper\Branch %281871%29.jpg" />
-    <Content Include="Content\images\MC\textil_wallpaper\Archive Wallpaper\Fruit %281864%29.jpg" />
-    <Content Include="Content\images\MC\textil_wallpaper\Archive Wallpaper\Garden Craft %281908%29.jpg" />
-    <Content Include="Content\images\MC\textil_wallpaper\Archive Wallpaper\Garden Tulip %281885%29.jpg" />
-    <Content Include="Content\images\MC\textil_wallpaper\Archive Wallpaper\Golden Lily %281899%29.jpg" />
-    <Content Include="Content\images\MC\textil_wallpaper\Archive Wallpaper\Marigold %281875%29.jpg" />
-    <Content Include="Content\images\MC\textil_wallpaper\Archive Wallpaper\Meadow Sweet %281904%29.jpg" />
-    <Content Include="Content\images\MC\textil_wallpaper\Archive Wallpaper\Pimpernel %281876%29.jpg" />
-    <Content Include="Content\images\MC\textil_wallpaper\Archive Wallpaper\Scroll %281871%29.jpg" />
-    <Content Include="Content\images\MC\textil_wallpaper\Archive Wallpaper\Willow %281874%29.jpg" />
-    <Content Include="Content\images\MC\textil_wallpaper\Archive Weaves\Acanthus Tapestry %281875%29.jpg" />
-    <Content Include="Content\images\MC\textil_wallpaper\Archive Weaves\Branch %281871%29.jpg" />
-    <Content Include="Content\images\MC\textil_wallpaper\Archive Weaves\Crown Imperial %281876%29.jpg" />
-    <Content Include="Content\images\MC\textil_wallpaper\Archive Weaves\Fruit %281864%29Willow Bough %281887%29.jpg" />
-    <Content Include="Content\images\MC\textil_wallpaper\Archive Weaves\Garden Craft %281908%29.jpg" />
-    <Content Include="Content\images\MC\textil_wallpaper\Archive Weaves\Peacock and Dragon %281878%29.jpg" />
-    <Content Include="Content\images\MC\textil_wallpaper\Embroideries\Acanthus.jpg" />
-    <Content Include="Content\images\MC\textil_wallpaper\Embroideries\Fruit.jpg" />
-    <Content Include="Content\images\MC\textil_wallpaper\Embroideries\Lily.jpg" />
-    <Content Include="Content\images\MC\textil_wallpaper\Embroideries\May.jpg" />
-    <Content Include="Content\images\MC\textil_wallpaper\Embroideries\Tulip.jpg" />
     <Content Include="Content\images\MC\textil_wallpaper\ArchiveEmbroideries.jpg" />
     <Content Include="Content\images\MC\textil_wallpaper\Archive_II_Print.jpg" />
     <Content Include="Content\images\MC\textil_wallpaper\Archive_II_Wallpaper.jpg" />
@@ -505,26 +466,6 @@
     <Content Include="Content\images\MC\textil_wallpaper\Morris_Volume_IV.jpg" />
     <Content Include="Content\images\MC\textil_wallpaper\Morris_Volume_V.jpg" />
     <Content Include="Content\images\MC\textil_wallpaper\Pimpernel.jpg" />
-    <Content Include="Content\images\MC\textil_wallpaper\Morris Volume IV\Acanthus Scroll.jpg" />
-    <Content Include="Content\images\MC\textil_wallpaper\Morris Volume IV\Brer Rabbit.jpg" />
-    <Content Include="Content\images\MC\textil_wallpaper\Morris Volume IV\Cray.jpg" />
-    <Content Include="Content\images\MC\textil_wallpaper\Morris Volume IV\Honeysuckle &amp; Tulip.jpg" />
-    <Content Include="Content\images\MC\textil_wallpaper\Morris Volume IV\Pearwood.jpg" />
-    <Content Include="Content\images\MC\textil_wallpaper\Morris Volume IV\Trellis.jpg" />
-    <Content Include="Content\images\MC\textil_wallpaper\Morris Volume IV\Woodford.jpg" />
-    <Content Include="Content\images\MC\textil_wallpaper\Morris Volume V\Chrysanthemum.jpg" />
-    <Content Include="Content\images\MC\textil_wallpaper\Morris Volume V\Granada.jpg" />
-    <Content Include="Content\images\MC\textil_wallpaper\Morris Volume V\Indian.jpg" />
-    <Content Include="Content\images\MC\textil_wallpaper\Morris Volume V\Mary Isobel.jpg" />
-    <Content Include="Content\images\MC\textil_wallpaper\Morris Volume V\Tangley.jpg" />
-    <Content Include="Content\images\MC\textil_wallpaper\Morris Volume V\Thistle.jpg" />
-    <Content Include="Content\images\MC\textil_wallpaper\Morris Volume V\Tulip &amp; Rose.jpg" />
-    <Content Include="Content\images\MC\textil_wallpaper\Pimpernel\Artichoke.jpg" />
-    <Content Include="Content\images\MC\textil_wallpaper\Pimpernel\Evenlode Trail.jpg" />
-    <Content Include="Content\images\MC\textil_wallpaper\Pimpernel\Kelmscott.jpg" />
-    <Content Include="Content\images\MC\textil_wallpaper\Pimpernel\Larkspur.jpg" />
-    <Content Include="Content\images\MC\textil_wallpaper\Pimpernel\Pimpernel.jpg" />
-    <Content Include="Content\images\MC\textil_wallpaper\Pimpernel\Planet.jpg" />
     <Content Include="Content\images\Sanderson\baner\adison-stripe-dps-hp.jpg" />
     <Content Include="Content\images\Sanderson\baner\angel-ferns-wallpaper-dps[0].jpg" />
     <Content Include="Content\images\Sanderson\baner\blossom-bough-wallpaper-dps.jpg" />
@@ -1738,18 +1679,6 @@
     <Content Include="Content\css\mbExtruder.less" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Content\images\MC\textil_wallpaper\Archive Embroideries\.DS_Store" />
-    <Content Include="Content\images\MC\textil_wallpaper\Archive Embroideries\Thumbs.db" />
-    <Content Include="Content\images\MC\textil_wallpaper\Archive II Prints\.DS_Store" />
-    <Content Include="Content\images\MC\textil_wallpaper\Archive II Wallpaper\.DS_Store" />
-    <Content Include="Content\images\MC\textil_wallpaper\Archive Prints\.DS_Store" />
-    <Content Include="Content\images\MC\textil_wallpaper\Archive Wallpaper\.DS_Store" />
-    <Content Include="Content\images\MC\textil_wallpaper\Archive Weaves\.DS_Store" />
-    <Content Include="Content\images\MC\textil_wallpaper\Embroideries\.DS_Store" />
-    <Content Include="Content\images\MC\textil_wallpaper\Morris Volume IV\.DS_Store" />
-    <Content Include="Content\images\MC\textil_wallpaper\Morris Volume V\.DS_Store" />
-    <Content Include="Content\images\MC\textil_wallpaper\Pimpernel\.DS_Store" />
-    <Content Include="Content\images\MC\textil_wallpaper\Pimpernel\Thumbs.db" />
     <Content Include="Content\images\MC\pdf\Archive_II.pdf" />
     <None Include="Properties\PublishProfiles\iis.pubxml" />
     <None Include="Properties\PublishProfiles\localhost.pubxml" />
@@ -1758,13 +1687,10 @@
     <Content Include="Views\Shared\Products\part_LG\_Little_Greene.cshtml" />
     <Content Include="Views\Shared\Products\part_FB\_Farrow_and_Ball.cshtml" />
     <Content Include="Views\Shared\Products\part_WH\William_Howard_prod.cshtml" />
-    <Content Include="Views\Shared\_LayoutFB.cshtml" />
     <Content Include="Views\Shared\Products\part_FB\paints_Farrow_and_ball.cshtml" />
     <Content Include="Views\Shared\Products\part_FB\wallpapers_Farrow_and_ball.cshtml" />
     <Content Include="Views\Products\Little_Greene.cshtml" />
     <Content Include="Views\Shared\Products\part_FB\_table_of_FB_paints.cshtml" />
-    <Content Include="Views\Shared\_LayoutLG.cshtml" />
-    <Content Include="Views\Shared\_LayoutProducts.cshtml" />
     <Content Include="Views\Shared\Products\_bottom_etr.cshtml" />
     <Content Include="Views\Products\Sanderson.cshtml" />
     <Content Include="Views\Shared\Products\part_Sn\_Sanderson.cshtml" />
@@ -1794,6 +1720,7 @@
     <Content Include="Views\Shared\Products\part_LG\video_Little_Greene.cshtml" />
     <Content Include="Views\Shared\Products\part_WH\video_William_Howard.cshtml" />
     <Content Include="Views\Shared\Products\part_FB\_new_colours_2013.cshtml" />
+    <None Include="Properties\PublishProfiles\on_hmsrv.pubxml" />
     <None Include="Properties\PublishProfiles\webdep.pubxml" />
     <Content Include="Views\Shared\Other\NewsPartialPage1.cshtml" />
   </ItemGroup>
