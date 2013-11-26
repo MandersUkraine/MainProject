@@ -1705,6 +1705,8 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\images\MC\pdf\Archive_II.pdf" />
+    <None Include="Properties\PublishProfiles\web_deploy_manders.pubxml" />
+    <None Include="Properties\PublishProfiles\from srv2008r2.pubxml" />
     <None Include="Properties\PublishProfiles\iis.pubxml" />
     <None Include="Properties\PublishProfiles\localhost.pubxml" />
     <None Include="Properties\PublishProfiles\new.manders.pubxml" />
