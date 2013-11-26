@@ -36,6 +36,8 @@
     <link href="@Url.Content("~/Content/themes/smoothness/jquery-ui-1.10.3.custom.css")" rel="stylesheet" />
     <link href="@Url.Content("~/Content/css/mbExtruder.css")" rel="stylesheet" />
     <link href="@Url.Content("~/Content/Site.css")" rel="stylesheet" />
+    <link href="~/Tools/fancybox/jquery.fancybox-1.3.4.css" rel="stylesheet" />
+
     <style>
         /* GLOBAL STYLES
     -------------------------------------------------- */
@@ -646,6 +648,9 @@
     <script type="text/javascript" src="~/Scripts/inc/jquery.metadata.js"></script>
     <script type="text/javascript" src="~/Scripts/inc/mbExtruder.js"></script>
 
+    <script type="text/javascript" src="~/Tools/fancybox/jquery.fancybox-1.3.4.pack.js"></script>
+
+
     @* 
     <script type="text/javascript" src="@Url.Content("~/Tools/bootstrap-master/docs/assets/js/bootstrap-alert.js")"></script>
     
@@ -666,8 +671,23 @@
     <script type="text/javascript" src="@Url.Content("~/Tools/bootstrap-master/docs/assets/js/bootstrap-button.js")"></script>
 
     <script type="text/javascript">
+        $(document).ready(function () {
+                      
+
+            $("a.grouped_elements").fancybox({
+                'transitionIn': 'elastic',
+                'transitionOut': 'elastic',
+                'speedIn': 600,
+                'speedOut': 200,
+                'overlayShow': false
+            });
+
+        });
 
         $(function () {
+
+
+
             // carousel demo
             $('#myCarousel').carousel();
             // tooltipe from jQuery
